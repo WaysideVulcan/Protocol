@@ -1,20 +1,20 @@
 # 本次實驗皆使用VC707開發板來完成，詳細內容可參考PDF
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/vc707.png)
 
 ## UART overview
 
 全稱Universal Asynchronous Receiver/Transmitter，屬於異步Serial通信接口的統稱。
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/protocol_port.png)
 
 UART為單端全雙工，TX與RX共用信號線
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/uart/signal.png)
 
 信號一次傳輸10個Bit，包含一個起始位及結束位
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/uart/bit.png)
 
 ### UART Verilog Code
 
@@ -48,15 +48,15 @@ SPI ( Serial Periphel Interface) 為一種高速全雙工的同步通訊協議�
 
 SPI有主從之分，下圖例分別顯示單對單及單對多的情形
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/spi/SPI_overview.png)
 
 SPI的四種抓取資料模式
 
-![Image text]() ![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/spi/SPI_Mode.png) ![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/spi/SPI_Mode_2.png)
 
 對VC707上的SPI Flash做資料傳輸
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/spi/flash.png)
 
 ### SPI Verilog Code
 
@@ -96,21 +96,21 @@ Inter – Integrated Circuit，屬於同步雙向Serial通信接口的統稱。
 
 而且總共只需要兩線即可傳輸(SCL負責同步.SDA負責傳輸數據)且支援多主機對多從機，
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/iic/IIC.png)
 
 IIC的串列資料傳輸位
 
-![Image text]() ![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/iic/IIC_bit.png) 
 
 對開發版上的IIC EEPROM做資料傳輸
 
 IIC透過辨識從機的address來決定是否傳輸
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/iic/iic_slave.png)
 
 IIC的信號傳輸時序
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/iic/IIC_Timing.png)
 
 ### IIC Verilog Code
 

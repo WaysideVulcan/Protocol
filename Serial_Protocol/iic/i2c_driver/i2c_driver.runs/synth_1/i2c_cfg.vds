@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue May  7 15:39:07 2024
+# Process ID: 8640
+# Current directory: C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1
+# Command line: vivado.exe -log i2c_cfg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_cfg.tcl
+# Log file: C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/i2c_cfg.vds
+# Journal file: C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source i2c_cfg.tcl -notrace
+Command: synth_design -top i2c_cfg -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21636
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1483.227 ; gain = 441.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'i2c_cfg' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:2]
+WARNING: [Synth 8-151] case item 6'b000001 is unreachable [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:46]
+WARNING: [Synth 8-151] case item 6'b000001 is unreachable [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:46]
+WARNING: [Synth 8-151] case item 6'b000001 is unreachable [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:46]
+WARNING: [Synth 8-151] case item 6'b000001 is unreachable [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:46]
+INFO: [Synth 8-6157] synthesizing module 'i2c_driver' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:388]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/.Xil/Vivado-8640-Vulcan/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/.Xil/Vivado-8640-Vulcan/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_driver' (0#1) [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:275]
+INFO: [Synth 8-6157] synthesizing module 'ila_i2c' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/.Xil/Vivado-8640-Vulcan/realtime/ila_i2c_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_i2c' (0#1) [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/.Xil/Vivado-8640-Vulcan/realtime/ila_i2c_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_cfg' (0#1) [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:2]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_i2c_driver'. This will prevent further optimization [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:243]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_ila0'. This will prevent further optimization [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:388]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_ila_i2c'. This will prevent further optimization [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_cfg.v:275]
+WARNING: [Synth 8-7129] Port start in module i2c_driver is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.004 ; gain = 556.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.004 ; gain = 556.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.004 ; gain = 556.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1598.004 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'inst_i2c_driver/inst_ila0'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'inst_i2c_driver/inst_ila0'
+Parsing XDC File [c:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.gen/sources_1/ip/ila_i2c/ila_i2c/ila_i2c_in_context.xdc] for cell 'inst_ila_i2c'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.gen/sources_1/ip/ila_i2c/ila_i2c/ila_i2c_in_context.xdc] for cell 'inst_ila_i2c'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1695.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1695.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst_i2c_driver/inst_ila0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_ila_i2c. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                        000000001 |                        000000001
+                WR_START |                        000000010 |                        000000010
+                  WR_DEV |                        000000100 |                        000000100
+                  WR_MEM |                        000001000 |                        000001000
+                 WR_DATA |                        000010000 |                        000010000
+                RD_START |                        000100000 |                        000100000
+                  RD_DEV |                        001000000 |                        001000000
+                 RD_DATA |                        010000000 |                        010000000
+                    STOP |                        100000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'i2c_driver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 6     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 26    
+	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port start in module i2c_driver is either unconnected or has no load
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst_i2c_driver/cnt_freq_reg[1]/Q' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:165]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.srcs/sources_1/new/i2c_driver.v:165]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |ila_i2c       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila     |     1|
+|2     |ila_i2c |     1|
+|3     |BUFG    |     1|
+|4     |CARRY4  |     6|
+|5     |LUT1    |    13|
+|6     |LUT2    |    46|
+|7     |LUT3    |    21|
+|8     |LUT4    |    28|
+|9     |LUT5    |    23|
+|10    |LUT6    |    88|
+|11    |FDRE    |   120|
+|12    |FDSE    |     6|
+|13    |IBUF    |     2|
+|14    |IOBUF   |     1|
+|15    |OBUF    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1695.066 ; gain = 556.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1695.066 ; gain = 653.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1695.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete | Checksum: d69bd5fa
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 9 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1695.066 ; gain = 1069.973
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vulcan/Protocol/Serial_Protocol/iic/i2c_driver/i2c_driver.runs/synth_1/i2c_cfg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file i2c_cfg_utilization_synth.rpt -pb i2c_cfg_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 15:39:38 2024...

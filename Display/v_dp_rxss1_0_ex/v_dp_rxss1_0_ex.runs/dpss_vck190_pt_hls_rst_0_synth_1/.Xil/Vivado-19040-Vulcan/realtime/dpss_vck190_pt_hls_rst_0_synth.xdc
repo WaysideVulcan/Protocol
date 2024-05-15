@@ -1,0 +1,6 @@
+set_property SRC_FILE_INFO {cfile:c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_hls_rst_0/dpss_vck190_pt_hls_rst_0_ooc.xdc rfile:../../../../../v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_hls_rst_0/dpss_vck190_pt_hls_rst_0_ooc.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_hls_rst_0_synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:59 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -period 10.000 -name s_axi_clk [get_ports s_axi_aclk]
+set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells U0]

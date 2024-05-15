@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May  8 16:51:34 2024
+# Process ID: 8620
+# Current directory: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23352 C:\Vulcan\Protocol\PCie\fpga_pcie_x1_xdma_bram_blockdesign\pcie_xdma_test.xpr
+# Log file: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/vivado.log
+# Journal file: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.xpr
+INFO: [Project 1-313] Project file moved from 'E:/XilinxProjects/PCIE_XDMA/netfpga_pcie_x1_xdma_bram_blockdesign' since last save.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'xdma_bram_xdma_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'xdma_bram_axi_bram_ctrl_0_2_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_xdma_0_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_xdma_0_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_xdma_0_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_2' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_2' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_2' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_bram_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_bram_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xdma_bram_axi_bram_ctrl_0_bram_0' generated file not found 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'xdma_bram.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+xdma_bram_axi_bram_ctrl_0_bram_0
+xdma_bram_xlconstant_0_0
+xdma_bram_xdma_0_0
+xdma_bram_axi_bram_ctrl_0_2
+
+INFO: [Project 1-230] Project 'pcie_xdma_test.xpr' upgraded for this version of Vivado.
+upgrade_project -migrate_output_products
+WARNING: [IP_Flow 19-2162] IP 'xdma_v4_1_3_blk_mem_64_noreg_be' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'xdma_v4_1_3_blk_mem_64_noreg_be' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'xdma_v4_1_3_blk_mem_64_reg_be' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'xdma_v4_1_3_blk_mem_64_reg_be' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'xdma_bram_xdma_0_0_pcie3_ip' is locked:
+* IP definition 'Virtex-7 FPGA Gen3 Integrated Block for PCI Express (4.3)' for IP 'xdma_bram_xdma_0_0_pcie3_ip' (customized with software release 2019.1) has a different revision in the IP Catalog.
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0.dcp' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.v' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.vhdl' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0/xdma_bram_xdma_0_0_sim_netlist.vhdl'
+WARNING: [IP_Flow 19-2162] IP 'xdma_bram_xdma_0_0' is locked:
+* IP definition 'DMA/Bridge Subsystem for PCI Express (4.1)' for IP 'xdma_bram_xdma_0_0' (customized with software release 2019.1) has a different revision in the IP Catalog. * IP 'xdma_bram_xdma_0_0' contains one or more locked subcores.
+INFO: [BD 41-2710] Migrated 'xdma_bram_xdma_0_0.xci'
+  Source files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0'
+  Output files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_xdma_0_0'.
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2.dcp' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.v' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.vhdl' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/xdma_bram_axi_bram_ctrl_0_2_sim_netlist.vhdl'
+WARNING: [IP_Flow 19-2162] IP 'xdma_bram_axi_bram_ctrl_0_2' is locked:
+* IP definition 'AXI BRAM Controller (4.1)' for IP 'xdma_bram_axi_bram_ctrl_0_2' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [BD 41-2710] Migrated 'xdma_bram_axi_bram_ctrl_0_2.xci'
+  Source files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2'
+  Output files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2'.
+WARNING: [IP_Flow 19-2162] IP 'xdma_bram_xlconstant_0_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'xdma_bram_xlconstant_0_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [BD 41-2710] Migrated 'xdma_bram_xlconstant_0_0.xci'
+  Source files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_xlconstant_0_0'
+  Output files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_xlconstant_0_0'.
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0.dcp' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.v' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.vhdl' to 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0/xdma_bram_axi_bram_ctrl_0_bram_0_sim_netlist.vhdl'
+WARNING: [IP_Flow 19-2162] IP 'xdma_bram_axi_bram_ctrl_0_bram_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'xdma_bram_axi_bram_ctrl_0_bram_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [BD 41-2710] Migrated 'xdma_bram_axi_bram_ctrl_0_bram_0.xci'
+  Source files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0'
+  Output files are located in 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_bram_0'.
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {xdma_bram_xlconstant_0_0 xdma_bram_xdma_0_0 xdma_bram_axi_bram_ctrl_0_2 xdma_bram_axi_bram_ctrl_0_bram_0}] -log ip_upgrade.log
+Reading block design file <C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd>...
+Adding component instance block -- xilinx.com:ip:xdma:4.1 - xdma_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Successfully read diagram <xdma_bram> from block design file <C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd>
+Upgrading 'C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd'
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] xdma_bram_axi_bram_ctrl_0_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] xdma_bram_axi_bram_ctrl_0_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] xdma_bram_axi_bram_ctrl_0_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] xdma_bram_axi_bram_ctrl_0_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [IP_Flow 19-3422] Upgraded xdma_bram_axi_bram_ctrl_0_2 (AXI BRAM Controller 4.1) from revision 1 to revision 9
+INFO: [IP_Flow 19-3422] Upgraded xdma_bram_axi_bram_ctrl_0_bram_0 (Block Memory Generator 8.4) from revision 3 to revision 7
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'pf1_msix_cap_table_size' from '000' to '020' has been ignored for IP 'xdma_bram_xdma_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'pf1_msix_cap_table_offset' from '00000000' to '00009000' has been ignored for IP 'xdma_bram_xdma_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'pf1_msix_cap_pba_offset' from '00000000' to '00009FE0' has been ignored for IP 'xdma_bram_xdma_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF3_SRIOV_VF_DEVICE_ID' from 'A331' to '0000' has been ignored for IP 'xdma_bram_xdma_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF2_SRIOV_VF_DEVICE_ID' from 'A231' to '0000' has been ignored for IP 'xdma_bram_xdma_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF1_SRIOV_VF_DEVICE_ID' from 'A131' to '0000' has been ignored for IP 'xdma_bram_xdma_0_0'
+INFO: [IP_Flow 19-3422] Upgraded xdma_bram_xdma_0_0 (DMA/Bridge Subsystem for PCI Express 4.1) from revision 3 to revision 26
+INFO: [IP_Flow 19-3422] Upgraded xdma_bram_xlconstant_0_0 (Constant 1.1) from revision 6 to revision 8
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'xdma_bram_xdma_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Vulcan\Protocol\PCie\fpga_pcie_x1_xdma_bram_blockdesign\pcie_xdma_test.srcs\sources_1\bd\xdma_bram\xdma_bram.bd> 
+Wrote  : <C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/ui/bd_164d3d5b.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2013.207 ; gain = 171.777
+export_ip_user_files -of_objects [get_ips {xdma_bram_xlconstant_0_0 xdma_bram_xdma_0_0 xdma_bram_axi_bram_ctrl_0_2 xdma_bram_axi_bram_ctrl_0_bram_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd]
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/xdma_0/M_AXI_BYPASS' to master interface '/xdma_0/M_AXI_BYPASS'. Please either complete or remove this path to resolve.
+Wrote  : <C:\Vulcan\Protocol\PCie\fpga_pcie_x1_xdma_bram_blockdesign\pcie_xdma_test.srcs\sources_1\bd\xdma_bram\xdma_bram.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(19) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/synth/xdma_bram.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(19) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/sim/xdma_bram.v
+Verilog Output written to : c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/hdl/xdma_bram_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+Exporting to file c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/hw_handoff/xdma_bram.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.gen/sources_1/bd/xdma_bram/synth/xdma_bram.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2013.207 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all xdma_bram_xdma_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_xdma_0_0
+catch { config_ip_cache -export [get_ips -all xdma_bram_axi_bram_ctrl_0_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_axi_bram_ctrl_0_2
+catch { config_ip_cache -export [get_ips -all xdma_bram_axi_bram_ctrl_0_bram_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_axi_bram_ctrl_0_bram_0
+export_ip_user_files -of_objects [get_files C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd]
+launch_runs xdma_bram_axi_bram_ctrl_0_2_synth_1 xdma_bram_axi_bram_ctrl_0_bram_0_synth_1 xdma_bram_xdma_0_0_synth_1 -jobs 20
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_axi_bram_ctrl_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_axi_bram_ctrl_0_bram_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_bram_xdma_0_0
+[Wed May  8 16:57:16 2024] Launched xdma_bram_axi_bram_ctrl_0_2_synth_1, xdma_bram_axi_bram_ctrl_0_bram_0_synth_1, xdma_bram_xdma_0_0_synth_1...
+Run output will be captured here:
+xdma_bram_axi_bram_ctrl_0_2_synth_1: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.runs/xdma_bram_axi_bram_ctrl_0_2_synth_1/runme.log
+xdma_bram_axi_bram_ctrl_0_bram_0_synth_1: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.runs/xdma_bram_axi_bram_ctrl_0_bram_0_synth_1/runme.log
+xdma_bram_xdma_0_0_synth_1: C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.runs/xdma_bram_xdma_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.srcs/sources_1/bd/xdma_bram/xdma_bram.bd] -directory C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.ip_user_files -ipstatic_source_dir C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.cache/compile_simlib/modelsim} {questa=C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.cache/compile_simlib/questa} {riviera=C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.cache/compile_simlib/riviera} {activehdl=C:/Vulcan/Protocol/PCie/fpga_pcie_x1_xdma_bram_blockdesign/pcie_xdma_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 17:08:17 2024...

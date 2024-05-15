@@ -1,0 +1,89 @@
+-------------------------------------
+| Tool Version : Vivado v.2023.2
+| Date         : Wed May  8 17:43:29 2024
+| Host         : Vulcan
+| Design       : design_1
+| Device       : xcvp1202-vsva2785-3HP-E-S
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+*************************************
+Constraining loads of Specific Clocks
+*************************************
+Constraining loads for clocks of types BUFG_GT 
+For clocks of type BUFG_GT: 
+	Enforcing a fixed size of 4 horizontal clock regions
+	Considering clock nets with loads with fanout less than 10000
+	Accept cross-SLR move/constraining: Yes
+Design has no clock of the constrained type
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 2
+	Number of BUFGCE: 0
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 2
+	Number of BUFG_FABRIC: 0
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pl0_ref_clk
+	Clock source type: BUFG_PS fixed to track 6
+	Clock source region: X1Y1
+	Clock regions with locked loads: (0, 2) (1, 1) (1, 3) 
+
+Clock 2: cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pl1_ref_clk
+	Clock source type: BUFG_PS fixed to track 7
+	Clock source region: X1Y1
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+
+Checking conflicts w.r.t. CEW-Root restrictions:
+	No conflict found
+**************************
+Dump ILP Clock Region Info
+**************************
+clock name: cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pl0_ref_clk
+  Source: X1Y1
+  HR regions: X1Y1, X2Y1, X3Y1
+  VR regions: X3Y1, X3Y2
+  Root: X3Y2
+  VD regions: X3Y1, X3Y2, X3Y3, X3Y4
+  HD regions: X0Y1, X0Y2, X0Y3, X0Y4, X1Y1, X1Y2, X1Y3, X1Y4, X2Y1, X2Y2, X2Y3, X2Y4, X3Y1, X3Y2, X3Y3, X3Y4, X4Y1, X4Y2, X4Y3, X4Y4, X5Y1, X5Y2, X5Y3, X5Y4, X6Y1, X6Y2, X6Y3, X6Y4, X7Y1, X7Y2, X7Y3, X7Y4, X8Y1, X8Y2, X8Y3, X8Y4, X9Y1, X9Y2, X9Y3, X9Y4
+
+clock name: cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pl1_ref_clk
+  Source: X1Y1
+  HR regions: X1Y1, X2Y1, X3Y1
+  VR regions: X3Y1, X3Y2, X3Y3
+  Root: X3Y3
+  VD regions: X3Y1, X3Y2, X3Y3, X3Y4
+  HD regions: X0Y1, X0Y2, X0Y3, X0Y4, X1Y1, X1Y2, X1Y3, X1Y4, X2Y1, X2Y2, X2Y3, X2Y4, X3Y1, X3Y2, X3Y3, X3Y4, X4Y1, X4Y2, X4Y3, X4Y4, X5Y1, X5Y2, X5Y3, X5Y4, X6Y1, X6Y2, X6Y3, X6Y4, X7Y1, X7Y2, X7Y3, X7Y4, X8Y1, X8Y2, X8Y3, X8Y4, X9Y1, X9Y2, X9Y3, X9Y4
+
+
+Number of clock sources in each region:
+#BUFGCE, #BUFGCE_DIV, #BUFCTRL, #BUFG_GT, #BUFG_PS, #BUFG_FABRIC
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 4| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0|                X|                X|                X|
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0|                X|                X|                X|
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0|                X|                X|                X|
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 2, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0|                X|                X|                X|
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0| 0, 0, 0, 0, 0, 0|
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+               0                 1                 2                 3                 4                 5                 6                 7                 8                 9                10                11                12    

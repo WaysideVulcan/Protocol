@@ -1,0 +1,247 @@
+2023.2:
+ * Version 3.1 (Rev. 1)
+ * Bug Fix: IOSTANDARD constraints are removed from subsystem Out Of Context XDC
+ * Bug Fix: Updates to fix/waive CDC issues wherever applicable. All the CDC waivers are now moved to XDC
+ * Other: Rebrand to AMD copyright information
+ * Revision change in one or more subcores
+
+2023.1.2:
+ * Version 3.1
+ * No changes
+
+2023.1.1:
+ * Version 3.1
+ * No changes
+
+2023.1:
+ * Version 3.1
+ * Bug Fix: Lint and CDC cleanup
+ * Feature Enhancement: Included hdcp key management and edid helper cores into DP 1.4 RX subsystem
+ * Revision change in one or more subcores
+
+2022.2.2:
+ * Version 3.0 (Rev. 8)
+ * No changes
+
+2022.2.1:
+ * Version 3.0 (Rev. 8)
+ * Revision change in one or more subcores
+
+2022.2:
+ * Version 3.0 (Rev. 7)
+ * Feature Enhancement: Updated the vck190 example design to monitor gtpowergood signal as per new GT requirement
+ * Revision change in one or more subcores
+
+2022.1.2:
+ * Version 3.0 (Rev. 6)
+ * No changes
+
+2022.1.1:
+ * Version 3.0 (Rev. 6)
+ * No changes
+
+2022.1:
+ * Version 3.0 (Rev. 6)
+ * New Feature: Option to include Clocking wizard IP within DisplayPort 1.4 subsystem for Versal based designs
+ * Feature Enhancement: EGW_IS_PARENT_IP attribute addition for Versal hard block planner visibility
+ * Revision change in one or more subcores
+
+2021.2.2:
+ * Version 3.0 (Rev. 5)
+ * No changes
+
+2021.2.1:
+ * Version 3.0 (Rev. 5)
+ * No changes
+
+2021.2:
+ * Version 3.0 (Rev. 5)
+ * Bug Fix: XDC and CDC updates for set_max_delay constraints
+ * Bug Fix: Enabled vendor specific DPCD space by default
+ * New Feature: HDCP 1.4/2.3 support with DSC/FEC
+ * Revision change in one or more subcores
+
+2021.1.1:
+ * Version 3.0 (Rev. 4)
+ * Revision change in one or more subcores
+
+2021.1:
+ * Version 3.0 (Rev. 3)
+ * Bug Fix: Updated s_axis_phy_rx_sb_status_tdata width to remove Critical Warnings
+ * New Feature: HDCP 2.3 repeater support
+ * Feature Enhancement: Updates for CTS test 5.2.2.3. DPCD 0x205 register bit[1] is made 0 when Audio mute bit in VBID is set (in SST mode).
+ * Feature Enhancement: Updates for CTS test 5.2.1.7. Fixed the issue of corrupted EDID read.
+ * Feature Enhancement: Updates for CTS test 5.2.2.5. HDCP1.3/2.2 specific DPCD read/write interrupts are inhibited when corresponding parameters are not enabled in the system .
+ * Feature Enhancement: Updates for CTS test 5.2.2.6. Added new AXI-4 Lite register bit [8] at 0x464 to control DPCD's 0x0004 bit [0]
+ * Revision change in one or more subcores
+
+2020.3:
+ * Version 3.0 (Rev. 2)
+ * Feature Enhancement: MISC0 and MISC1 output ports for in-band stereo Left/Right control
+ * Feature Enhancement: Added a new AXI-4 Lite register 0x0464 for controlling default value of DPCD offset register 0x00109 (I2C Speed Control)
+ * Revision change in one or more subcores
+
+2020.2.2:
+ * Version 3.0 (Rev. 1)
+ * Revision change in one or more subcores
+
+2020.2.1:
+ * Version 3.0
+ * No changes
+
+2020.2:
+ * Version 3.0
+ * New Feature: Added YUV420 support
+ * New Feature: Colorimetry decoding using VSC SDP packet in addition to MISC0/1 MSA values
+ * New Feature: Added adaptive-sync feature, adaptive-sync SDP packet reception along with interrupt generation
+ * New Feature: Added fabric 8B10B decoder implementation
+ * New Feature: Added In-band 3D stereo display protocol support
+ * New Feature: Added aux burst read support for lane status DPCD registers
+ * New Feature: Supported devices and production status are now determined automatically, to simplify support for future devices
+ * Revision change in one or more subcores
+
+2020.1.1:
+ * Version 2.1 (Rev. 3)
+ * Revision change in one or more subcores
+
+2020.1:
+ * Version 2.1 (Rev. 2)
+ * Bug Fix: Single write to 00100h DPCD register will clear the CR_DONE lane status bit and SYMBOL_LOCKED status bit when bit 0 of x01FC AXI-4 lite register is set to one
+ * Bug Fix: Fixed incorrect videomode change interrupt triggering issue
+ * Bug Fix: Fixed the issue of internal FIFO overflows because of absence of gating FIFO writes until valid MSA is received
+ * Bug Fix: Fixed the issue in receiving 0x84 and 0x87 type secondary packets back to back
+ * New Feature: Added Link rate option to select 8.1 Gbps (default) or 5.4 Gbps
+ * Feature Enhancement: Option to include AXI IIC with DP RX Subsystem
+ * Feature Enhancement: Support added for XCZU58DR and XCZU59DR devices
+ * Revision change in one or more subcores
+
+2019.2.2:
+ * Version 2.1 (Rev. 1)
+ * No changes
+
+2019.2.1:
+ * Version 2.1 (Rev. 1)
+ * No changes
+
+2019.2:
+ * Version 2.1 (Rev. 1)
+ * Bug Fix: Updates to RX_Video_to_AXI4_Bridge and displayport core are done to fix timing in FEC and DSC data paths
+ * Bug Fix: DP sink side logic has been updated to fix issue with audio payload being wrongly detected as header and header being detected as payload
+ * Bug Fix: Updates in 0x109h DPCD reg to control speed for the IIC EDID interface
+ * Bug Fix: RX audio interface outputs driven to zero when VB-ID bit-4 is set to 1
+ * Bug Fix: Fixed the AUX defer issue for AUX-over-I2C EDID read transaction with MOT bit set
+ * New Feature: HDCP 1.3 repeater support
+ * Feature Enhancement: DP Sink Fallback Video Formats Enumeration DPCD Register Addition at 0x00020h
+ * Feature Enhancement: XPM_FIFO migration
+ * Feature Enhancement: Added HDCP2.2 support with example design
+ * Revision change in one or more subcores
+
+2019.1.3:
+ * Version 2.1
+ * No changes
+
+2019.1.2:
+ * Version 2.1
+ * No changes
+
+2019.1.1:
+ * Version 2.1
+ * No changes
+
+2019.1:
+ * Version 2.1
+ * Bug Fix: XDCB-5 warnings fixed in XDC constraints
+ * Bug Fix: AXI-4 lite register 0x7F0 is mirrored to 0x02201 DPCD register for MAX_LINE_RATE. This will enable to limit the DP 1.4 Subsystem line rate to 5.4 Gbps
+ * Bug Fix: TP1 reset pulse width is increased to make it detect in drp_clk of vid_phy controller
+ * Bug Fix: Updated the 0x0A and 0x0B DPCD registers when Audio is enabled
+ * Bug Fix: Interrupt module is updated to mask the no_video interrupt on streams 2,3,4 when SST is mode is selected through software in the MST capable system
+ * Bug Fix: Added ALMOST FULL pin to HDCP Egress and Ingress FIFOs. It is used to avoid data corruption when HDCP is enabled
+ * New Feature: Added MST FB Pass-through example design
+ * Feature Enhancement: Added Audio Clock Regenration Interface
+ * Feature Enhancement: KCU105 pass-through example timing closure for 8.1 Gbps
+ * Feature Enhancement: VCU118 RX-only example design baud rate is updated to 115200 inline with other example design
+ * Feature Enhancement: Added YUV4422 and YUV444 support in ZCU102 pass-Through example design and removed ACR interface since it was not used
+ * Revision change in one or more subcores
+
+2018.3.1:
+ * Version 2.0
+ * No changes
+
+2018.3:
+ * Version 2.0
+ * Bug Fix: Changed AXI4-Stream Color Mapping to follow UG934
+ * Bug Fix: Fixed symbol error counter not getting cleared
+ * Bug Fix: Shortened application example design name to fix windows os path length issue
+ * Bug Fix: XDCB-5 warnings fixed in XDC constraints
+ * New Feature: Added HDCP v1.3 support
+ * New Feature: Added Support for MST up to 4 Streams
+ * New Feature: Added Support for MST Audio (1 Stream only)
+ * New Feature: Added Ultrascale+ GTYE4 support
+ * New Feature: Added VCU118 RX-Only example design
+ * Feature Enhancement: Integrated Audio Interface (I2S) and ACR into application example design
+ * Feature Enhancement: Added Audio Clock Regenration Interface
+ * Revision change in one or more subcores
+
+2018.2:
+ * Version 1.0 (Rev. 1)
+ * Revision change in one or more subcores
+
+2018.1:
+ * Version 1.0
+ * Initial Release
+ * Support for Single stream transport (SST)
+ * DisplayPort RX Subsystem with 1/2/4 lanes
+ * Dynamic link rate support (1.62/2.7/5.4/8.1 Gbps)
+ * Dynamic support of 6, 8, 10, 12, or 16 bits per component (BPC)
+ * Dynamic support of RGB/YCbCr444/YCbCr422 color formats
+ * Supports SDP packet for static HDR mode
+ * AXI4 Stream video output interface
+ * Native video output interface
+ * External 16-bit Video PHY interface
+ * Optional AXI4 Stream audio output interface
+ * AXI IIC Controller support to program retimer
+
+(c) Copyright 2018 - 2023 Advanced Micro Devices, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of AMD and is protected under U.S. and international copyright
+and other intellectual property laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+AMD, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) AMD shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or AMD had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+AMD products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of AMD products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

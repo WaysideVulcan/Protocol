@@ -1,0 +1,26 @@
+ =========================GTREFCLK0 =======================
+ GTREFCLK0 is (R0 of PROT0) a single frequency port
+ Drive 270 MHz  on GTREFCLK0
+ 
+ 
+ 
+ =========================GTREFCLK1 =======================
+ GTREFCLK1 is (R0 of PROT1) a single frequency port
+ Drive 270 MHz  on GTREFCLK1
+ 
+ 
+ 
+=========================Table Summary=======================
+  
++---------------+------------------------------+------------------+------------------+------------------+------------------+
+| Protocol Info | Parameters                   | CONFIG 0         | CONFIG 1         | CONFIG 2         | CONFIG 3         |
++---------------+------------------------------+------------------+------------------+------------------+------------------+
+| Protocol 0    | RX LINE RATE (Gb/s)          | 1.62             | 2.7              | 5.4              | 8.1              |
+| SIMPLEX_RX    | RX PLL TYPE                  | LCPLL            | LCPLL            | LCPLL            | LCPLL            |
+| 4 lanes       | RX REF CLK FREQ (MHz)        | 270              | 270              | 270              | 270              |
+|               | Actual RX REF CLK FREQ (MHz) | 270.000000000000 | 270.000000000000 | 270.000000000000 | 270.000000000000 |
+| Protocol 1    | TX LINE RATE (Gb/s)          | 1.62             | 2.7              | 5.4              | 8.1              |
+| SIMPLEX_TX    | TX PLL TYPE                  | RPLL             | RPLL             | RPLL             | RPLL             |
+| 4 lanes       | TX REF CLK FREQ (MHz)        | 270              | 270              | 270              | 270              |
+|               | Actual TX REF CLK FREQ (MHz) | 270.000000000000 | 270.000000000000 | 270.000000000000 | 270.000000000000 |
++---------------+------------------------------+------------------+------------------+------------------+------------------+

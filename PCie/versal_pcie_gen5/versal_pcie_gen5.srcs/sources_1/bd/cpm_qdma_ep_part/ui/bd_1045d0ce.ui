@@ -1,0 +1,107 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.566704",
+   "Default View_TopLeft":"-233,-139",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port CH0_LPDDR4_0_0 -pg 1 -lvl 7 -x 2240 -y 450 -defaultsOSRD
+preplace port CH1_LPDDR4_0_0 -pg 1 -lvl 7 -x 2240 -y 470 -defaultsOSRD
+preplace port M_AXIL -pg 1 -lvl 7 -x 2240 -y 350 -defaultsOSRD
+preplace port PCIE1_GT_0 -pg 1 -lvl 7 -x 2240 -y 870 -defaultsOSRD
+preplace port S_AXIL -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port dma1_axis_c2h_dmawr_0 -pg 1 -lvl 7 -x 2240 -y 770 -defaultsOSRD
+preplace port dma1_axis_c2h_status_0 -pg 1 -lvl 7 -x 2240 -y 810 -defaultsOSRD
+preplace port dma1_c2h_byp_in_mm_0_0 -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace port dma1_c2h_byp_in_mm_1_0 -pg 1 -lvl 0 -x 0 -y 710 -defaultsOSRD
+preplace port dma1_c2h_byp_in_st_csh_0 -pg 1 -lvl 0 -x 0 -y 730 -defaultsOSRD
+preplace port dma1_c2h_byp_out_0 -pg 1 -lvl 7 -x 2240 -y 730 -defaultsOSRD
+preplace port dma1_dsc_crdt_in_0 -pg 1 -lvl 0 -x 0 -y 850 -defaultsOSRD
+preplace port dma1_h2c_byp_in_mm_0_0 -pg 1 -lvl 0 -x 0 -y 750 -defaultsOSRD
+preplace port dma1_h2c_byp_in_mm_1_0 -pg 1 -lvl 0 -x 0 -y 770 -defaultsOSRD
+preplace port dma1_h2c_byp_in_st_0 -pg 1 -lvl 0 -x 0 -y 790 -defaultsOSRD
+preplace port dma1_h2c_byp_out_0 -pg 1 -lvl 7 -x 2240 -y 750 -defaultsOSRD
+preplace port dma1_m_axis_h2c_0 -pg 1 -lvl 7 -x 2240 -y 790 -defaultsOSRD
+preplace port dma1_qsts_out_0 -pg 1 -lvl 7 -x 2240 -y 830 -defaultsOSRD
+preplace port dma1_s_axis_c2h_0 -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace port dma1_s_axis_c2h_cmpt_0 -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
+preplace port dma1_st_rx_msg_0 -pg 1 -lvl 7 -x 2240 -y 710 -defaultsOSRD
+preplace port dma1_tm_dsc_sts_0 -pg 1 -lvl 7 -x 2240 -y 850 -defaultsOSRD
+preplace port gt_refclk1_0 -pg 1 -lvl 0 -x 0 -y 1030 -defaultsOSRD
+preplace port sys_clk0_0 -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port usr_irq_0 -pg 1 -lvl 0 -x 0 -y 1110 -defaultsOSRD
+preplace port usr_flr_0 -pg 1 -lvl 0 -x 0 -y 1090 -defaultsOSRD
+preplace port port-id_cpm_cor_irq_0 -pg 1 -lvl 7 -x 2240 -y 1010 -defaultsOSRD
+preplace port port-id_cpm_irq0_0 -pg 1 -lvl 0 -x 0 -y 1050 -defaultsOSRD
+preplace port port-id_cpm_irq1_0 -pg 1 -lvl 0 -x 0 -y 1070 -defaultsOSRD
+preplace port port-id_cpm_misc_irq_0 -pg 1 -lvl 7 -x 2240 -y 990 -defaultsOSRD
+preplace port port-id_cpm_uncor_irq_0 -pg 1 -lvl 7 -x 2240 -y 1030 -defaultsOSRD
+preplace port port-id_dma1_axi_aresetn_0 -pg 1 -lvl 7 -x 2240 -y 430 -defaultsOSRD
+preplace port port-id_dma1_intrfc_clk_0 -pg 1 -lvl 7 -x 2240 -y 410 -defaultsOSRD
+preplace port port-id_dma1_intrfc_resetn_0 -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
+preplace port port-id_pcie0_user_lnk_up_0 -pg 1 -lvl 7 -x 2240 -y 20 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1850 -y 210 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram1 -pg 1 -lvl 6 -x 2100 -y 80 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 6 -x 2100 -y 220 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -x 1850 -y 70 -defaultsOSRD
+preplace inst axi_noc_0 -pg 1 -lvl 4 -x 1380 -y 430 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1850 -y 350 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 2 -x 550 -y 930 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y 950 -defaultsOSRD
+preplace inst versal_cips_0 -pg 1 -lvl 4 -x 1380 -y 850 -defaultsOSRD
+preplace inst pcie_qdma_mailbox_0 -pg 1 -lvl 3 -x 900 -y 960 -defaultsOSRD
+preplace netloc cpm_irq0_0_1 1 0 4 30J 1070 NJ 1070 730J 1120 1080J
+preplace netloc cpm_irq1_0_1 1 0 4 20J 1080 NJ 1080 710J 1130 1110J
+preplace netloc dma1_intrfc_resetn_0_1 1 0 4 NJ 1130 NJ 1130 700J 1140 1120J
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 400 1140 690
+preplace netloc versal_cips_0_cpm_cor_irq 1 4 3 NJ 1010 NJ 1010 NJ
+preplace netloc versal_cips_0_cpm_misc_irq 1 4 3 NJ 990 NJ 990 NJ
+preplace netloc versal_cips_0_cpm_pcie_noc_axi0_clk 1 3 2 1070 570 1660
+preplace netloc versal_cips_0_cpm_pcie_noc_axi1_clk 1 3 2 1050 580 1670
+preplace netloc versal_cips_0_cpm_uncor_irq 1 4 3 NJ 1030 NJ 1030 NJ
+preplace netloc versal_cips_0_dma1_axi_aresetn 1 0 7 50 1050 NJ 1050 770 1100 1090J 1120 1700 440 NJ 440 2220J
+preplace netloc versal_cips_0_pcie0_user_lnk_up 1 6 1 N 20
+preplace netloc versal_cips_0_pl0_ref_clk 1 1 6 410 1150 750 1090 1040 590 1680 430 NJ 430 2210J
+preplace netloc versal_cips_0_pl1_ref_clk 1 0 5 50 850 390 1020 760 1080 1100J 1110 1640
+preplace netloc S_AXI_0_1 1 0 5 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 NJ 210
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 1 NJ 70
+preplace netloc axi_noc_0_CH0_LPDDR4_0 1 4 3 NJ 450 NJ 450 NJ
+preplace netloc axi_noc_0_CH1_LPDDR4_0 1 4 3 NJ 470 NJ 470 NJ
+preplace netloc axi_noc_0_M00_AXI 1 4 1 1690 190n
+preplace netloc axi_noc_0_M01_AXI 1 4 1 1710 330n
+preplace netloc axi_noc_0_M02_AXI 1 1 4 410 550 NJ 550 NJ 550 1650
+preplace netloc dma1_c2h_byp_in_mm_0_0_1 1 0 4 NJ 690 NJ 690 NJ 690 NJ
+preplace netloc dma1_c2h_byp_in_mm_1_0_1 1 0 4 NJ 710 NJ 710 NJ 710 NJ
+preplace netloc dma1_c2h_byp_in_st_csh_0_1 1 0 4 NJ 730 NJ 730 NJ 730 NJ
+preplace netloc dma1_dsc_crdt_in_0_1 1 0 4 40J 840 NJ 840 NJ 840 1060J
+preplace netloc dma1_h2c_byp_in_mm_0_0_1 1 0 4 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc dma1_h2c_byp_in_mm_1_0_1 1 0 4 NJ 770 NJ 770 NJ 770 NJ
+preplace netloc dma1_h2c_byp_in_st_0_1 1 0 4 NJ 790 NJ 790 NJ 790 NJ
+preplace netloc dma1_s_axis_c2h_0_1 1 0 4 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc dma1_s_axis_c2h_cmpt_0_1 1 0 4 NJ 830 NJ 830 NJ 830 NJ
+preplace netloc gt_refclk1_0_1 1 0 4 40J 1060 NJ 1060 740J 1110 1070J
+preplace netloc pcie_qdma_mailbox_0_dma_flr 1 3 1 1060 890n
+preplace netloc pcie_qdma_mailbox_0_dma_usr_irq 1 3 1 1050 870n
+preplace netloc pcie_qdma_mailbox_0_pcie_mgmt 1 3 1 1030 670n
+preplace netloc smartconnect_0_M00_AXI 1 5 2 NJ 350 NJ
+preplace netloc smartconnect_1_M00_AXI 1 2 1 690 900n
+preplace netloc sys_clk0_0_1 1 0 4 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc usr_flr_0_1 1 0 3 NJ 1090 NJ 1090 700J
+preplace netloc usr_irq_0_1 1 0 3 NJ 1110 NJ 1110 720J
+preplace netloc versal_cips_0_CPM_PCIE_NOC_0 1 3 2 1060 540 1640
+preplace netloc versal_cips_0_CPM_PCIE_NOC_1 1 3 2 1120 560 1650
+preplace netloc versal_cips_0_PCIE1_GT 1 4 3 NJ 870 NJ 870 NJ
+preplace netloc versal_cips_0_dma1_axis_c2h_dmawr 1 4 3 NJ 770 NJ 770 NJ
+preplace netloc versal_cips_0_dma1_axis_c2h_status 1 4 3 NJ 810 NJ 810 NJ
+preplace netloc versal_cips_0_dma1_c2h_byp_out 1 4 3 NJ 730 NJ 730 NJ
+preplace netloc versal_cips_0_dma1_h2c_byp_out 1 4 3 NJ 750 NJ 750 NJ
+preplace netloc versal_cips_0_dma1_m_axis_h2c 1 4 3 NJ 790 NJ 790 NJ
+preplace netloc versal_cips_0_dma1_qsts_out 1 4 3 NJ 830 NJ 830 NJ
+preplace netloc versal_cips_0_dma1_st_rx_msg 1 4 3 NJ 710 NJ 710 NJ
+preplace netloc versal_cips_0_dma1_tm_dsc_sts 1 4 3 NJ 850 NJ 850 NJ
+levelinfo -pg 1 0 220 550 900 1380 1850 2100 2240
+pagesize -pg 1 -db -bbox -sgen -240 -10 2460 1160
+"
+}
+

@@ -1,0 +1,187 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed May  8 18:15:17 2024
+| Host         : Vulcan running 64-bit major release  (build 9200)
+| Command      : report_methodology -file cpm_qdma_ep_part_wrapper_methodology_drc_routed.rpt -pb cpm_qdma_ep_part_wrapper_methodology_drc_routed.pb -rpx cpm_qdma_ep_part_wrapper_methodology_drc_routed.rpx
+| Design       : cpm_qdma_ep_part_wrapper
+| Device       : xcvp1202-vsva2785-3HP-e-S
+| Speed File   : -3HP
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 20
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| AVAL-344  | Warning  | Design_needs_USER_RAM_AVERAGE_ACTIVITY_set | 1          |
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 16         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 1          |
+| CLKC-81   | Advisory | XPLL CLKOUT with phase shift drives no IOs | 1          |
+| LATCH-1   | Advisory | Existing latches in the design             | 1          |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-344#1 Warning
+Design_needs_USER_RAM_AVERAGE_ACTIVITY_set  
+The design property USER_RAM_AVERAGE_ACTIVITY on the top-level current_design object is unset (or set to -1).  The estimated RAM_AVERAGE_ACTIVITY used for the design is 10 and assumes a worst-case switching scenario for the URAM and BRAM.  RAM activity directly impacts clock uncertainty and the RAM_AVERAGE_ACTIVITY property may not be accurate for designs that are not final.  It is recommended that the USER_RAM_AVERAGE_ACTIVITY property be specified.  Please refer to the Versal ACAP Clocking Resources Architecture Manual and the Versal ACAP Hardware, IP, and Platform Development Methodology User Guide for more information on specifying the USER_RAM_AVERAGE_ACTIVITY.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[0].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[0].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[0].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[0].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[1].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[1].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[1].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[1].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__10, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[10].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[10].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[10].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[10].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__11, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[11].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[11].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[11].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[11].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__12, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[12].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[12].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[12].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[12].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__13, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[13].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[13].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[13].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[13].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__14, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[14].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[14].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[14].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[14].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__15, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[15].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[15].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[15].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[15].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[2].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[2].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[2].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[2].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[3].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[3].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[3].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[3].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[4].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[4].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[4].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[4].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[5].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[5].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[5].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[5].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[6].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[6].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[6].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[6].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[7].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[7].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[7].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[7].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[8].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[8].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[8].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[8].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/u_mailbox_fsm/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst_i_1__9, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[9].u_pf_reqq/u_eq_mem/enb_reg/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[9].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[0]/CLR,
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[9].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[1]/CLR
+cpm_qdma_ep_part_i/pcie_qdma_mailbox_0/inst/rtl_top/u_mailbox/GEN_PF_REQQ[9].u_pf_reqq/u_eq_mem/read_latency_b_cnt_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch dma1_qdma_app_i/axi_st_module_i/dsc_crdt_wrapper_i/dsc_crdt_mux_i/c2h_dsc_crdt_in_rdy_reg cannot be properly analyzed as its control pin dma1_qdma_app_i/axi_st_module_i/dsc_crdt_wrapper_i/dsc_crdt_mux_i/c2h_dsc_crdt_in_rdy_reg/G is not reached by a timing clock
+Related violations: <none>
+
+CLKC-81#1 Advisory
+XPLL CLKOUT with phase shift drives no IOs  
+The XPLL cell cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/u_xpll0_bank1 has non-zero CLKOUT1_PHASE phase-shift for CLKOUT1, but that clock output does not drive an I/O. Using a phase-shift is not a recommended method for internal paths timing closure and it also uses more power.
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 1 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

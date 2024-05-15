@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/xdma_bram/ip/xdma_bram_axi_bram_ctrl_0_2/sim/xdma_bram_axi_bram_ctrl_0_2.vhd" \
+
+# Do not sort compile order
+nosort

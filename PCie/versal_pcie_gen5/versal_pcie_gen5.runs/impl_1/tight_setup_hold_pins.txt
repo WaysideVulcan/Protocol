@@ -1,0 +1,32 @@
++====================+===================+================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                            |
++====================+===================+================================================================================================================================+
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_pcie_mdma_fdmux_crc_int/in1_crc_reg[12]/D    |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_pcie_mdma_fdmux_crc_int/in1_crc_reg[17]/D    |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_pcie_mdma_fdmux_crc_int/in1_crc_reg[23]/D    |
+| clk_pl_0           | clk_pl_0          | dma1_qdma_app_i/user_control_i/queue_cnts_i/qid_vld_reg/D                                                                      |
+| clk_pl_0           | clk_pl_0          | dma1_qdma_app_i/user_control_i/queue_cnts_i/queued_ids_reg[115]/D                                                              |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][66]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[1][35]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][39]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][93]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[1][31]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[1][39]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][31]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][34]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][6]/D      |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][39]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][84]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_inband_converter/out_data_reg[30]/D |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][93]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][23]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[1][33]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][33]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][38]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][4]/D      |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][4]/D      |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][32]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[2][32]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_segmenter/seg_data_reg[0][23]/D     |
+| clk_pl_0           | clk_pl_0          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/qdma_1_wrapper_i/AXIST.u_demux/u_c2h_axis_inband_converter/out_data_reg[15]/D |
++--------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------+

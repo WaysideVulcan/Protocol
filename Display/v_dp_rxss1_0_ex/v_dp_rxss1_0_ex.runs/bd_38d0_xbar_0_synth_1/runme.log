@@ -1,0 +1,35 @@
+
+*** Running vivado
+    with args -log bd_38d0_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_38d0_xbar_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_38d0_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:33 . Memory (MB): peak = 583.293 ; gain = 181.051
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_xbar_0
+Command: synth_design -top bd_38d0_xbar_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+The application has run out of memory
+    while executing
+"synth_design -top bd_38d0_xbar_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context"
+    invoked from within
+"if { $cacheID == "" } {
+close [open __synthesis_is_running__ w]
+
+OPTRACE "synth_design" START { }
+synth_design -top bd_38d0_xbar_0 -part xcvc1902-vsva..."
+    (file "bd_38d0_xbar_0.tcl" line 170)
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:03:57 2024...

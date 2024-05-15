@@ -1,0 +1,53 @@
+set SynModuleInfo {
+  {SRCNAME entry_proc MODELNAME entry_proc RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_entry_proc}
+  {SRCNAME {reg<unsigned short>} MODELNAME reg_unsigned_short_s RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_reg_unsigned_short_s}
+  {SRCNAME AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start MODELNAME AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start
+    SUBMODULES {
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME dpss_vck190_pt_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME AXIvideo2MultiPixStream_Pipeline_loop_width MODELNAME AXIvideo2MultiPixStream_Pipeline_loop_width RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width
+    SUBMODULES {
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_sparsemux_5_8_10_1_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_sparsemux_5_8_10_1_1 BINDTYPE op TYPE sparsemux IMPL auto}
+    }
+  }
+  {SRCNAME AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol MODELNAME AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol}
+  {SRCNAME AXIvideo2MultiPixStream MODELNAME AXIvideo2MultiPixStream RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream}
+  {SRCNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_943_13 MODELNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_943_13 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_943_13}
+  {SRCNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_806_9 MODELNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_806_9 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_806_9}
+  {SRCNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_5 MODELNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_5 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_5}
+  {SRCNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_632_1 MODELNAME MultiPixStream2Bytes_Pipeline_VITIS_LOOP_632_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_632_1}
+  {SRCNAME MultiPixStream2Bytes MODELNAME MultiPixStream2Bytes RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MultiPixStream2Bytes
+    SUBMODULES {
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_urem_13ns_6ns_13_17_seq_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_urem_13ns_6ns_13_17_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 16 ALLOW_PRAGMA 1}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_12ns_14ns_25_1_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_12ns_14ns_25_1_1 BINDTYPE op TYPE mul IMPL dsp LATENCY 0 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 MODELNAME Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1}
+  {SRCNAME Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 MODELNAME Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2}
+  {SRCNAME Bytes2AXIMMvideo MODELNAME Bytes2AXIMMvideo RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_Bytes2AXIMMvideo}
+  {SRCNAME FrmbufWrHlsDataFlow MODELNAME FrmbufWrHlsDataFlow RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow
+    SUBMODULES {
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w32_d4_S RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w32_d4_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME HwReg_frm_buffer_c_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w32_d4_S RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w32_d4_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME HwReg_frm_buffer2_c_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w16_d3_S RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w16_d3_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME WidthInBytes_val2_c9_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w120_d2_S RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w120_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME img_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w256_d480_B RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w256_d480_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_plane0_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w256_d480_B RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w256_d480_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_plane1_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w16_d2_S RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_fifo_w16_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME WidthInBytes_val2_c_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_MultiPixStream2Bytes_U0_U}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_Bytes2AXIMMvideo_U0_U}
+    }
+  }
+  {SRCNAME v_frmbuf_wr MODELNAME v_frmbuf_wr RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_v_frmbuf_wr IS_TOP 1
+    SUBMODULES {
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_3ns_16s_16_1_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_3ns_16s_16_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_15ns_17ns_31_1_1 RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mul_15ns_17ns_31_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mm_video_m_axi RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_mm_video_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_CTRL_s_axi RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_CTRL_s_axi BINDTYPE interface TYPE interface_s_axilite}
+      {MODELNAME dpss_vck190_pt_v_frmbuf_wr_0_0_regslice_both RTLNAME dpss_vck190_pt_v_frmbuf_wr_0_0_regslice_both BINDTYPE interface TYPE interface_regslice INSTNAME dpss_vck190_pt_v_frmbuf_wr_0_0_regslice_both_U}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 19:05:35 2024
+# Process ID: 14292
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_3_0_synth_1
+# Command line: vivado.exe -log dpss_vck190_pt_proc_sys_reset_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_proc_sys_reset_3_0.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_3_0_synth_1/dpss_vck190_pt_proc_sys_reset_3_0.vds
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_3_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source dpss_vck190_pt_proc_sys_reset_3_0.tcl -notrace

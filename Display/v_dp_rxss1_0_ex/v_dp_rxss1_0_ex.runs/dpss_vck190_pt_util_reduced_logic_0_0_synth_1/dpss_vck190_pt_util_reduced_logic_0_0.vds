@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 19:02:58 2024
+# Process ID: 9720
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_reduced_logic_0_0_synth_1
+# Command line: vivado.exe -log dpss_vck190_pt_util_reduced_logic_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_util_reduced_logic_0_0.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_reduced_logic_0_0_synth_1/dpss_vck190_pt_util_reduced_logic_0_0.vds
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_reduced_logic_0_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source dpss_vck190_pt_util_reduced_logic_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:33 . Memory (MB): peak = 582.648 ; gain = 182.445
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_reduced_logic_0_0
+Command: synth_design -top dpss_vck190_pt_util_reduced_logic_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+The application has run out of memory
+    while executing
+"synth_design -top dpss_vck190_pt_util_reduced_logic_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context"
+    invoked from within
+"if { $cacheID == "" } {
+close [open __synthesis_is_running__ w]
+
+OPTRACE "synth_design" START { }
+synth_design -top dpss_vck190_pt_util_reduced_logic_..."
+    (file "dpss_vck190_pt_util_reduced_logic_0_0.tcl" line 111)
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:03:56 2024...

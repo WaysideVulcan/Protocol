@@ -1,0 +1,1067 @@
+
+*** Running vivado
+    with args -log dpss_vck190_pt_dprx_gt_ip0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_dprx_gt_ip0_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source dpss_vck190_pt_dprx_gt_ip0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 583.605 ; gain = 183.457
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_dprx_gt_ip0_0
+Command: synth_design -top dpss_vck190_pt_dprx_gt_ip0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11672
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 2012.090 ; gain = 438.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'gtwiz_reset_tx_pll_and_datapath_sync', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst.v:916]
+INFO: [Synth 8-11241] undeclared symbol 'rst_hold', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1464]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gttxreset0', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1467]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gttxreset1', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1487]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gttxreset2', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1507]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gttxreset3', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1527]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gtrxreset0', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1547]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gtrxreset1', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1566]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gtrxreset2', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1585]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gtrxreset3', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1604]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gttxreset', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1656]
+INFO: [Synth 8-11241] undeclared symbol 'ch_gtrxreset', assumed default net type 'wire' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1657]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_top' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:50]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_gt_bridge_v2_0_4_axi' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_gt_bridge_v2_0_4_axi' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:49]
+WARNING: [Synth 8-7071] port 'ch0_rxpllgtrst' of module 'v_vid_gt_bridge_v2_0_4_axi' is unconnected for instance 'v_vid_gt_bridge_v2_0_4_axi_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1417]
+WARNING: [Synth 8-7071] port 'ch1_rxpllgtrst' of module 'v_vid_gt_bridge_v2_0_4_axi' is unconnected for instance 'v_vid_gt_bridge_v2_0_4_axi_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1417]
+WARNING: [Synth 8-7071] port 'ch2_rxpllgtrst' of module 'v_vid_gt_bridge_v2_0_4_axi' is unconnected for instance 'v_vid_gt_bridge_v2_0_4_axi_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1417]
+WARNING: [Synth 8-7071] port 'ch3_rxpllgtrst' of module 'v_vid_gt_bridge_v2_0_4_axi' is unconnected for instance 'v_vid_gt_bridge_v2_0_4_axi_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1417]
+WARNING: [Synth 8-7023] instance 'v_vid_gt_bridge_v2_0_4_axi_inst' of module 'v_vid_gt_bridge_v2_0_4_axi' has 190 connections declared, but only 186 given [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1417]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/synth/dpss_vck190_pt_dprx_gt_ip0_0_gtreset.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/synth/dpss_vck190_pt_dprx_gt_ip0_0_gtreset.v:53]
+WARNING: [Synth 8-7071] port 'pcie_rstb_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' is unconnected for instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+WARNING: [Synth 8-7071] port 'rx_clr_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' is unconnected for instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+WARNING: [Synth 8-7071] port 'rx_clrb_leaf_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' is unconnected for instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+WARNING: [Synth 8-7071] port 'tx_clr_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' is unconnected for instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+WARNING: [Synth 8-7071] port 'tx_clrb_leaf_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' is unconnected for instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+WARNING: [Synth 8-7023] instance 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst' of module 'dpss_vck190_pt_dprx_gt_ip0_0_gtreset' has 44 connections declared, but only 39 given [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:1660]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0_top' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:50]
+WARNING: [Synth 8-7071] port 'clk_100mhz' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_awaddr' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_awvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_awready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_wdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_wstrb' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_wvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_wready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_bresp' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_bvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_bready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_araddr' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_arvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_arready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_rdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_rresp' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_rvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 's00_axi_rready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'gt_txusrclk' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_bufg_gt_clr' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_iloresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch1_iloresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch2_iloresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch3_iloresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_iloreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch1_iloreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch2_iloreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch3_iloreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_pll0_reset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_pll1_reset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllpd' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllpd' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllpd' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllpd' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_pll0_locked' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_pll1_locked' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_mmcm_locked' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch0_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch0_tdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch0_tuser' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch0_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch1_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch1_tdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch1_tuser' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch1_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch2_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch2_tdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch2_tuser' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch2_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch3_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch3_tdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch3_tuser' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'tx_axi4s_ch3_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'status_sb_tx_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'status_sb_tx_tdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'status_sb_tx_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_gt_ctrl' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_gt_sts' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_in' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_in_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_in_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_out_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_rx_out_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_in' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_in_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_in_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_out' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_out_tvalid' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'sdi_ctrl_sb_tx_out_tready' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txmstdatapathreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpmareset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpcsresetmask' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpmaresetmask' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpcsreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txuserrdy' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txprogdivreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpd' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_tx8b10ben' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpolarity' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txprbssel' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txprbsforceerr' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txdiffctrl' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txprecursor' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpostcursor' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txinhibit' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txpmaresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txmstreset' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txmstresetdone' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+WARNING: [Synth 8-7071] port 'ch0_txdata' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'inst' of module 'dpss_vck190_pt_dprx_gt_ip0_0_top' has 316 connections declared, but only 121 given [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:550]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_dprx_gt_ip0_0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.v:53]
+WARNING: [Synth 8-3848] Net ch0_rxpllgtrst in module/entity v_vid_gt_bridge_v2_0_4_axi does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:242]
+WARNING: [Synth 8-3848] Net ch1_rxpllgtrst in module/entity v_vid_gt_bridge_v2_0_4_axi does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:262]
+WARNING: [Synth 8-3848] Net ch2_rxpllgtrst in module/entity v_vid_gt_bridge_v2_0_4_axi does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:282]
+WARNING: [Synth 8-3848] Net ch3_rxpllgtrst in module/entity v_vid_gt_bridge_v2_0_4_axi does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/c360/hdl/v_vid_gt_bridge_v2_0_rfs.v:302]
+WARNING: [Synth 8-3848] Net gtwiz_reset_rx_cdr_stable_out in module/entity dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/ip_0/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst.v:73]
+WARNING: [Synth 8-3848] Net ch0_iloreset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:117]
+WARNING: [Synth 8-3848] Net ch1_iloreset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:118]
+WARNING: [Synth 8-3848] Net ch2_iloreset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:119]
+WARNING: [Synth 8-3848] Net ch3_iloreset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:120]
+WARNING: [Synth 8-3848] Net hsclk_rpll_reset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:500]
+WARNING: [Synth 8-3848] Net hsclk_lcpll_reset in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:501]
+WARNING: [Synth 8-3848] Net sdi_gt_sts in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:171]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_rx_in_tready in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:175]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_rx_out in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:177]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_rx_out_tvalid in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:178]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_tx_in_tready in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:183]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_tx_out in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:185]
+WARNING: [Synth 8-3848] Net sdi_ctrl_sb_tx_out_tvalid in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:186]
+WARNING: [Synth 8-3848] Net ch0_txrate in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:222]
+WARNING: [Synth 8-3848] Net ch0_txelecidle in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:225]
+WARNING: [Synth 8-3848] Net ch1_txrate in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:253]
+WARNING: [Synth 8-3848] Net ch2_pllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:262]
+WARNING: [Synth 8-3848] Net ch2_txrate in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:281]
+WARNING: [Synth 8-3848] Net ch3_pllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:290]
+WARNING: [Synth 8-3848] Net ch3_txrate in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:309]
+WARNING: [Synth 8-3848] Net ch0_rxpllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:355]
+WARNING: [Synth 8-3848] Net ch1_rxpllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:384]
+WARNING: [Synth 8-3848] Net ch2_rxpllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:413]
+WARNING: [Synth 8-3848] Net ch3_rxpllgtrst in module/entity dpss_vck190_pt_dprx_gt_ip0_0_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/dpss_vck190_pt_dprx_gt_ip0_0_top.v:442]
+WARNING: [Synth 8-7129] Port gtwiz_reset_rx_cdr_stable_out in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port txusrclk2_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ilo_reset_done in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port plllock_tx_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port txresetdone_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rxusrclk2_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port plllock_rx_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rxcdrlock_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rxresetdone_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_enable in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_enabled_tie_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_enabled_tie_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port shared_pll_tie_in in module dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch0_rxpllgtrst in module v_vid_gt_bridge_v2_0_4_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rxpllgtrst in module v_vid_gt_bridge_v2_0_4_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rxpllgtrst in module v_vid_gt_bridge_v2_0_4_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rxpllgtrst in module v_vid_gt_bridge_v2_0_4_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dp_gt_pll_rst in module v_vid_gt_bridge_v2_0_4_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch0_iloreset in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_iloreset in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_iloreset in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_iloreset in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[15] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[14] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[13] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[12] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[11] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[10] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[9] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[8] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[7] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[6] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[5] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[4] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[3] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[2] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[1] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_gt_sts[0] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_in_tready in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[31] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[30] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[29] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[28] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[27] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[26] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[25] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[24] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[23] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[22] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[21] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[20] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[19] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[18] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[17] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[16] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[15] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[14] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[13] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[12] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[11] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[10] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[9] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[8] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[7] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[6] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[5] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[4] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[3] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[2] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[1] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out[0] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_rx_out_tvalid in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_in_tready in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[31] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[30] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[29] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[28] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[27] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[26] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[25] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[24] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[23] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[22] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[21] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[20] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[19] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[18] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[17] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[16] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[15] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[14] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[13] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[12] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[11] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[10] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[9] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[8] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sdi_ctrl_sb_tx_out[7] in module dpss_vck190_pt_dprx_gt_ip0_0_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 2161.078 ; gain = 587.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 2161.078 ; gain = 587.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 2161.078 ; gain = 587.516
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2161.078 ; gain = 0.000
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2327.262 ; gain = 17.641
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_dprx_gt_ip0_0/synth/dpss_vck190_pt_dprx_gt_ip0_0.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dprx_gt_ip0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dprx_gt_ip0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dpss_vck190_pt_dprx_gt_ip0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dpss_vck190_pt_dprx_gt_ip0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dpss_vck190_pt_dprx_gt_ip0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dpss_vck190_pt_dprx_gt_ip0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 60 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2328.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2329.355 ; gain = 1.113
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:01:30 . Memory (MB): peak = 2329.355 ; gain = 755.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:01:30 . Memory (MB): peak = 2329.355 ; gain = 755.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dprx_gt_ip0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_rxrate_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxbufstatus_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxbufstatus_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxbufstatus_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxbufstatus_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_rx . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_rx_dp . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_tx . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_tx_dp . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxbyteisaligned_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxcdrlock_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxprbserr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_txmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_txmstresetdone_tx_usr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_txresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxbyteisaligned_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxcdrlock_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxprbserr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_rxresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_txmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_txpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch1_txresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxbyteisaligned_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxcdrlock_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxprbserr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_rxresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_txmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_txpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch2_txresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxbyteisaligned_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxcdrlock_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxprbserr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_rxresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_txmstresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_txpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch3_txresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_gt_powergood_rx_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_gt_powergood_tx_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_hsclk0_lcpll_locked_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_hsclk0_rpll_locked_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_hsclk1_lcpll_locked_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_hsclk1_rpll_locked_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_rxpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_ch0_txpmaresetdone_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_rxbufgt_clr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_txbufgt_clr_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_bit_synchronizer_gtwiz_reset_rx_active_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_bit_synchronizer_gtwiz_reset_userclk_tx_active_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_bit_synchronizer_gtpowergood_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_rx_1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/\use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst_tx_1 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:01:31 . Memory (MB): peak = 2329.355 ; gain = 755.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:33 . Memory (MB): peak = 2329.355 ; gain = 755.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 36    
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 45    
+	                3 Bit    Registers := 34    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 35    
+	   8 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 7     
+	   8 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:42 . Memory (MB): peak = 2455.801 ; gain = 882.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/dpss_vck190_pt_dprx_gt_ip0_0_gtreset_inst/inst/use_master_reset.dpss_vck190_pt_dprx_gt_ip0_0_gtreset_master_reset_synchronizer_gtwiz_reset_all_inst/src_arst' to pin 'inst/gtwiz_reset_all_in0_inferred/i_4/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:04:12 . Memory (MB): peak = 3152.723 ; gain = 1579.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:04:12 . Memory (MB): peak = 3152.871 ; gain = 1579.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__5`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__41`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__41' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__42`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__42' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__43`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__43' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__44`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__44' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__45`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__45' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__46`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__46' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__47`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__47' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__48`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__48' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__49`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__49' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__50`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__50' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__4`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__51`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__51' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__52`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__52' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__53`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__53' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__54`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__54' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__55`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__55' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__56`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__56' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__57`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__57' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__58`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__58' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__59`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__59' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__60`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__60' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__5`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__61`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__61' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__6`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__6' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__62`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__62' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__63`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__63' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__64`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__64' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__65`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__65' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__66`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__66' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__7`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__7' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__67`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__67' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__68`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__68' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__69`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__69' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__70`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__70' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__71`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__71' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__8`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__8' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__72`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__72' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__73`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__73' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__74`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__74' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__75`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__75' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__76`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__76' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__77`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__77' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__78`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__78' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__79`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__79' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__80`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__80' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__6`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__6' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0`
+   Worst Slack before retiming is 2200 and worst slack after retiming is 2200
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0' done
+
+
+INFO: [Common 17-14] Message 'Synth 8-5816' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:04:15 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin inst:gt_txusrclk to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:tx_pll0_locked to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:tx_pll1_locked to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:tx_mmcm_locked to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch0_txresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch0_txpmaresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch0_txmstresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch1_txresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch1_txpmaresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch1_txmstresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch2_txresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch2_txpmaresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch2_txmstresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch3_txresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch3_txpmaresetdone to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:ch3_txmstresetdone to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:04:27 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:04:27 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:04:27 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:04:27 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:04:28 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:04:28 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LOOKAHEAD8 |     3|
+|3     |LUT1       |     2|
+|4     |LUT2       |    10|
+|5     |LUT3       |     5|
+|6     |LUT4       |     6|
+|7     |LUT5       |     2|
+|8     |LUT6       |     9|
+|9     |LUT6CY     |    24|
+|10    |FDCE       |     4|
+|11    |FDPE       |     9|
+|12    |FDRE       |   299|
+|13    |FDSE       |     3|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:04:28 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 413 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:04:11 . Memory (MB): peak = 3177.781 ; gain = 1435.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:04:30 . Memory (MB): peak = 3177.781 ; gain = 1604.219
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 3189.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3228.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 24 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 6a6d6106
+INFO: [Common 17-83] Releasing license: Synthesis
+240 Infos, 233 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:06:23 . Memory (MB): peak = 3228.617 ; gain = 2564.188
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3228.617 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 60 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3228.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dprx_gt_ip0_0_synth_1/dpss_vck190_pt_dprx_gt_ip0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dpss_vck190_pt_dprx_gt_ip0_0_utilization_synth.rpt -pb dpss_vck190_pt_dprx_gt_ip0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:08:14 2024...

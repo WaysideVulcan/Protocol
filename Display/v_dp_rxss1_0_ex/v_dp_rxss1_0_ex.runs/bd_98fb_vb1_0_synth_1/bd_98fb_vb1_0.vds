@@ -1,0 +1,821 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 18:57:28 2024
+# Process ID: 7544
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1
+# Command line: vivado.exe -log bd_98fb_vb1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_98fb_vb1_0.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/bd_98fb_vb1_0.vds
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source bd_98fb_vb1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 582.633 ; gain = 184.102
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_vb1_0
+Command: synth_design -top bd_98fb_vb1_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24600
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 2011.926 ; gain = 438.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_98fb_vb1_0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:47]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_sub' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:852]
+WARNING: [Synth 8-693] zero replication count - replication ignored [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2474]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_array' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3565]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_array' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3565]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_array__parameterized0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3565]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_array__parameterized0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3565]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_pulse' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3590]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_pulse' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3590]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_single' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3542]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_cdc_single' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:3542]
+INFO: [Synth 8-6157] synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_axis' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:320]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2356]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:506]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1214]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1281]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1303]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1914]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1914]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2356]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_axis' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2_sub' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:852]
+INFO: [Synth 8-6155] done synthesizing module 'dp_videoaxi4s_bridge_v1_0_2' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:47]
+WARNING: [Synth 8-7071] port 'vtd_active_video' of module 'dp_videoaxi4s_bridge_v1_0_2' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:142]
+WARNING: [Synth 8-7071] port 'vtd_vsync' of module 'dp_videoaxi4s_bridge_v1_0_2' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:142]
+WARNING: [Synth 8-7071] port 'vtd_hsync' of module 'dp_videoaxi4s_bridge_v1_0_2' is unconnected for instance 'inst' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:142]
+WARNING: [Synth 8-7023] instance 'inst' of module 'dp_videoaxi4s_bridge_v1_0_2' has 32 connections declared, but only 29 given [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98fb_vb1_0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/synth/bd_98fb_vb1_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element dest_pulse_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:860]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3069]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:544]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:765]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1398]
+WARNING: [Synth 8-6014] Unused sequential element enable_420_maclk_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1188]
+WARNING: [Synth 8-6014] Unused sequential element vid_de_q_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1636]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tdata_fifo_out_3_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2490]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tdata_fifo_out_4_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2491]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tdata_fifo_out_5_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2492]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tdata_fifo_out_6_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2493]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tuser_3_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2497]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tuser_4_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2498]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tuser_5_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2499]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_tuser_6_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2500]
+WARNING: [Synth 8-6014] Unused sequential element auto_clear_r_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1049]
+WARNING: [Synth 8-6014] Unused sequential element vid_vsync_sticky_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1836]
+WARNING: [Synth 8-6014] Unused sequential element vid_vsync_remap_maclk_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1843]
+WARNING: [Synth 8-6014] Unused sequential element enable_dsc_sync_1_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1868]
+WARNING: [Synth 8-6014] Unused sequential element sof_sof_count_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2640]
+WARNING: [Synth 8-6014] Unused sequential element eol_eol_count_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:2648]
+WARNING: [Synth 8-6014] Unused sequential element enable_420_vid_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:1183]
+WARNING: [Synth 8-3848] Net dsc_last_from_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:972]
+WARNING: [Synth 8-3848] Net dsc_valid_from_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:973]
+WARNING: [Synth 8-3848] Net vid_pixel0_dsc_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:978]
+WARNING: [Synth 8-3848] Net vid_pixel1_dsc_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:979]
+WARNING: [Synth 8-3848] Net vid_pixel2_dsc_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:980]
+WARNING: [Synth 8-3848] Net vid_pixel3_dsc_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:981]
+WARNING: [Synth 8-3848] Net dsc_sof_from_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:974]
+WARNING: [Synth 8-3848] Net dsc_tkeep_from_fifo in module/entity dp_videoaxi4s_bridge_v1_0_2_sub does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:976]
+WARNING: [Synth 8-6014] Unused sequential element vid_rstn_dup_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:113]
+WARNING: [Synth 8-3848] Net vtd_active_video in module/entity dp_videoaxi4s_bridge_v1_0_2 does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:93]
+WARNING: [Synth 8-3848] Net vtd_vsync in module/entity dp_videoaxi4s_bridge_v1_0_2 does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:94]
+WARNING: [Synth 8-3848] Net vtd_hsync in module/entity dp_videoaxi4s_bridge_v1_0_2 does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/989e/hdl/dp_videoaxi4s_bridge_v1_0_rfs.v:95]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[183] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[182] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[181] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[180] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[179] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[178] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[177] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[176] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[175] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[174] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[173] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[172] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[171] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[170] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[169] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[168] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[167] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[166] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[165] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[164] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[163] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[162] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[161] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[160] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[159] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[158] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[157] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[156] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[155] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[154] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[153] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[152] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[151] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[150] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[149] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[148] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[147] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[146] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[145] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[144] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[143] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[142] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[141] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[140] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[139] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[138] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[137] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[136] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[135] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[134] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[133] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[132] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[131] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[130] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[129] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[128] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[127] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[126] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[125] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[124] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[123] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[122] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[121] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[120] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[119] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[118] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[117] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[116] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[115] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[114] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[113] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[112] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[111] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[110] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[109] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[108] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[107] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[106] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[105] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[104] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[103] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[102] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[101] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[100] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[99] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[98] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[97] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[96] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[95] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[94] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[93] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[92] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[91] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[90] in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2138.027 ; gain = 565.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 2138.027 ; gain = 565.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 2138.027 ; gain = 565.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2138.027 ; gain = 0.000
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/bd_98fb_vb1_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2320.363 ; gain = 23.711
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/bd_98fb_vb1_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/bd_98fb_vb1_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/bd_98fb_vb1_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/ip/ip_3/bd_98fb_vb1_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_98fb_vb1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_98fb_vb1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_BPC_INST_1/xpm_cdc_array_single_inst' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_BPC_INST_1/xpm_cdc_array_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_COLOR_FORMAT_INST_1/xpm_cdc_array_single_inst' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_COLOR_FORMAT_INST_1/xpm_cdc_array_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_PIXEL_MODE_INST_1/xpm_cdc_array_single_inst' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/CDC_SINGLE_PIXEL_MODE_INST_1/xpm_cdc_array_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_98fb_vb1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_98fb_vb1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_98fb_vb1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_98fb_vb1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_98fb_vb1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_98fb_vb1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_98fb_vb1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_98fb_vb1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 17 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2320.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2322.324 ; gain = 1.961
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:01:06 . Memory (MB): peak = 2322.324 ; gain = 749.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:01:06 . Memory (MB): peak = 2322.324 ; gain = 749.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_PIXEL_MODE_INST_1/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_COLOR_FORMAT_INST_1/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_BPC_INST_1/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_PIXEL_MODE_INST/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_COLOR_FORMAT_INST/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_VSYNC_AXIS_INST/xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /CDC_SINGLE_AXIS_OVERFLOW_PULSE_INST/xpm_cdc_array_single_inst/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /cdc_single_dsc_en_axis_inst/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cdc_single_vid_rst_inst/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst /dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:06 . Memory (MB): peak = 2322.324 ; gain = 749.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:01:08 . Memory (MB): peak = 2322.324 ; gain = 749.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   4 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   4 Input   11 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 2     
+	   4 Input   10 Bit       Adders := 5     
+	   3 Input   10 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     11 Bit         XORs := 2     
+	   2 Input     10 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 40    
++---Registers : 
+	              184 Bit    Registers := 2     
+	              128 Bit    Registers := 3     
+	              120 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 15    
+	               10 Bit    Registers := 14    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 21    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 49    
++---RAMs : 
+	             184K Bit	(1024 X 184 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  120 Bit        Muxes := 10    
+	   8 Input  120 Bit        Muxes := 1     
+	   2 Input   90 Bit        Muxes := 2     
+	   2 Input   60 Bit        Muxes := 4     
+	   9 Input   48 Bit        Muxes := 4     
+	   2 Input   30 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 33    
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 21    
+	   6 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+RAM ("inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:26 . Memory (MB): peak = 2519.184 ; gain = 946.191
+---------------------------------------------------------------------------------
+RAM ("inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                     | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 184(NO_CHANGE)   | W |   | 1 K x 184(WRITE_FIRST) |   | R | Port A and B     | 1      | 5      | 1,1,1,1,1,1     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:04:07 . Memory (MB): peak = 3198.527 ; gain = 1625.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:04:07 . Memory (MB): peak = 3198.527 ; gain = 1625.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                     | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\gen_disable_dsc_bridge_sub.dp_videoaxi4s_bridge_v1_0_2_sub_inst/dp_videoaxi4s_bridge_v1_0_2_axis_inst/fifo_gen_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 184(NO_CHANGE)   | W |   | 1 K x 184(WRITE_FIRST) |   | R | Port A and B     | 1      | 5      | 1,1,1,1,1,1     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__5`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__6`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__6' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__7`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__7' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__8`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__8' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__parameterized0`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__parameterized0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__3`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__3' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_pulse`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_pulse' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__4`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst__3`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst__3' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_memory_base`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_memory_base' done
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__2`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__2' done
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__parameterized0`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__parameterized0' done
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray' done
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__parameterized1`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_gray__parameterized1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst__4`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_sync_rst' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_fifo_base`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_fifo_base' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_fifo_axis`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_fifo_axis' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `dp_videoaxi4s_bridge_v1_0_2`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `dp_videoaxi4s_bridge_v1_0_2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_98fb_vb1_0`
+   Worst Slack before retiming is -69 and worst slack after retiming is -69
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_98fb_vb1_0' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:04:10 . Memory (MB): peak = 3219.520 ; gain = 1646.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:04:21 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:04:21 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:04:21 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:04:21 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:04:22 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:04:22 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |LOOKAHEAD8   |    20|
+|5     |LUT1         |    10|
+|6     |LUT2         |   125|
+|7     |LUT3         |   223|
+|8     |LUT4         |   156|
+|9     |LUT5         |   126|
+|10    |LUT6         |   429|
+|11    |LUT6CY       |   134|
+|12    |RAMB18E5_INT |     1|
+|13    |RAMB36E5_INT |     5|
+|14    |FDRE         |   795|
+|15    |FDSE         |    12|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:04:22 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 286 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:03:57 . Memory (MB): peak = 3234.316 ; gain = 1477.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:04:22 . Memory (MB): peak = 3234.316 ; gain = 1661.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 3246.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3272.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 134 instances
+  RAMB18E5 => RAMB18E5_INT: 1 instance 
+  RAMB36E5 => RAMB36E5_INT: 5 instances
+
+Synth Design complete | Checksum: 9ff9d1c4
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:06:21 . Memory (MB): peak = 3272.102 ; gain = 2608.602
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3272.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/bd_98fb_vb1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:47 . Memory (MB): peak = 3272.102 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_98fb_vb1_0, cache-ID = 86c57a36b5979ab2
+INFO: [Coretcl 2-1174] Renamed 45 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3272.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/bd_98fb_vb1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_98fb_vb1_0_utilization_synth.rpt -pb bd_98fb_vb1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:05:21 2024...

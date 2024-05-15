@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'FrmbufRdHlsDataFlow'" level="0">
+<item name = "Date">Thu May  9 19:06:41 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">versalaicore</item>
+<item name = "Target device">xcvc1902-vsva2197-2MP-e-S</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 2.866 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">234, 53101658, 0.780 us, 0.177 sec, 20, 53101458, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln0_entry_proc_fu_190">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_AXIMMvideo2Bytes_fu_197">AXIMMvideo2Bytes, 1, 18653761, 3.333 ns, 62.173 ms, 1, 18653761, no</column>
+<column name="grp_Bytes2MultiPixStream_fu_218">Bytes2MultiPixStream, 1, 53101457, 3.333 ns, 0.177 sec, 1, 53101457, no</column>
+<column name="grp_MultiPixStream2AXIvideo_fu_230">MultiPixStream2AXIvideo, 19, 8320339, 63.327 ns, 27.732 ms, 19, 8320339, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

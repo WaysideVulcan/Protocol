@@ -1,0 +1,724 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 18:57:27 2024
+# Process ID: 19076
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1
+# Command line: vivado.exe -log dpss_vck190_pt_clk_wizard_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_clk_wizard_2_0.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dpss_vck190_pt_clk_wizard_2_0.vds
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source dpss_vck190_pt_clk_wizard_2_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 582.973 ; gain = 184.859
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_clk_wizard_2_0
+Command: synth_design -top dpss_vck190_pt_clk_wizard_2_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2132
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 2012.207 ; gain = 436.926
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'DCO_DCLK_DIV' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:52]
+WARNING: [Synth 8-11065] parameter 'DCNT_B' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:54]
+WARNING: [Synth 8-11065] parameter 'DCO_CODE_INIT' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:56]
+WARNING: [Synth 8-11065] parameter 'DCO_CODE_FINAL' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:57]
+WARNING: [Synth 8-11065] parameter 'BCODE_B' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:58]
+WARNING: [Synth 8-11065] parameter 'T_RST' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:60]
+WARNING: [Synth 8-11065] parameter 'T1_RST' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:61]
+WARNING: [Synth 8-11065] parameter 'RCNT_B' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:62]
+WARNING: [Synth 8-11065] parameter 'T_DCO' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:66]
+WARNING: [Synth 8-11065] parameter 'T_DCO_SYN' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:70]
+WARNING: [Synth 8-11065] parameter 'T_CAL_STEP' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:74]
+WARNING: [Synth 8-11065] parameter 'SESSION_END' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:76]
+WARNING: [Synth 8-11065] parameter 'S_RST' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:80]
+WARNING: [Synth 8-11065] parameter 'S_1' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:81]
+WARNING: [Synth 8-11065] parameter 'S_2' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:82]
+WARNING: [Synth 8-11065] parameter 'S_3' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:83]
+WARNING: [Synth 8-11065] parameter 'S_4' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:84]
+WARNING: [Synth 8-11065] parameter 'S_5' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:85]
+WARNING: [Synth 8-11065] parameter 'S_6' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:86]
+WARNING: [Synth 8-11065] parameter 'S_7' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:87]
+WARNING: [Synth 8-11065] parameter 'S_8' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:88]
+WARNING: [Synth 8-11065] parameter 'S_9' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:89]
+WARNING: [Synth 8-11065] parameter 'S_10' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:90]
+WARNING: [Synth 8-11065] parameter 'S_11' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:91]
+WARNING: [Synth 8-11065] parameter 'S_12' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:92]
+WARNING: [Synth 8-11065] parameter 'S_13' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:93]
+WARNING: [Synth 8-11065] parameter 'S_14' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:94]
+WARNING: [Synth 8-11065] parameter 'S_15' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:95]
+WARNING: [Synth 8-11065] parameter 'S_FINISH' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:96]
+WARNING: [Synth 8-11065] parameter 'DONT_CARE_STATE' becomes localparam in 'dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal' with formal parameter declaration list [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_cmt_dpll_fd_cal.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/synth/dpss_vck190_pt_clk_wizard_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:47]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_axi_clk_config' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_axi_clk_config.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_axi_lite_ipif' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_axi_lite_ipif.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_slave_attachment' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_slave_attachment.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_address_decoder' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_address_decoder.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized1' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized1' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized2' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized2' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized3' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized3' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized4' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized4' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized5' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized5' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized6' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized6' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized7' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized7' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_pselect_f.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_address_decoder' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_address_decoder.vhd:198]
+INFO: [Synth 8-226] default block is never used [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_slave_attachment.vhd:443]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_slave_attachment' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_slave_attachment.vhd:242]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_axi_lite_ipif' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_axi_lite_ipif.vhd:257]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp' declared at 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:41' bound to instance 'CLK_CORE_DRP_I' of component 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_axi_clk_config.vhd:385]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:81]
+	Parameter S1_CLKFBOUT_1 bound to: 16'b0001011000000000 
+	Parameter S1_CLKFBOUT_2 bound to: 16'b0010110100101101 
+	Parameter S1_CLKOUT0_1 bound to: 16'b0001101100000000 
+	Parameter S1_CLKOUT0_2 bound to: 16'b0000001000000010 
+	Parameter S1_CLKOUT1_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT1_2 bound to: 16'b0000001100000011 
+	Parameter S1_CLKOUT2_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT2_2 bound to: 16'b0000001100000011 
+	Parameter S1_CLKOUT3_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT3_2 bound to: 16'b0000001100000011 
+	Parameter S1_CP bound to: 16'b0000000000101110 
+	Parameter S1_DESKEW_1 bound to: 16'b0000000000000000 
+	Parameter S1_DESKEW_2 bound to: 16'b0000010000000000 
+	Parameter S1_DIVCLK bound to: 16'b0000000100000001 
+	Parameter S1_INTERPOL_1 bound to: 16'b0000000000000000 
+	Parameter S1_INTERPOL_2 bound to: 16'b0000000000000000 
+	Parameter S1_LF bound to: 16'b0000111010000000 
+	Parameter S1_LOCK_1 bound to: 16'b0100000011111010 
+	Parameter S1_LOCK_2 bound to: 16'b0100001111101001 
+	Parameter S1_RES bound to: 16'b0000000000000100 
+	Parameter S1_LOCK_3 bound to: 16'b0000000000000001 
+	Parameter S1_CLKOUT4_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT4_2 bound to: 16'b0000001100000011 
+	Parameter S1_CLKOUT5_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT5_2 bound to: 16'b0000001100000011 
+	Parameter S1_CLKOUT6_1 bound to: 16'b0000101000000000 
+	Parameter S1_CLKOUT6_2 bound to: 16'b0000001100000011 
+	Parameter S1_INTERPOL_3 bound to: 16'b0000000000000000 
+	Parameter S1_INTERPOL_4 bound to: 16'b0000000000000000 
+	Parameter S1_CLKFBOUT_3 bound to: 16'b0000000000000000 
+	Parameter S1_SS bound to: 16'b0000111100000000 
+	Parameter S1_CLKFBOUT_4 bound to: 16'b0000000000000001 
+INFO: [Synth 8-3491] module 'dpss_vck190_pt_clk_wizard_2_0_drp' declared at 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:49' bound to instance 'mmcm_drp_inst' of component 'dpss_vck190_pt_clk_wizard_2_0_drp' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:530]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_drp' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:49]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[127]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[126]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[125]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[124]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[123]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[122]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[121]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[120]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[119]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[118]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[117]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[116]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[115]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[114]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[113]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[112]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[111]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[110]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[109]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[108]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[107]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[106]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[105]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[104]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[103]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[102]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[101]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[100]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[99]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[98]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[97]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[96]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[95]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[94]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[93]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[92]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[91]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[90]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[89]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[88]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[87]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[86]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[85]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[84]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[83]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[82]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[81]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[80]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[79]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[78]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[77]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[76]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[75]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[74]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[73]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[72]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[71]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[70]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[69]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[68]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[67]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[66]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[65]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[64]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[63]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[62]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[61]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[60]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[59]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[58]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[57]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[56]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[55]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[54]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[53]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[52]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[51]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[50]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[49]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[48]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[47]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[46]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[45]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[44]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[43]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[42]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[41]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[40]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[39]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[38]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[37]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[36]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[35]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[34]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[33]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[32]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[31]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[30]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[29]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[28]' is not inferred as ram due to incorrect usage [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:144]
+INFO: [Common 17-14] Message 'Synth 8-7186' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_drp' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_mmcm_pll_drp.v:49]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_soft_reset' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:142]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_soft_reset' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/proc_common_v3_00_a/hdl/src/vhdl/dpss_vck190_pt_clk_wizard_2_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_axi_clk_config' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_axi_clk_config.vhd:119]
+INFO: [Synth 8-6157] synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clocking_structure' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_structure.v:47]
+INFO: [Synth 8-6157] synthesizing module 'MMCME5' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82769]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME5' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82769]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clocking_structure' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clocking_structure.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'dpss_vck190_pt_clk_wizard_2_0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/synth/dpss_vck190_pt_clk_wizard_2_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element interrupt_enable_reg_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:378]
+WARNING: [Synth 8-6014] Unused sequential element interrupt_status_reg_wr_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:379]
+WARNING: [Synth 8-6014] Unused sequential element clk_mon_error_reg_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:487]
+WARNING: [Synth 8-6014] Unused sequential element clk_mon_error_reg_d_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element interrupt_status_reg_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp.vhd:489]
+WARNING: [Synth 8-3848] Net clk_stop in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:378]
+WARNING: [Synth 8-3848] Net clk_glitch in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:379]
+WARNING: [Synth 8-3848] Net clk_oor in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:380]
+WARNING: [Synth 8-3848] Net interrupt in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:381]
+WARNING: [Synth 8-3848] Net locked_fb in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:398]
+WARNING: [Synth 8-3848] Net clkfb_out_p in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:403]
+WARNING: [Synth 8-3848] Net clkfb_out_n in module/entity dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top does not have driver. [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top.v:404]
+WARNING: [Synth 8-7129] Port clkin1_deskew in module dpss_vck190_pt_clk_wizard_2_0_clocking_structure is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkin2_deskew in module dpss_vck190_pt_clk_wizard_2_0_clocking_structure is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkfb1_deskew in module dpss_vck190_pt_clk_wizard_2_0_clocking_structure is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkfb2_deskew in module dpss_vck190_pt_clk_wizard_2_0_clocking_structure is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aclk in module dpss_vck190_pt_clk_wizard_2_0_clocking_structure is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[0] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module dpss_vck190_pt_clk_wizard_2_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[5] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[6] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[7] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[0] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[5] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[6] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[7] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module dpss_vck190_pt_clk_wizard_2_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module dpss_vck190_pt_clk_wizard_2_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_stop[3] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_stop[2] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_stop[1] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_stop[0] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_glitch[3] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_glitch[2] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_glitch[1] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_glitch[0] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_oor[3] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_oor[2] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_oor[1] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_oor[0] in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port locked_fb in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkfb_out_p in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkfb_out_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port resetn in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port user_clk0 in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port user_clk1 in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port user_clk2 in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port user_clk3 in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ref_clk in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk1_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk2_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk3_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk4_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk5_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk6_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk7_clr_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk1_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk2_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk3_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk4_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk5_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk6_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk7_ce in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_in2_p in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_in2_n in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkfb_in_p in module dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 2152.008 ; gain = 576.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 2152.008 ; gain = 576.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 2152.008 ; gain = 576.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 2152.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-2489] -period contains time 10.000100 which will be rounded to 10.000 to ensure it is an integer multiple of 1 picosecond [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_ooc.xdc:9]
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2325.266 ; gain = 18.500
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_late.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_clk_wizard_2_0/dpss_vck190_pt_clk_wizard_2_0_late.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2325.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.298 . Memory (MB): peak = 2325.266 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:01:09 . Memory (MB): peak = 2325.266 ; gain = 749.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:01:09 . Memory (MB): peak = 2325.266 ; gain = 749.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:01:09 . Memory (MB): peak = 2325.266 ; gain = 749.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dpss_vck190_pt_clk_wizard_2_0_slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'dpss_vck190_pt_clk_wizard_2_0_drp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'dpss_vck190_pt_clk_wizard_2_0_slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RESTART |                             0000 |                             0001
+               WAIT_LOCK |                             0001 |                             0010
+                WAIT_SEN |                             0010 |                             0011
+                 ADDRESS |                             0011 |                             0100
+             WAIT_A_DRDY |                             0100 |                             0101
+                 BITMASK |                             0101 |                             0110
+                  BITSET |                             0110 |                             0111
+                   WRITE |                             0111 |                             1000
+               WAIT_DRDY |                             1000 |                             1001
+                    READ |                             1001 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'dpss_vck190_pt_clk_wizard_2_0_drp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:01:11 . Memory (MB): peak = 2325.266 ; gain = 749.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               39 Bit    Registers := 34    
+	               32 Bit    Registers := 66    
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 2     
+	  10 Input    7 Bit        Muxes := 3     
+	  10 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 143   
+	  10 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 65    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:02:03 . Memory (MB): peak = 2491.367 ; gain = 916.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:04:09 . Memory (MB): peak = 3159.660 ; gain = 1584.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:04:15 . Memory (MB): peak = 3258.090 ; gain = 1682.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top`
+   Worst Slack before retiming is 8196 and worst slack after retiming is 8255
+   Numbers of local forward move = 4, and local backward move = 18
+
+	Retimed registers names:
+		inst/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_reg_fret
+		inst/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_reg_fret__0
+		inst/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_reg_fret__1
+		inst/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_reg_fret__2
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/FSM_sequential_current_state_reg[2]_fret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/FSM_sequential_current_state_reg[2]_fret__0
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_addr_reg[0]_fret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_addr_reg[0]_fret__0
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_addr_reg[0]_fret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_addr_reg[0]_fret__2
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_addr_reg[0]_fret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[0]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[0]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[10]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[10]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[11]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[11]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[1]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[1]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[26]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[26]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[27]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[27]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[28]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[28]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[30]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[30]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret__0
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret__2
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[31]_bret__4
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[32]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[32]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[33]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[33]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[34]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[34]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[35]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[35]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[37]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[37]_bret__0
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[37]_bret__3
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[3]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[5]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[5]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[8]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[8]_bret__1
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[9]_bret
+		inst/inst/CLK_CORE_DRP_I/mmcm_drp_inst/ram_do_reg[9]_bret__1
+ 
+
+INFO: [Synth 8-5816] Retiming module `dpss_vck190_pt_clk_wizard_2_0_clk_wiz_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `dpss_vck190_pt_clk_wizard_2_0`
+   Worst Slack before retiming is 8255 and worst slack after retiming is 8255
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `dpss_vck190_pt_clk_wizard_2_0' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:04:19 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:05:16 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:05:16 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:05:17 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:05:17 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:05:17 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:05:17 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Retiming Report:
++--------------------+----+
+|Retiming summary:   |    | 
++--------------------+----+
+|Forward Retiming    | 4  | 
+|Backward Retiming   | 18 | 
+|New registers added | 51 | 
+|Registers deleted   | 18 | 
++--------------------+----+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT1   |     2|
+|3     |LUT2   |    63|
+|4     |LUT3   |    62|
+|5     |LUT4   |    43|
+|6     |LUT5   |   191|
+|7     |LUT6   |   885|
+|9     |MMCME5 |     1|
+|10    |FDRE   |  2693|
+|11    |FDSE   |    87|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:05:17 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:04:55 . Memory (MB): peak = 3267.164 ; gain = 1518.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:05:19 . Memory (MB): peak = 3267.164 ; gain = 1691.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3274.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance inst/clock_primitive_inst/MMCME5_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3294.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 1 instance 
+
+Synth Design complete | Checksum: c566c3ad
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:07:18 . Memory (MB): peak = 3294.738 ; gain = 2630.262
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3294.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dpss_vck190_pt_clk_wizard_2_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dpss_vck190_pt_clk_wizard_2_0, cache-ID = aaa13224e4e5b95d
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3294.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/dpss_vck190_pt_clk_wizard_2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dpss_vck190_pt_clk_wizard_2_0_utilization_synth.rpt -pb dpss_vck190_pt_clk_wizard_2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:05:32 2024...

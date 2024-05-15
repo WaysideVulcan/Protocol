@@ -1,0 +1,235 @@
+
+wire clk_PROT1_R0;
+wire clk_PROT1_R1;
+wire clk_PROT1_R2;
+wire clk_PROT1_R3;
+wire clk_PROT1_R4;
+wire clk_PROT1_R5;
+
+real t0_ip1;
+real t1_ip1;
+real t2_ip1;
+real t3_ip1;
+real frequency_ip1;
+reg  gpio_enable_ip1 = 1'b0;
+reg   clk_ip1_lr0_tx = 1'b0;
+reg   clk_ip1_lr0_rx = 1'b0;
+reg   clk_ip1_lr1_tx = 1'b0;
+reg   clk_ip1_lr1_rx = 1'b0;
+reg   clk_ip1_lr2_tx = 1'b0;
+reg   clk_ip1_lr2_rx = 1'b0;
+reg   clk_ip1_lr3_tx = 1'b0;
+reg   clk_ip1_lr3_rx = 1'b0;
+
+always #1.8515ns clk_ip1_lr0_tx =  ~clk_ip1_lr0_tx;
+always #1.8515ns clk_ip1_lr1_tx =  ~clk_ip1_lr1_tx;
+always #1.8515ns clk_ip1_lr2_tx =  ~clk_ip1_lr2_tx;
+always #1.8515ns clk_ip1_lr3_tx =  ~clk_ip1_lr3_tx;
+ 
+ 
+ 
+ 
+
+
+  reg [10:0] link_up_ctr_ip1 = 11'd0;
+  reg        link_stable_ip1 = 1'b0;
+  always @(posedge apb_clk) begin
+    if (link_status_ip1 !== 1'b1) begin
+      link_up_ctr_ip1 <= 11'd0;
+      link_stable_ip1 <= 1'b0;
+    end
+    else begin
+      if (&link_up_ctr_ip1)
+        link_stable_ip1 <= 1'b1;
+      else
+        link_up_ctr_ip1 <= link_up_ctr_ip1 + 11'd1;
+    end
+  end
+
+
+
+initial 
+  begin
+      wait(rpll_lock_ip1);
+              $display("PROT1 CONFIG0:::::: PLL LOCKED ");
+
+
+
+
+assign t2_ip1 = 101.2500000 - (101.2500000)*0.01;
+assign t3_ip1 = 101.2500000 + (101.2500000)*0.01;
+ 
+
+              wait( tx_resetdone_out_ip1);
+              $display("PROT1 CONFIG0 TX RESET DONE asserted");
+              @ (posedge txusrclk_ip1) t0_ip1 = $realtime;
+              @ (posedge txusrclk_ip1) t1_ip1 = $realtime;
+              frequency_ip1 = 1000 / (t1_ip1 - t0_ip1);
+              $display("PROT1 CONFIG0 POST PLL LOCK TXUSRCLK Frequency = %g", frequency_ip1);
+              if ((frequency_ip1 <= t3_ip1 ) &&  (frequency_ip1 >=  t2_ip1))
+              $display(" TX_USER CLOCK  PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+              else
+              $display(" Error: TX_USER CLOCK IS NOT PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+
+
+
+    $display("=====================================================================================================");
+    $display("The selected PROT1 configuration is SIMPLEX. The IP core therefore");
+    $display("disables checking of the PRBS-based link status within this simulation testbench. This simulation will");
+    $display("simply run for a short period of time and then end with a test completed successfully message, but it");
+    $display("should not be construed to mean that data integrity was observed in this configuration. You may wish");
+    $display("to extend this simulation period to observe actual behavior, which is not predictable by this IP core.");
+    $display("=====================================================================================================");
+
+        $display("Time : %12d ns   PROT1 CONFIG0: simulation completed", $time);
+
+              gpio_enable_ip1 = 1'b0;
+ 
+
+
+              rate_sel_ip1 = 4'd1;
+              $display(" PROT1 RATE CHANGE INITIATED ");
+              $display("PROT1 CONFIG1::::::: PLL LOCKED  ");
+              wait( !tx_resetdone_out_ip1);
+
+assign t2_ip1 = 168.7500000 - (168.7500000)*0.01;
+assign t3_ip1 = 168.7500000 + (168.7500000)*0.01;
+              wait( tx_resetdone_out_ip1);
+              $display("PROT1 CONFIG1 ::::: TX RESET DONE asserted");
+              @ (posedge txusrclk_ip1) t0_ip1 = $realtime;
+              @ (posedge txusrclk_ip1) t1_ip1 = $realtime;
+              frequency_ip1 = 1000 / (t1_ip1 - t0_ip1);
+              $display("PROT1 CONFIG1:::::::POST PLL LOCK TXUSRCLK Frequency = %g", frequency_ip1);
+              if ((frequency_ip1 <= t3_ip1 ) &&  (frequency_ip1 >=  t2_ip1 ))
+              $display("PROT1 CONFIG1::::::: TX_USER CLOCK IS  PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+              else
+              $display(" Error: TX_USER CLOCK IS NOT PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+
+
+    $display("=====================================================================================================");
+    $display("The selected PROT1 configuration is SIMPLEX. The IP core therefore");
+    $display("disables checking of the PRBS-based link status within this simulation testbench. This simulation will");
+    $display("simply run for a short period of time and then end with a test completed successfully message, but it");
+    $display("should not be construed to mean that data integrity was observed in this configuration. You may wish");
+    $display("to extend this simulation period to observe actual behavior, which is not predictable by this IP core.");
+    $display("=====================================================================================================");
+
+        $display("Time : %12d ns   PROT1 CONFIG1: simulation completed", $time);
+              gpio_enable_ip1 = 1'b0;
+ 
+
+
+              rate_sel_ip1 = 4'd2;
+              $display(" PROT1 RATE CHANGE INITIATED ");
+              $display("PROT1 CONFIG2::::::: PLL LOCKED  ");
+              wait( !tx_resetdone_out_ip1);
+
+assign t2_ip1 = 337.5000000 - (337.5000000)*0.01;
+assign t3_ip1 = 337.5000000 + (337.5000000)*0.01;
+              wait( tx_resetdone_out_ip1);
+              $display("PROT1 CONFIG2 ::::: TX RESET DONE asserted");
+              @ (posedge txusrclk_ip1) t0_ip1 = $realtime;
+              @ (posedge txusrclk_ip1) t1_ip1 = $realtime;
+              frequency_ip1 = 1000 / (t1_ip1 - t0_ip1);
+              $display("PROT1 CONFIG2:::::::POST PLL LOCK TXUSRCLK Frequency = %g", frequency_ip1);
+              if ((frequency_ip1 <= t3_ip1 ) &&  (frequency_ip1 >=  t2_ip1 ))
+              $display("PROT1 CONFIG2::::::: TX_USER CLOCK IS  PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+              else
+              $display(" Error: TX_USER CLOCK IS NOT PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+
+
+    $display("=====================================================================================================");
+    $display("The selected PROT1 configuration is SIMPLEX. The IP core therefore");
+    $display("disables checking of the PRBS-based link status within this simulation testbench. This simulation will");
+    $display("simply run for a short period of time and then end with a test completed successfully message, but it");
+    $display("should not be construed to mean that data integrity was observed in this configuration. You may wish");
+    $display("to extend this simulation period to observe actual behavior, which is not predictable by this IP core.");
+    $display("=====================================================================================================");
+
+        $display("Time : %12d ns   PROT1 CONFIG2: simulation completed", $time);
+              gpio_enable_ip1 = 1'b0;
+ 
+
+
+              rate_sel_ip1 = 4'd3;
+              $display(" PROT1 RATE CHANGE INITIATED ");
+              $display("PROT1 CONFIG3::::::: PLL LOCKED  ");
+              wait( !tx_resetdone_out_ip1);
+
+assign t2_ip1 = 506.2500000 - (506.2500000)*0.01;
+assign t3_ip1 = 506.2500000 + (506.2500000)*0.01;
+              wait( tx_resetdone_out_ip1);
+              $display("PROT1 CONFIG3 ::::: TX RESET DONE asserted");
+              @ (posedge txusrclk_ip1) t0_ip1 = $realtime;
+              @ (posedge txusrclk_ip1) t1_ip1 = $realtime;
+              frequency_ip1 = 1000 / (t1_ip1 - t0_ip1);
+              $display("PROT1 CONFIG3:::::::POST PLL LOCK TXUSRCLK Frequency = %g", frequency_ip1);
+              if ((frequency_ip1 <= t3_ip1 ) &&  (frequency_ip1 >=  t2_ip1 ))
+              $display("PROT1 CONFIG3::::::: TX_USER CLOCK IS  PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+              else
+              $display(" Error: TX_USER CLOCK IS NOT PROPER TX_USER_CLOCK POST PLL LOCK is %g and EXPECTED is [%g:%g]",frequency_ip1, t2_ip1 , t3_ip1);
+
+
+    $display("=====================================================================================================");
+    $display("The selected PROT1 configuration is SIMPLEX. The IP core therefore");
+    $display("disables checking of the PRBS-based link status within this simulation testbench. This simulation will");
+    $display("simply run for a short period of time and then end with a test completed successfully message, but it");
+    $display("should not be construed to mean that data integrity was observed in this configuration. You may wish");
+    $display("to extend this simulation period to observe actual behavior, which is not predictable by this IP core.");
+    $display("=====================================================================================================");
+
+        $display("Time : %12d ns   PROT1 CONFIG3: simulation completed", $time);
+    
+       PROT_PASS[1] = 1'b1;
+         
+end
+
+initial 
+  begin
+      frequency_ip1 = 101.2500000; 
+      repeat (300000) @ (posedge apb_clk);
+      if (frequency_ip1 <= 150 )
+      repeat (1500000) @ (posedge apb_clk);
+      frequency_ip1 = 168.7500000; 
+      repeat (300000) @ (posedge apb_clk);
+      if (frequency_ip1 <= 150 )
+      repeat (1500000) @ (posedge apb_clk);
+      frequency_ip1 = 337.5000000; 
+      repeat (300000) @ (posedge apb_clk);
+      if (frequency_ip1 <= 150 )
+      repeat (1500000) @ (posedge apb_clk);
+      frequency_ip1 = 506.2500000; 
+      repeat (300000) @ (posedge apb_clk);
+      if (frequency_ip1 <= 150 )
+      repeat (1500000) @ (posedge apb_clk);
+
+      TB_TIMEOUT[1] = 1'b1;
+      $display("Time : %12d ns   PROT1 ::::: FAIL: simulation timeout. ", $time);
+
+end
+
+ 
+ 
+ 
+assign clk_PROT1_R0       =      
+                                 (rate_sel_ip1 == 4'd0) ?  clk_ip1_lr0_tx : 
+                                 (rate_sel_ip1 == 4'd1) ?  clk_ip1_lr1_tx : 
+                                 (rate_sel_ip1 < 4'd1) ?  clk_ip1_lr0_tx : 
+                                 (rate_sel_ip1 == 4'd2) ?  clk_ip1_lr2_tx : 
+                                 (rate_sel_ip1 < 4'd2) ?  clk_ip1_lr1_tx : 
+                                 (rate_sel_ip1 == 4'd3) ?  clk_ip1_lr3_tx : 
+                                 (rate_sel_ip1 < 4'd3) ?  clk_ip1_lr2_tx : 
+ 
+                                 (rate_sel_ip1 > 4'd3) ?  clk_ip1_lr3_tx : 
+                                   clk_ip1_lr0_tx ; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

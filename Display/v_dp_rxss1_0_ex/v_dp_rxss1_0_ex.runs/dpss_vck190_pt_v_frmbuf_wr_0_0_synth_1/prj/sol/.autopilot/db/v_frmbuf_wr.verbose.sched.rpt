@@ -1,0 +1,214 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_frmbuf_wr'
+================================================================
+* Date:           Thu May  9 19:06:44 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.792 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+-----------+-----------+-----+----------+---------+
+    |  Latency (cycles)  |   Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |    max   |    min    |    max    | min |    max   |   Type  |
+    +---------+----------+-----------+-----------+-----+----------+---------+
+    |       29|  53110103|  96.657 ns|  0.177 sec|   30|  53110104|       no|
+    +---------+----------+-----------+-----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.44>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%muxLogicCE_to_frm_buffer2_read = muxlogic"   --->   Operation 5 'muxlogic' 'muxLogicCE_to_frm_buffer2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%frm_buffer2_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %frm_buffer2"   --->   Operation 6 'read' 'frm_buffer2_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%muxLogicCE_to_frm_buffer_read = muxlogic"   --->   Operation 7 'muxlogic' 'muxLogicCE_to_frm_buffer_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%frm_buffer_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %frm_buffer"   --->   Operation 8 'read' 'frm_buffer_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%muxLogicCE_to_video_format_read = muxlogic"   --->   Operation 9 'muxlogic' 'muxLogicCE_to_video_format_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%video_format_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %video_format"   --->   Operation 10 'read' 'video_format_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%muxLogicCE_to_stride_read = muxlogic"   --->   Operation 11 'muxlogic' 'muxLogicCE_to_stride_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%stride_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %stride"   --->   Operation 12 'read' 'stride_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%muxLogicCE_to_height_read = muxlogic"   --->   Operation 13 'muxlogic' 'muxLogicCE_to_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %height"   --->   Operation 14 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%muxLogicCE_to_width_read = muxlogic"   --->   Operation 15 'muxlogic' 'muxLogicCE_to_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.00ns)   --->   "%width_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %width"   --->   Operation 16 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 126 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty = trunc i16 %height_read"   --->   Operation 17 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%empty_67 = trunc i16 %width_read"   --->   Operation 18 'trunc' 'empty_67' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%empty_68 = trunc i16 %video_format_read"   --->   Operation 19 'trunc' 'empty_68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln194 = zext i16 %video_format_read" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 20 'zext' 'zext_ln194' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%BYTES_PER_PIXEL_addr = getelementptr i3 %BYTES_PER_PIXEL, i32 0, i32 %zext_ln194" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 21 'getelementptr' 'BYTES_PER_PIXEL_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_BYTES_PER_PIXEL_load = muxlogic i6 %BYTES_PER_PIXEL_addr"   --->   Operation 22 'muxlogic' 'MuxLogicAddr_to_BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [2/2] (0.44ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 23 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 0.44> <CoreInst = "ROM">   --->   Core 105 'ROM' <Latency = 1> <II = 1> <Delay = 1.07> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%MEMORY2LIVE_addr = getelementptr i3 %MEMORY2LIVE, i32 0, i32 %zext_ln194" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 24 'getelementptr' 'MEMORY2LIVE_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_colorFormat = muxlogic i6 %MEMORY2LIVE_addr"   --->   Operation 25 'muxlogic' 'MuxLogicAddr_to_colorFormat' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (0.44ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 26 'load' 'colorFormat' <Predicate = true> <Delay = 0.44> <CoreInst = "ROM">   --->   Core 105 'ROM' <Latency = 1> <II = 1> <Delay = 1.07> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+
+State 2 <SV = 1> <Delay = 2.18>
+ST_2 : Operation 27 [1/2] (0.88ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 27 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 0.88> <CoreInst = "ROM">   --->   Core 105 'ROM' <Latency = 1> <II = 1> <Delay = 1.07> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%BYTES_PER_PIXEL_load_cast = zext i3 %BYTES_PER_PIXEL_load" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 28 'zext' 'BYTES_PER_PIXEL_load_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%muxLogicI0_to_mul_ln194 = muxlogic i16 %BYTES_PER_PIXEL_load_cast"   --->   Operation 29 'muxlogic' 'muxLogicI0_to_mul_ln194' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%muxLogicI1_to_mul_ln194 = muxlogic i16 %width_read"   --->   Operation 30 'muxlogic' 'muxLogicI1_to_mul_ln194' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (1.27ns)   --->   "%mul_ln194 = mul i16 %BYTES_PER_PIXEL_load_cast, i16 %width_read" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 31 'mul' 'mul_ln194' <Predicate = true> <Delay = 1.27> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i13.i2, i13 %empty_67, i2 0" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:181]   --->   Operation 32 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln181 = zext i15 %shl_ln" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:181]   --->   Operation 33 'zext' 'zext_ln181' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%muxLogicI0_to_mul_ln181 = muxlogic i31 %zext_ln181"   --->   Operation 34 'muxlogic' 'muxLogicI0_to_mul_ln181' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%muxLogicI1_to_mul_ln181 = muxlogic i31 43691"   --->   Operation 35 'muxlogic' 'muxLogicI1_to_mul_ln181' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (2.18ns)   --->   "%mul_ln181 = mul i31 %zext_ln181, i31 43691" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:181]   --->   Operation 36 'mul' 'mul_ln181' <Predicate = true> <Delay = 2.18> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.71ns)   --->   "%icmp_ln177 = icmp_eq  i6 %empty_68, i6 22" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 37 'icmp' 'icmp_ln177' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.71ns)   --->   "%icmp_ln177_1 = icmp_eq  i6 %empty_68, i6 23" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 38 'icmp' 'icmp_ln177_1' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.71ns)   --->   "%icmp_ln177_2 = icmp_eq  i6 %empty_68, i6 25" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 39 'icmp' 'icmp_ln177_2' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.71ns)   --->   "%icmp_ln177_3 = icmp_eq  i6 %empty_68, i6 43" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 40 'icmp' 'icmp_ln177_3' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/2] (0.88ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 41 'load' 'colorFormat' <Predicate = true> <Delay = 0.88> <CoreInst = "ROM">   --->   Core 105 'ROM' <Latency = 1> <II = 1> <Delay = 1.07> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+
+State 3 <SV = 2> <Delay = 2.12>
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node WidthInBytes)   --->   "%tmp = partselect i14 @_ssdm_op_PartSelect.i14.i31.i32.i32, i31 %mul_ln181, i32 17, i32 30" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:181]   --->   Operation 42 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node WidthInBytes)   --->   "%zext_ln182 = zext i14 %tmp" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:182]   --->   Operation 43 'zext' 'zext_ln182' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node WidthInBytes)   --->   "%or_ln177 = or i1 %icmp_ln177, i1 %icmp_ln177_1" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 44 'or' 'or_ln177' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 78 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node WidthInBytes)   --->   "%or_ln177_1 = or i1 %icmp_ln177_2, i1 %icmp_ln177_3" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 45 'or' 'or_ln177_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 78 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node WidthInBytes)   --->   "%or_ln177_2 = or i1 %or_ln177_1, i1 %or_ln177" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 46 'or' 'or_ln177_2' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 78 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [1/1] (0.38ns) (out node of the LUT)   --->   "%WidthInBytes = select i1 %or_ln177_2, i16 %zext_ln182, i16 %mul_ln194" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 47 'select' 'WidthInBytes' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 77 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 48 [2/2] (1.73ns)   --->   "%call_ln198 = call void @FrmbufWrHlsDataFlow, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i256 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i16 %WidthInBytes, i3 %colorFormat, i13 %empty_67, i13 %empty, i16 %stride_read, i6 %empty_68" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:198]   --->   Operation 48 'call' 'call_ln198' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%spectopmodule_ln115 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:115]   --->   Operation 49 'spectopmodule' 'spectopmodule_ln115' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %mm_video, void @empty_22, i32 0, i32 0, void @empty_23, i32 100, i32 2073600, void @empty_24, void @empty_25, void @empty_23, i32 16, i32 8, i32 16, i32 16, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %mm_video"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %width"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_28, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %height"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_30, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stride"   --->   Operation 58 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_31, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %video_format"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_9, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_33, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_0, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_1, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_29, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty, i32 4294967295, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i120 %s_axis_video_V_data_V"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i15 %s_axis_video_V_keep_V"   --->   Operation 72 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i15 %s_axis_video_V_strb_V"   --->   Operation 73 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_user_V"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_last_V"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_id_V"   --->   Operation 76 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_dest_V"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_20, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_26, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%specstablecontent_ln141 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width, void " [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:141]   --->   Operation 79 'specstablecontent' 'specstablecontent_ln141' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%specstablecontent_ln143 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height, void " [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:143]   --->   Operation 80 'specstablecontent' 'specstablecontent_ln143' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "%specstablecontent_ln145 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %stride, void " [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:145]   --->   Operation 81 'specstablecontent' 'specstablecontent_ln145' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%specstablecontent_ln147 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %video_format, void " [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:147]   --->   Operation 82 'specstablecontent' 'specstablecontent_ln147' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln177 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177]   --->   Operation 83 'specaxissidechannel' 'specaxissidechannel_ln177' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/2] (0.00ns)   --->   "%call_ln198 = call void @FrmbufWrHlsDataFlow, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i256 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i16 %WidthInBytes, i3 %colorFormat, i13 %empty_67, i13 %empty, i16 %stride_read, i6 %empty_68" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:198]   --->   Operation 84 'call' 'call_ln198' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%ret_ln204 = ret" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:204]   --->   Operation 85 'ret' 'ret_ln204' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 1.443ns
+The critical path consists of the following:
+	'muxlogic' operation 16 bit ('muxLogicCE_to_video_format_read') [22]  (0.000 ns)
+	s_axi read operation ('video_format') on port 'video_format' [23]  (1.000 ns)
+	'getelementptr' operation 6 bit ('BYTES_PER_PIXEL_addr', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194) [69]  (0.000 ns)
+	'muxlogic' operation 3 bit ('MuxLogicAddr_to_BYTES_PER_PIXEL_load') [70]  (0.000 ns)
+	'load' operation 3 bit ('BYTES_PER_PIXEL_load', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194) on array 'BYTES_PER_PIXEL' [71]  (0.443 ns)
+
+ <State 2>: 2.185ns
+The critical path consists of the following:
+	'muxlogic' operation 31 bit ('muxLogicI0_to_mul_ln181') [78]  (0.000 ns)
+	'mul' operation 31 bit ('mul_ln181', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:181) [80]  (2.185 ns)
+
+ <State 3>: 2.127ns
+The critical path consists of the following:
+	'select' operation 16 bit ('WidthInBytes', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:177) [90]  (0.388 ns)
+	'call' operation 0 bit ('call_ln198', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:198) to 'FrmbufWrHlsDataFlow' [94]  (1.739 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

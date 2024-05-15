@@ -1,0 +1,231 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date             : Wed May  8 18:15:37 2024
+| Host             : Vulcan running 64-bit major release  (build 9200)
+| Command          : report_power -file cpm_qdma_ep_part_wrapper_power_routed.rpt -pb cpm_qdma_ep_part_wrapper_power_summary_routed.pb -rpx cpm_qdma_ep_part_wrapper_power_routed.rpx
+| Design           : cpm_qdma_ep_part_wrapper
+| Device           : xcvp1202-vsva2785-3HP-e-S
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 24.935       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 14.150       |
+| Device Static (W)        | 10.785       |
+| Effective TJA (C/W)      | 3.0          |
+| Max Ambient (C)          | 25.0         |
+| Junction Temperature (C) | 100.0        |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.552 |       30 |       --- |             --- |
+| Logic                    |     0.284 |    84242 |       --- |             --- |
+|   LUT as Logic           |     0.230 |    34359 |    900224 |            3.82 |
+|   LUT as Distributed RAM |     0.034 |     2488 |    450112 |            0.55 |
+|   CLE FF Register        |     0.019 |    29894 |   1800448 |            1.66 |
+|   LOOKAHEAD8             |     0.001 |      635 |    112528 |            0.56 |
+|   LUT as Shift Register  |    <0.001 |       18 |    450112 |           <0.01 |
+|   Others                 |     0.000 |     1763 |       --- |             --- |
+| Signals                  |     0.439 |    78504 |       --- |             --- |
+| Block RAM                |     0.057 |       25 |      1341 |            1.86 |
+| URAM                     |     0.201 |       22 |       677 |            3.25 |
+| XPLL                     |     0.245 |        3 |        26 |           11.54 |
+| DSPs                     |     0.006 |        3 |       --- |             --- |
+| I/O                      |     1.591 |      132 |       --- |             --- |
+| GTYP                     |     4.219 |        2 |         7 |           28.57 |
+| Hard IPs                 |     1.530 |        1 |       --- |             --- |
+|   CPM5                   |     1.530 |        1 |         1 |          100.00 |
+| NoC-DDRMC                |     3.554 |        2 |       --- |             --- |
+|   NoC                    |     3.115 |        1 |       --- |             --- |
+|   DDRMC                  |     0.439 |        1 |         4 |           25.00 |
+| PS9                      |     1.472 |        1 |       --- |             --- |
+| Static Power             |    10.785 |          |           |                 |
+|   PS Static              |     0.265 |          |           |                 |
+|   PL Static              |    10.520 |          |           |                 |
+| Total                    |    24.935 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source      | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint      |       0.880 |    11.497 |       3.274 |      8.224 |       NA    | Unspecified | NA         |
+| VCC_SOC     |       0.880 |     5.704 |       4.048 |      1.656 |       NA    | Unspecified | NA         |
+| VCC_IO      |       0.880 |     1.129 |       0.800 |      0.329 |       NA    | Unspecified | NA         |
+| VCCRAM      |       0.880 |     0.073 |       0.033 |      0.040 |       NA    | Unspecified | NA         |
+| Vccaux      |       1.500 |     1.481 |       0.227 |      1.254 |       NA    | Unspecified | NA         |
+| VCCO_503    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_500    |       1.800 |     0.052 |       0.052 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_501    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_502    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCC_FUSE    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_BATT    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| GTY_AVCCAUX |       1.500 |     0.016 |       0.013 |      0.002 |       NA    | Unspecified | NA         |
+| GTY_AVCC    |       0.920 |     1.145 |       1.110 |      0.036 |       NA    | Unspecified | NA         |
+| GTY_AVTT    |       1.200 |     1.518 |       1.499 |      0.019 |       NA    | Unspecified | NA         |
+| Vcco33      |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25      |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18      |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15      |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135     |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12      |       1.200 |     0.677 |       0.660 |      0.017 |       NA    | Unspecified | NA         |
+| Vcco11      |       1.100 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10      |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PMC     |       0.880 |     0.345 |       0.297 |      0.048 |       NA    | Unspecified | NA         |
+| VCCAUX_PMC  |       1.500 |     0.094 |       0.092 |      0.002 |       NA    | Unspecified | NA         |
+| VCCAUX_SMON |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSLP    |       0.880 |     0.325 |       0.213 |      0.112 |       NA    | Unspecified | NA         |
+| VCC_PSFP    |       0.880 |     1.101 |       0.937 |      0.163 |       NA    | Unspecified | NA         |
+| VCCCPM5     |       0.880 |     2.161 |       1.701 |      0.460 |       NA    | Unspecified | NA         |
+| Vccint_gt   |       0.880 |     0.346 |       0.000 |      0.346 |       NA    | Unspecified | NA         |
+| MGTMAVcc    |       0.920 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTMAVtt    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTMVccaux  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++-------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++------------------+------+
+| Ambient Temp (C) | 25.0 |
+| ThetaJA (C/W)    | 3.0  |
++------------------+------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------+-------------------------------------------------------------------------------------------+-----------------+
+| Clock                   | Domain                                                                                    | Constraint (ns) |
++-------------------------+-------------------------------------------------------------------------------------------+-----------------+
+| GT_REFCLK1              | gt_refclk1_0_clk_p                                                                        |            10.0 |
+| bank1_clkout0           | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/bank1_clkout0           |             1.3 |
+| bank1_xpll0_fifo_rd_clk | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/bank1_xpll0_fifo_rd_clk |             1.3 |
+| ch0_rxoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch0_rxoutclk          |             1.0 |
+| ch0_rxoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch0_rxoutclk          |             1.0 |
+| ch0_txoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch0_txoutclk          |             1.0 |
+| ch0_txoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch0_txoutclk          |             1.0 |
+| ch1_rxoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch1_rxoutclk          |             1.0 |
+| ch1_rxoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch1_rxoutclk          |             1.0 |
+| ch1_txoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch1_txoutclk          |             1.0 |
+| ch1_txoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch1_txoutclk          |             1.0 |
+| ch2_rxoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch2_rxoutclk          |             1.0 |
+| ch2_rxoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch2_rxoutclk          |             1.0 |
+| ch2_txoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch2_txoutclk          |             1.0 |
+| ch2_txoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch2_txoutclk          |             1.0 |
+| ch3_rxoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch3_rxoutclk          |             1.0 |
+| ch3_rxoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch3_rxoutclk          |             1.0 |
+| ch3_txoutclk            | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst/ch3_txoutclk          |             1.0 |
+| ch3_txoutclk_1          | cpm_qdma_ep_part_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst/ch3_txoutclk          |             1.0 |
+| clk_pl_0                | cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pmc_pl_ref_clk[0]                      |             2.3 |
+| clk_pl_1                | cpm_qdma_ep_part_i/versal_cips_0/inst/pspmc_0/inst/pmc_pl_ref_clk[1]                      |             4.0 |
+| mc_clk_xpll             | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/mc_clk_xpll             |             1.3 |
+| pll_clk_xpll            | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/pll_clk_xpll            |             0.3 |
+| pll_clktoxphy[0]        | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/pll_clktoxphy[0]        |             0.3 |
+| pll_clktoxphy[2]        | cpm_qdma_ep_part_i/axi_noc_0/inst/MC0_ddrc/inst/noc_ddr4_phy/inst/pll_clktoxphy[2]        |             0.3 |
+| sys_clk0_0_clk_p[0]     | sys_clk0_0_clk_p[0]                                                                       |             5.0 |
++-------------------------+-------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------+-----------+
+| Name                         | Power (W) |
++------------------------------+-----------+
+| cpm_qdma_ep_part_wrapper     |    14.150 |
+|   cpm_qdma_ep_part_i         |    13.519 |
+|     axi_bram_ctrl_0          |     0.045 |
+|       U0                     |     0.045 |
+|     axi_bram_ctrl_0_bram     |     0.036 |
+|       inst                   |     0.036 |
+|     axi_noc_0                |     5.419 |
+|       inst                   |     5.419 |
+|     pcie_qdma_mailbox_0      |     0.142 |
+|       inst                   |     0.142 |
+|     smartconnect_0           |     0.020 |
+|       inst                   |     0.020 |
+|     smartconnect_1           |     0.022 |
+|       inst                   |     0.022 |
+|     versal_cips_0            |     7.834 |
+|       inst                   |     7.834 |
+|   dma1_qdma_app_i            |     0.631 |
+|     axi_st_module_i          |     0.395 |
+|       ST_c2h_0               |     0.164 |
+|       ST_c2h_cmpt_0          |     0.103 |
+|       ST_c2h_perf_cntr_i     |     0.003 |
+|       ST_h2c_perf_cntr_i     |     0.003 |
+|       crc32_gen_i            |     0.005 |
+|       dsc_crdt_wrapper_i     |     0.002 |
+|       l3fwd_cntr_i           |     0.115 |
+|     dsc_byp_c2h_i            |     0.019 |
+|       xpm_fifo_desc_c2h_MM_i |     0.012 |
+|       xpm_fifo_desc_c2h_ST_i |     0.007 |
+|     dsc_byp_h2c_i            |     0.022 |
+|       xpm_fifo_desc_h2c_MM_i |     0.012 |
+|       xpm_fifo_desc_h2c_ST_i |     0.009 |
+|     user_control_i           |     0.194 |
+|       queue_cnts_i           |     0.167 |
++------------------------------+-----------+
+
+

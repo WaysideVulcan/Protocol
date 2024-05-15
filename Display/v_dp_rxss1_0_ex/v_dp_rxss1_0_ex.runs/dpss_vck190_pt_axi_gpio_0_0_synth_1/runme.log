@@ -1,0 +1,181 @@
+
+*** Running vivado
+    with args -log dpss_vck190_pt_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_axi_gpio_0_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source dpss_vck190_pt_axi_gpio_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 583.059 ; gain = 181.035
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_gpio_0_0
+Command: synth_design -top dpss_vck190_pt_axi_gpio_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6936
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 2011.348 ; gain = 438.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dpss_vck190_pt_axi_gpio_0_0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_gpio_0_0/synth/dpss_vck190_pt_axi_gpio_0_0.vhd:84]
+	Parameter C_FAMILY bound to: versal - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:1270' bound to instance 'U0' of component 'axi_gpio' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_gpio_0_0/synth/dpss_vck190_pt_axi_gpio_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'dpss_vck190_pt_axi_gpio_0_0' (0#1) [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_gpio_0_0/synth/dpss_vck190_pt_axi_gpio_0_0.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:322]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:322]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:489]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_in in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[4] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[7] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[8] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[0] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[0] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[4] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[5] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[6] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[7] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[8] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[9] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[10] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[11] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[12] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[13] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[14] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[15] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[16] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[17] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[18] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[19] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[20] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[21] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[22] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[23] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[24] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[25] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[26] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[27] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[28] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[29] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[30] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[31] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[0] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[1] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[2] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[4] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[7] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[8] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2128.238 ; gain = 555.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2128.238 ; gain = 555.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2128.238 ; gain = 555.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2128.238 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 61 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+The application has run out of memory
+    while executing
+"synth_design -top dpss_vck190_pt_axi_gpio_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context"
+    invoked from within
+"if { $cacheID == "" } {
+close [open __synthesis_is_running__ w]
+
+OPTRACE "synth_design" START { }
+synth_design -top dpss_vck190_pt_axi_gpio_0_0 -part ..."
+    (file "dpss_vck190_pt_axi_gpio_0_0.tcl" line 116)
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:00:32 2024...

@@ -1,0 +1,3 @@
+28 errors generated.
+Error while processing C:\Vulcan\Protocol\Display\v_dp_rxss1_0_ex\v_dp_rxss1_0_ex.runs\dpss_vck190_pt_v_frmbuf_rd_0_0_synth_1\prj\sol\.autopilot\db\v_frmbuf_rd.pp.0.cpp.
+clang-tidy applied 361 of 361 suggested fixes.

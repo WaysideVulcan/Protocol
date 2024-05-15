@@ -1,0 +1,124 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.456308",
+   "Default View_TopLeft":"-149,-167",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port GT_Serial -pg 1 -lvl 7 -x 3010 -y 710 -defaultsOSRD
+preplace port CH0_DDR4_0_0 -pg 1 -lvl 7 -x 3010 -y 560 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 7 -x 3010 -y 540 -defaultsOSRD
+preplace port aud_mclk_in -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port refclk -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port sys_clk0_0 -pg 1 -lvl 0 -x 0 -y 760 -defaultsOSRD
+preplace port port-id_aux_rx_data_in -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_aux_rx_data_out -pg 1 -lvl 7 -x 3010 -y 240 -defaultsOSRD
+preplace port port-id_aux_tx_data_in -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace port port-id_aux_tx_data_out -pg 1 -lvl 7 -x 3010 -y 1370 -defaultsOSRD
+preplace port port-id_lrclk_rx -pg 1 -lvl 7 -x 3010 -y 1390 -defaultsOSRD
+preplace port port-id_lrclk_tx -pg 1 -lvl 7 -x 3010 -y 1020 -defaultsOSRD
+preplace port port-id_mclk_out_rx -pg 1 -lvl 7 -x 3010 -y 1200 -defaultsOSRD
+preplace port port-id_mclk_out_tx -pg 1 -lvl 7 -x 3010 -y 1300 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_rx_hpd -pg 1 -lvl 7 -x 3010 -y 1000 -defaultsOSRD
+preplace port port-id_sclk_rx -pg 1 -lvl 7 -x 3010 -y 1410 -defaultsOSRD
+preplace port port-id_sclk_tx -pg 1 -lvl 7 -x 3010 -y 1040 -defaultsOSRD
+preplace port port-id_sdata_rx -pg 1 -lvl 0 -x 0 -y 1110 -defaultsOSRD
+preplace port port-id_sdata_tx -pg 1 -lvl 7 -x 3010 -y 400 -defaultsOSRD
+preplace port port-id_tx_hpd -pg 1 -lvl 0 -x 0 -y 1170 -defaultsOSRD
+preplace portBus OBUF_DS_P_0 -pg 1 -lvl 7 -x 3010 -y 200 -defaultsOSRD
+preplace portBus aux_rx_data_en_out_n -pg 1 -lvl 7 -x 3010 -y 220 -defaultsOSRD
+preplace portBus aux_tx_data_en_out_n -pg 1 -lvl 7 -x 3010 -y 1350 -defaultsOSRD
+preplace portBus pwd -pg 1 -lvl 7 -x 3010 -y 1100 -defaultsOSRD
+preplace inst gt_quad -pg 1 -lvl 6 -x 2720 -y 790 -defaultsOSRD
+preplace inst clk_wizard_1 -pg 1 -lvl 3 -x 980 -y 690 -defaultsOSRD
+preplace inst dp_rx_hier_0 -pg 1 -lvl 3 -x 980 -y 260 -defaultsOSRD
+preplace inst dp_tx_hier_0 -pg 1 -lvl 4 -x 1500 -y 1080 -defaultsOSRD
+preplace inst oddr_0 -pg 1 -lvl 6 -x 2720 -y 1200 -defaultsOSRD
+preplace inst oddr_1 -pg 1 -lvl 6 -x 2720 -y 1300 -defaultsOSRD
+preplace inst processor_hier_0 -pg 1 -lvl 5 -x 2120 -y 710 -defaultsOSRD
+preplace inst util_ds_buf_2_aud -pg 1 -lvl 1 -x 180 -y 830 -defaultsOSRD
+preplace inst util_ds_buf_aud -pg 1 -lvl 2 -x 510 -y 890 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -x 2720 -y 1100 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 180 -y 940 -defaultsOSRD
+preplace netloc bufg_gt_usrclk 1 2 5 770 760 1270J 750 1750J 1030 NJ 1030 2950
+preplace netloc gt_quad_base_gtpowergood 1 2 5 700 1210 1160 1320 1940 1040 NJ 1040 2900
+preplace netloc bufg_gt_1_usrclk 1 3 4 1300 1400 NJ 1400 NJ 1400 2910
+preplace netloc In4_1 1 3 2 1240J 650 1760
+preplace netloc aux_rx_data_in_1 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc aux_tx_data_in_1 1 0 4 NJ 1000 NJ 1000 680J 970 NJ
+preplace netloc axi_gpio_0_gpio_io_o 1 2 4 790 520 1200J 370 NJ 370 2340
+preplace netloc clk_wizard_0_clk_out1 1 3 3 1300 760 1820J 940 2350
+preplace netloc clk_wizard_1_clk_out1 1 2 4 750 780 1240 780 1830J 910 2320
+preplace netloc clk_wizard_1_clk_out2 1 3 1 1220 690n
+preplace netloc ctl_reset_1 1 2 4 760 770 NJ 770 1840J 920 2290
+preplace netloc dcm_locked_0_1 1 2 4 740 790 NJ 790 1780J 950 2330
+preplace netloc dp_rx_hier_0_Dout 1 2 2 800 560 1160
+preplace netloc dp_rx_hier_0_aud_clk_out_0 1 3 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc dp_rx_hier_0_aux_rx_data_en_out_n_0 1 3 4 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc dp_rx_hier_0_aux_rx_data_out_0 1 3 4 NJ 240 NJ 240 NJ 240 NJ
+preplace netloc dp_rx_hier_0_dprxss_dp_irq 1 3 2 NJ 260 1930
+preplace netloc dp_rx_hier_0_irq 1 3 2 NJ 300 1920
+preplace netloc dp_rx_hier_0_lrclk_out_0 1 3 4 1230J 630 1810J 1020 NJ 1020 NJ
+preplace netloc dp_rx_hier_0_peripheral_aresetn1 1 3 1 1180 340n
+preplace netloc dp_rx_hier_0_rx_hpd 1 3 4 NJ 360 NJ 360 NJ 360 2990J
+preplace netloc dp_rx_hier_0_sclk_out_0 1 3 4 NJ 380 NJ 380 NJ 380 2970J
+preplace netloc dp_rx_hier_0_sdata_0_out_0 1 3 4 1190J 390 NJ 390 NJ 390 2980J
+preplace netloc dp_tx_hier_0_aux_tx_data_en_out_n 1 4 3 NJ 1050 2360J 1360 2990J
+preplace netloc dp_tx_hier_0_aux_tx_data_out 1 4 3 NJ 1070 2350J 1370 NJ
+preplace netloc dp_tx_hier_0_lrclk_out_0 1 4 3 NJ 1130 2340J 1390 NJ
+preplace netloc dp_tx_hier_0_sclk_out_0 1 4 3 NJ 1150 2330J 1410 NJ
+preplace netloc ext_reset_in_0_1 1 0 5 NJ 210 NJ 210 690 540 1170 640 1910
+preplace netloc oddr_0_clk_out 1 6 1 NJ 1200
+preplace netloc oddr_1_clk_out 1 6 1 NJ 1300
+preplace netloc processor_hier_0_Dout 1 3 3 1290 430 NJ 430 2330
+preplace netloc processor_hier_0_peripheral_aresetn 1 3 3 1310 830 1690J 960 2340
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 2 4 720 1150 1230 1330 NJ 1330 2310
+preplace netloc sdata_0_in_0_1 1 0 4 NJ 1110 NJ 1110 NJ 1110 NJ
+preplace netloc tx_hpd_1 1 0 4 NJ 1170 NJ 1170 NJ 1170 NJ
+preplace netloc util_ds_buf_2_aud_IBUF_DS_ODIV2 1 1 1 NJ 840
+preplace netloc util_ds_buf_aud_BUFG_GT_O 1 2 4 680 810 1270 810 1700J 980 2430
+preplace netloc v_dp_txss1_0_dptxss_dp_irq 1 4 1 1920 710n
+preplace netloc v_frmbuf_rd_0_interrupt 1 4 1 1930 770n
+preplace netloc xlconstant_0_dout 1 6 1 NJ 1100
+preplace netloc xlconstant_1_dout 1 1 1 340J 860n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 2 4 710 820 1260 820 1740J 930 2300
+preplace netloc hsclk1_lcpllreset_1 1 3 3 NJ 420 NJ 420 2450
+preplace netloc gt_bufgtclr_1 1 3 3 1210J 400 NJ 400 2460
+preplace netloc hsclk0_lcpllreset_1 1 3 3 NJ 460 1700J 440 2380
+preplace netloc gt_quad_hsclk0_lcplllock 1 2 5 730 800 NJ 800 1730J 1010 NJ 1010 2920
+preplace netloc gt_quad_hsclk1_lcplllock 1 2 5 780 530 1220J 410 NJ 410 NJ 410 2900
+preplace netloc gt_quad_hsclk0_rplllock 1 3 4 1280 1380 NJ 1380 NJ 1380 2940
+preplace netloc hsclk0_rpllreset_1 1 4 2 NJ 1170 2440
+preplace netloc gt_quad_hsclk1_rplllock 1 3 4 1310 1420 NJ 1420 NJ 1420 2960
+preplace netloc gt_bufgtclr1_1 1 4 2 1950J 970 2520
+preplace netloc hsclk1_rpllreset_1 1 4 2 NJ 1210 2540
+preplace netloc gt_quad_usrclk1 1 3 4 1290 1430 NJ 1430 NJ 1430 2930
+preplace netloc gt_quad_base_GT_Serial 1 6 1 NJ 710
+preplace netloc CLK_IN_D_0_2 1 0 1 NJ 820
+preplace netloc S00_AXIS_1 1 3 1 1250 60n
+preplace netloc S01_AXI_1 1 4 1 1770 650n
+preplace netloc dp_rx_hier_0_rx_video_MM 1 3 2 NJ 80 1940
+preplace netloc processor_hier_0_CH0_DDR4_0_0 1 5 2 NJ 560 NJ
+preplace netloc processor_hier_0_IIC_0 1 5 2 2360J 540 NJ
+preplace netloc processor_hier_0_M02_AXI 1 2 4 800 510 NJ 510 1700J 480 2300
+preplace netloc processor_hier_0_M09_AXI 1 3 3 1280 350 NJ 350 2290
+preplace netloc sys_clk0_0_1 1 0 5 NJ 760 NJ 760 690J 620 NJ 620 1850J
+preplace netloc RX3_GT_IP_Interface_1 1 3 3 NJ 100 NJ 100 2530
+preplace netloc RX0_GT_IP_Interface_1 1 3 3 NJ 120 NJ 120 2540
+preplace netloc RX1_GT_IP_Interface_1 1 3 3 NJ 140 NJ 140 2520
+preplace netloc RX2_GT_IP_Interface_1 1 3 3 NJ 160 NJ 160 2500
+preplace netloc TX3_GT_IP_Interface_1 1 4 2 1800 470 2480J
+preplace netloc TX1_GT_IP_Interface_1 1 4 2 1790 460 2490J
+preplace netloc TX0_GT_IP_Interface_1 1 4 2 1710 450 2510J
+preplace netloc TX2_GT_IP_Interface_1 1 4 2 1720 490 2470J
+preplace netloc processor_hier_0_M05_AXI_0 1 5 1 2360 620n
+preplace netloc refclk_1 1 0 6 NJ 550 NJ 550 NJ 550 NJ 550 1810J 500 2370J
+levelinfo -pg 1 0 180 510 980 1500 2120 2720 3010
+pagesize -pg 1 -db -bbox -sgen -150 0 3240 1440
+"
+}
+{
+   "da_versal_dp_rx_ss_cnt":"1",
+   "da_versal_dp_tx_ss_cnt":"1"
+}

@@ -1,0 +1,635 @@
+*****New Version*****
+Channel 0:
+Simplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT1.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 4
+Number of Rx Rates: 4
+
+Channel 1:
+Simplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT1.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 4
+Number of Rx Rates: 4
+
+Channel 2:
+Simplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT1.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 4
+Number of Rx Rates: 4
+
+Channel 3:
+Simplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT1.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 4
+Number of Rx Rates: 4
+
+Parsing Channel 0 TX
+Parsing Channel 0 RX
+Parsing Channel 1 TX
+Parsing Channel 1 RX
+Parsing Channel 2 TX
+Parsing Channel 2 RX
+Parsing Channel 3 TX
+Parsing Channel 3 RX
+LCPLL_CFG2 added to Channel 0 RX
+Channel 0 A_CFG1 adjusted
+Channel 0 A_CFG1 adjusted
+Channel 0 A_CFG1 adjusted
+Channel 0 A_CFG1 adjusted
+Channel 0 MST_RESET_CFG adjusted
+Channel 0 MST_RESET_CFG adjusted
+Channel 0 MST_RESET_CFG adjusted
+Channel 0 CTRL_RSV_CFG0 adjusted
+Channel 0 CTRL_RSV_CFG0 adjusted
+Channel 0 CTRL_RSV_CFG0 adjusted
+Masked Attribute List
+CH_0_PIPE_CTRL_CFG3
+CH_0_PIPE_CTRL_CFG7
+CH_0_RX_PHALIGN_CFG0
+CH_0_RX_PHALIGN_CFG1
+CH_0_TX_PCS_CFG0
+CH_0_TX_PHALIGN_CFG0
+CH_0_TX_PHALIGN_CFG1
+CH_1_PIPE_CTRL_CFG3
+CH_1_PIPE_CTRL_CFG7
+CH_1_RX_PHALIGN_CFG0
+CH_1_RX_PHALIGN_CFG1
+CH_1_TX_PCS_CFG0
+CH_1_TX_PHALIGN_CFG0
+CH_1_TX_PHALIGN_CFG1
+CH_2_PIPE_CTRL_CFG3
+CH_2_PIPE_CTRL_CFG7
+CH_2_RX_PHALIGN_CFG0
+CH_2_RX_PHALIGN_CFG1
+CH_2_TX_PCS_CFG0
+CH_2_TX_PHALIGN_CFG0
+CH_2_TX_PHALIGN_CFG1
+CH_3_PIPE_CTRL_CFG3
+CH_3_PIPE_CTRL_CFG7
+CH_3_RX_PHALIGN_CFG0
+CH_3_RX_PHALIGN_CFG1
+CH_3_TX_PCS_CFG0
+CH_3_TX_PHALIGN_CFG0
+CH_3_TX_PHALIGN_CFG1
+CTRL_A_CFG1
+Non-Masked Attribute List
+CH_0_EYESCAN_CFG16
+CH_0_RX_CDR_CFG0
+CH_0_RX_CDR_CFG2
+CH_0_RX_PHALIGN_CFG3
+CH_0_TX_PHALIGN_CFG2
+CH_0_TX_PHALIGN_CFG4
+CH_0_TX_PHALIGN_CFG5
+CH_1_EYESCAN_CFG16
+CH_1_RX_CDR_CFG0
+CH_1_RX_CDR_CFG2
+CH_1_RX_PHALIGN_CFG3
+CH_1_TX_PHALIGN_CFG2
+CH_1_TX_PHALIGN_CFG4
+CH_1_TX_PHALIGN_CFG5
+CH_2_EYESCAN_CFG16
+CH_2_RX_CDR_CFG0
+CH_2_RX_CDR_CFG2
+CH_2_RX_PHALIGN_CFG3
+CH_2_TX_PHALIGN_CFG2
+CH_2_TX_PHALIGN_CFG4
+CH_2_TX_PHALIGN_CFG5
+CH_3_EYESCAN_CFG16
+CH_3_RX_CDR_CFG0
+CH_3_RX_CDR_CFG2
+CH_3_RX_PHALIGN_CFG3
+CH_3_TX_PHALIGN_CFG2
+CH_3_TX_PHALIGN_CFG4
+CH_3_TX_PHALIGN_CFG5
+HS_0_LCPLL_CFG2
+HS_1_LCPLL_CFG2
+
+Channel 0 Writable Lists
+
+***TX Masked Writable Lists***
+Name: TX_PCS_CFG0
+Address: 119
+Name: TX_PHALIGN_CFG0
+Address: 151
+Name: TX_PHALIGN_CFG1
+Address: 152
+Name: PIPE_CTRL_CFG3
+Address: 160
+Name: PIPE_CTRL_CFG7
+Address: 164
+Name: A_CFG1
+Address: 530
+***TX Writable Lists***
+Name: TX_PHALIGN_CFG2
+Address: 153
+Name: TX_PHALIGN_CFG4
+Address: 155
+Name: TX_PHALIGN_CFG5
+Address: 156
+TX Channel 1 Skipped
+TX Channel 2 Skipped
+TX Channel 3 Skipped
+***RX Masked Writable Lists***
+Name: TX_PCS_CFG0
+Address: 119
+Name: RX_PHALIGN_CFG0
+Address: 145
+Name: RX_PHALIGN_CFG1
+Address: 146
+Name: PIPE_CTRL_CFG3
+Address: 160
+Name: PIPE_CTRL_CFG7
+Address: 164
+Name: A_CFG1
+Address: 530
+***RX Writable Lists***
+Name: LCPLL_CFG2
+Address: 29
+Name: RX_CDR_CFG0
+Address: 46
+Name: RX_CDR_CFG2
+Address: 48
+Name: EYESCAN_CFG16
+Address: 139
+Name: RX_PHALIGN_CFG3
+Address: 148
+Name: LCPLL_CFG2
+Address: 541
+RX Channel 1 Skipped
+RX Channel 2 Skipped
+RX Channel 3 Skipped
+***Writing TX Rate Table***
+
+TX Channel 0
+
+Rate: 0
+TX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: TX_PHALIGN_CFG0
+Address: 151
+Value: 4292608
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: TX_PHALIGN_CFG1
+Address: 152
+Value: 121925636
+Mask: 00000111100000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 228065583
+Mask: 00000001100000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 72734045
+Mask: 00000000000000000111011101110111
+Name: A_CFG1
+Address: 530
+Value: 372119086
+Mask: 00011111000000000001111100000000
+TX Normal
+
+Burst No Rom
+Name: TX_PHALIGN_CFG2
+Addr: 153
+Value: 360504
+Name: TX_PHALIGN_CFG4
+Addr: 155
+Value: 406454496
+Name: TX_PHALIGN_CFG5
+Addr: 156
+Value: 256
+
+Rate: 1
+TX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: TX_PHALIGN_CFG0
+Address: 151
+Value: 2195456
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: TX_PHALIGN_CFG1
+Address: 152
+Value: 63205380
+Mask: 00000111100000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 219676975
+Mask: 00000001100000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 72733501
+Mask: 00000000000000000111011101110111
+Name: A_CFG1
+Address: 530
+Value: 305009198
+Mask: 00011111000000000001111100000000
+TX Normal
+
+Burst No Rom
+Name: TX_PHALIGN_CFG2
+Addr: 153
+Value: 229432
+Name: TX_PHALIGN_CFG4
+Addr: 155
+Value: 404619488
+Name: TX_PHALIGN_CFG5
+Addr: 156
+Value: 128
+
+Rate: 2
+TX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: TX_PHALIGN_CFG0
+Address: 151
+Value: 1146880
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: TX_PHALIGN_CFG1
+Address: 152
+Value: 46428164
+Mask: 00000111100000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 211288367
+Mask: 00000001100000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 72732957
+Mask: 00000000000000000111011101110111
+Name: A_CFG1
+Address: 530
+Value: 305009198
+Mask: 00011111000000000001111100000000
+TX Normal
+
+Burst No Rom
+Name: TX_PHALIGN_CFG2
+Addr: 153
+Value: 98360
+Name: TX_PHALIGN_CFG4
+Addr: 155
+Value: 404095200
+Name: TX_PHALIGN_CFG5
+Addr: 156
+Value: 64
+
+Rate: 3
+TX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: TX_PHALIGN_CFG0
+Address: 151
+Value: 622592
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: TX_PHALIGN_CFG1
+Address: 152
+Value: 29650948
+Mask: 00000111100000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 202899759
+Mask: 00000001100000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 72732685
+Mask: 00000000000000000111011101110111
+Name: A_CFG1
+Address: 530
+Value: 221121838
+Mask: 00011111000000000001111100000000
+TX Normal
+
+Burst No Rom
+Name: TX_PHALIGN_CFG2
+Addr: 153
+Value: 65592
+Name: TX_PHALIGN_CFG4
+Addr: 155
+Value: 403570912
+Name: TX_PHALIGN_CFG5
+Addr: 156
+Value: 32
+
+TX Channel 1
+
+TX Channel 2
+
+TX Channel 3
+***Writing RX Rate Table***
+
+RX Channel 0
+
+Rate: 0
+RX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: RX_PHALIGN_CFG0
+Address: 145
+Value: 4292611
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG1
+Address: 146
+Value: 3900932104
+Mask: 11110000000000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 228065583
+Mask: 00001100000000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 72734045
+Mask: 00000000011101110111000000000000
+Name: A_CFG1
+Address: 530
+Value: 372119086
+Mask: 00000000001110100000000000111010
+RX Normal
+
+No Burst No Rom
+Name: LCPLL_CFG2
+Address: 29
+Value: 2185888264
+Name: RX_CDR_CFG0
+Address: 46
+Value: 67
+
+No Burst No Rom
+Name: RX_CDR_CFG2
+Address: 48
+Value: 134236673
+Name: EYESCAN_CFG16
+Address: 139
+Value: 3578789888
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG3
+Address: 148
+Value: 3892543488
+Name: LCPLL_CFG2
+Address: 541
+Value: 2185888264
+
+Rate: 1
+RX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: RX_PHALIGN_CFG0
+Address: 145
+Value: 2195459
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG1
+Address: 146
+Value: 2021883912
+Mask: 11110000000000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 160956719
+Mask: 00001100000000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 70505821
+Mask: 00000000011101110111000000000000
+Name: A_CFG1
+Address: 530
+Value: 371594790
+Mask: 00000000001110100000000000111010
+RX Normal
+
+No Burst No Rom
+Name: LCPLL_CFG2
+Address: 29
+Value: 2187067912
+Name: RX_CDR_CFG0
+Address: 46
+Value: 67
+
+No Burst No Rom
+Name: RX_CDR_CFG2
+Address: 48
+Value: 134236674
+Name: EYESCAN_CFG16
+Address: 139
+Value: 3578789888
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG3
+Address: 148
+Value: 2013495296
+Name: LCPLL_CFG2
+Address: 541
+Value: 2187067912
+
+Rate: 2
+RX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: RX_PHALIGN_CFG0
+Address: 145
+Value: 1146883
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG1
+Address: 146
+Value: 1485013000
+Mask: 11110000000000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 93847855
+Mask: 00001100000000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 68277597
+Mask: 00000000011101110111000000000000
+Name: A_CFG1
+Address: 530
+Value: 371594790
+Mask: 00000000001110100000000000111010
+RX Normal
+
+No Burst No Rom
+Name: LCPLL_CFG2
+Address: 29
+Value: 2187067912
+Name: RX_CDR_CFG0
+Address: 46
+Value: 67
+
+No Burst No Rom
+Name: RX_CDR_CFG2
+Address: 48
+Value: 134236722
+Name: EYESCAN_CFG16
+Address: 139
+Value: 2147483648
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG3
+Address: 148
+Value: 1476624384
+Name: LCPLL_CFG2
+Address: 541
+Value: 2187067912
+
+Rate: 3
+RX Masked
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 119
+Value: 1075839744
+Mask: 00000000000000000000000000000000
+Name: RX_PHALIGN_CFG0
+Address: 145
+Value: 622595
+Mask: 00000000011110000000000000000000
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG1
+Address: 146
+Value: 948142088
+Mask: 11110000000000000000000000000000
+Name: PIPE_CTRL_CFG3
+Address: 160
+Value: 26738991
+Mask: 00001100000000000000000000000000
+
+No Burst No Rom
+Name: PIPE_CTRL_CFG7
+Address: 164
+Value: 67163485
+Mask: 00000000011101110111000000000000
+Name: A_CFG1
+Address: 530
+Value: 370939420
+Mask: 00000000001110100000000000111010
+RX Normal
+
+No Burst No Rom
+Name: LCPLL_CFG2
+Address: 29
+Value: 2189361672
+Name: RX_CDR_CFG0
+Address: 46
+Value: 2483355715
+
+No Burst No Rom
+Name: RX_CDR_CFG2
+Address: 48
+Value: 134236757
+Name: EYESCAN_CFG16
+Address: 139
+Value: 0
+
+No Burst No Rom
+Name: RX_PHALIGN_CFG3
+Address: 148
+Value: 939753472
+Name: LCPLL_CFG2
+Address: 541
+Value: 2189361672
+
+RX Channel 1
+
+RX Channel 2
+
+RX Channel 3
+***Rate Table Structure***
+
+Channel 0
+Rate Block Size TX: 19
+Number of Rates TX: 4
+
+Channel 1
+Rate Block Size TX: 0
+Number of Rates TX: 4
+
+Channel 2
+Rate Block Size TX: 0
+Number of Rates TX: 4
+
+Channel 3
+Rate Block Size TX: 0
+Number of Rates TX: 4
+
+Channel 0
+Rate Block Size RX: 24
+Number of Rates RX: 4
+
+Channel 1
+Rate Block Size RX: 0
+Number of Rates RX: 4
+
+Channel 2
+Rate Block Size RX: 0
+Number of Rates RX: 4
+
+Channel 3
+Rate Block Size RX: 0
+Number of Rates RX: 4

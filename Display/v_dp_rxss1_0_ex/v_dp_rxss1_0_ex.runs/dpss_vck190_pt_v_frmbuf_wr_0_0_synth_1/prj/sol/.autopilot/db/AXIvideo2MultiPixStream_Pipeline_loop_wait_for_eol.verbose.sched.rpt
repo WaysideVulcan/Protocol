@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol'
+================================================================
+* Date:           Thu May  9 19:06:35 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.826 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        2|        2|  6.666 ns|  6.666 ns|    2|    2|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_wait_for_eol  |        0|        0|         1|          1|          1|     0|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_id_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_last_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_user_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i15 %s_axis_video_V_strb_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i15 %s_axis_video_V_keep_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %s_axis_video_V_data_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_23, void @empty_23, void @empty_23, i32 0, i32 0, i32 0, i32 0, void @empty_23, void @empty_23, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%muxLogicCE_to_eol_reload_read = muxlogic"   --->   Operation 12 'muxlogic' 'muxLogicCE_to_eol_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%eol_reload_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %eol_reload"   --->   Operation 13 'read' 'eol_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%muxLogicCE_to_select_ln306_read = muxlogic"   --->   Operation 14 'muxlogic' 'muxLogicCE_to_select_ln306_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%select_ln306_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %select_ln306"   --->   Operation 15 'read' 'select_ln306_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%muxLogicCE_to_axi_data_3_reload_read = muxlogic"   --->   Operation 16 'muxlogic' 'muxLogicCE_to_axi_data_3_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%axi_data_3_reload_read = read i120 @_ssdm_op_Read.ap_auto.i120, i120 %axi_data_3_reload"   --->   Operation 17 'read' 'axi_data_3_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%muxLogicData_to_store_ln226 = muxlogic i120 %axi_data_3_reload_read"   --->   Operation 18 'muxlogic' 'muxLogicData_to_store_ln226' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%muxLogicAddr_to_store_ln226 = muxlogic i120 %axi_data_4_out"   --->   Operation 19 'muxlogic' 'muxLogicAddr_to_store_ln226' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.49ns)   --->   "%store_ln226 = store i120 %axi_data_3_reload_read, i120 %axi_data_4_out" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226]   --->   Operation 20 'store' 'store_ln226' <Predicate = true> <Delay = 0.49>
+ST_1 : Operation 21 [1/1] (0.33ns)   --->   "%br_ln0 = br void %while.cond61"   --->   Operation 21 'br' 'br_ln0' <Predicate = true> <Delay = 0.33>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%axi_last_4 = phi i1 %select_ln306_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 22 'phi' 'axi_last_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%eol_2 = phi i1 %eol_reload_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 23 'phi' 'eol_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %eol_2, void %while.body63, void %for.inc69.exitStub" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 24 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln308 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_23" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:308]   --->   Operation 25 'specpipeline' 'specpipeline_ln308' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln309 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 0, i64 0" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:309]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln309' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 27 'specloopname' 'specloopname_ln306' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%muxLogicCE_to_empty = muxlogic"   --->   Operation 28 'muxlogic' 'muxLogicCE_to_empty' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.00ns)   --->   "%empty = read i154 @_ssdm_op_Read.axis.volatile.i120P0A.i15P0A.i15P0A.i1P0A.i1P0A.i1P0A.i1P0A, i120 %s_axis_video_V_data_V, i15 %s_axis_video_V_keep_V, i15 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 29 'read' 'empty' <Predicate = (!eol_2)> <Delay = 1.00> <CoreInst = "axis">   --->   Core 127 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%axi_data = extractvalue i154 %empty" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 30 'extractvalue' 'axi_data' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%axi_last = extractvalue i154 %empty" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 31 'extractvalue' 'axi_last' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%muxLogicData_to_store_ln226 = muxlogic i120 %axi_data"   --->   Operation 32 'muxlogic' 'muxLogicData_to_store_ln226' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%muxLogicAddr_to_store_ln226 = muxlogic i120 %axi_data_4_out"   --->   Operation 33 'muxlogic' 'muxLogicAddr_to_store_ln226' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.49ns)   --->   "%store_ln226 = store i120 %axi_data, i120 %axi_data_4_out" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226]   --->   Operation 34 'store' 'store_ln226' <Predicate = (!eol_2)> <Delay = 0.49>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln306 = br void %while.cond61" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 35 'br' 'br_ln306' <Predicate = (!eol_2)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln311 = muxlogic i1 %axi_last_4"   --->   Operation 36 'muxlogic' 'muxLogicData_to_write_ln311' <Predicate = (eol_2)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%write_ln311 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %axi_last_4_out, i1 %axi_last_4" [C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 37 'write' 'write_ln311' <Predicate = (eol_2)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 38 'ret' 'ret_ln0' <Predicate = (eol_2)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 1.826ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 1 bit ('axi.last') with incoming values : ('eol_reload_read') ('axi.last', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311) [33]  (0.330 ns)
+	'phi' operation 1 bit ('axi.last') with incoming values : ('eol_reload_read') ('axi.last', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311) [33]  (0.000 ns)
+	axis read operation ('empty', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311) on port 's_axis_video_V_data_V' (C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311) [40]  (1.000 ns)
+	'muxlogic' operation 0 bit ('muxLogicData_to_store_ln226') [43]  (0.000 ns)
+	'store' operation 0 bit ('store_ln226', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226) of variable 'axi.data', C:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311 on local variable 'axi_data_4_out' [45]  (0.496 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

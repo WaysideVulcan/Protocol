@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<POWERDATA data="NOC Compiler" dataVersion="2019.1.0">
+<NOC_ROUTES>
+<CLK clk_freq ="1000" used_clk_buffers ="11" total_clk_buffers ="58" dfx_usage ="FLAT"></CLK>
+<PATH type ="Read" name ="DDRMC/MC0_ddrc/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/MC0_ddrc" slave_type="DDRC" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="DDRMC_X0Y0/Port0_resp" sink_port="NOC_NPS5555_X2Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X2Y0/port0_out" sink_port="NOC_NPS5555_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y0/port3_out" sink_port="NOC_NPS5555_X0Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y1/port0_out" sink_port="NOC_NPS5555_X1Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port3_out" sink_port="NOC_NMU128_X0Y0/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="DDRMC/MC0_ddrc/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/MC0_ddrc" slave_type="DDRC" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y0/req_out" sink_port="NOC_NPS5555_X1Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port0_out" sink_port="NOC_NPS5555_X0Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y1/port1_out" sink_port="NOC_NPS5555_X0Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y0/port2_out" sink_port="NOC_NPS5555_X2Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X2Y0/port3_out" sink_port="DDRMC_X0Y0/Port0_req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M01_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y2/resp" sink_port="NOC_NPS_VNOC_X0Y4/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y4/port0_out" sink_port="NOC_NPS_VNOC_X0Y2/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port0_out" sink_port="NOC_NPS_VNOC_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port1_out" sink_port="NOC_NPS5555_X7Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port0_out" sink_port="NOC_NPS5555_X5Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port0_out" sink_port="NOC_NPS5555_X3Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port0_out" sink_port="NOC_NPS5555_X1Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port3_out" sink_port="NOC_NMU128_X0Y0/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y0/req_out" sink_port="NOC_NPS5555_X1Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port2_out" sink_port="NOC_NPS5555_X3Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port2_out" sink_port="NOC_NPS5555_X5Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port2_out" sink_port="NOC_NPS5555_X7Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port3_out" sink_port="NOC_NPS5555_X7Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port2_out" sink_port="NOC_NPS_VNOC_X0Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port2_out" sink_port="NOC_NPS_VNOC_X0Y4/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y4/port3_out" sink_port="NOC_NSU512_X0Y2/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M02_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M02_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y0/resp" sink_port="NOC_NPS_VNOC_X0Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port1_out" sink_port="NOC_NPS5555_X7Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port0_out" sink_port="NOC_NPS5555_X5Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port0_out" sink_port="NOC_NPS5555_X3Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port0_out" sink_port="NOC_NPS5555_X1Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port3_out" sink_port="NOC_NMU128_X0Y0/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M02_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M02_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y0/req_out" sink_port="NOC_NPS5555_X1Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port2_out" sink_port="NOC_NPS5555_X3Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port2_out" sink_port="NOC_NPS5555_X5Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port2_out" sink_port="NOC_NPS5555_X7Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port3_out" sink_port="NOC_NPS5555_X7Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port3_out" sink_port="NOC_NSU512_X0Y0/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y1/resp" sink_port="NOC_NPS_VNOC_X0Y2/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port0_out" sink_port="NOC_NPS_VNOC_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port1_out" sink_port="NOC_NPS5555_X7Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port0_out" sink_port="NOC_NPS5555_X5Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port0_out" sink_port="NOC_NPS5555_X3Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port0_out" sink_port="NOC_NPS5555_X1Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port3_out" sink_port="NOC_NMU128_X0Y0/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S00_AXI_nmu" master_name="axi_noc_0/inst/S00_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y0/req_out" sink_port="NOC_NPS5555_X1Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y0/port2_out" sink_port="NOC_NPS5555_X3Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y0/port2_out" sink_port="NOC_NPS5555_X5Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y0/port2_out" sink_port="NOC_NPS5555_X7Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y0/port3_out" sink_port="NOC_NPS5555_X7Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port2_out" sink_port="NOC_NPS_VNOC_X0Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port3_out" sink_port="NOC_NSU512_X0Y1/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="DDRMC/MC0_ddrc/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/MC0_ddrc" slave_type="DDRC" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="DDRMC_X0Y0/Port0_resp" sink_port="NOC_NPS5555_X2Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X2Y0/port0_out" sink_port="NOC_NPS5555_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y0/port3_out" sink_port="NOC_NPS5555_X0Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y1/port3_out" sink_port="NOC_NPS5555_X1Y1/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port1_out" sink_port="NOC_NMU128_X0Y1/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="DDRMC/MC0_ddrc/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/MC0_ddrc" slave_type="DDRC" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y1/req_out" sink_port="NOC_NPS5555_X1Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port3_out" sink_port="NOC_NPS5555_X0Y1/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y1/port1_out" sink_port="NOC_NPS5555_X0Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X0Y0/port2_out" sink_port="NOC_NPS5555_X2Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X2Y0/port3_out" sink_port="DDRMC_X0Y0/Port0_req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M01_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y2/resp" sink_port="NOC_NPS_VNOC_X0Y4/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y4/port0_out" sink_port="NOC_NPS_VNOC_X0Y2/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port0_out" sink_port="NOC_NPS_VNOC_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port3_out" sink_port="NOC_NPS5555_X7Y2/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port0_out" sink_port="NOC_NPS5555_X5Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port0_out" sink_port="NOC_NPS5555_X3Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port0_out" sink_port="NOC_NPS5555_X1Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port1_out" sink_port="NOC_NMU128_X0Y1/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M01_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M01_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y1/req_out" sink_port="NOC_NPS5555_X1Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port2_out" sink_port="NOC_NPS5555_X3Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port2_out" sink_port="NOC_NPS5555_X5Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port2_out" sink_port="NOC_NPS5555_X7Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port1_out" sink_port="NOC_NPS5555_X7Y1/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port2_out" sink_port="NOC_NPS_VNOC_X0Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port2_out" sink_port="NOC_NPS_VNOC_X0Y4/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y4/port3_out" sink_port="NOC_NSU512_X0Y2/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M02_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M02_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y0/resp" sink_port="NOC_NPS_VNOC_X0Y0/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port3_out" sink_port="NOC_NPS5555_X7Y2/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port0_out" sink_port="NOC_NPS5555_X5Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port0_out" sink_port="NOC_NPS5555_X3Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port0_out" sink_port="NOC_NPS5555_X1Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port1_out" sink_port="NOC_NMU128_X0Y1/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M02_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M02_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y1/req_out" sink_port="NOC_NPS5555_X1Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port2_out" sink_port="NOC_NPS5555_X3Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port2_out" sink_port="NOC_NPS5555_X5Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port2_out" sink_port="NOC_NPS5555_X7Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port1_out" sink_port="NOC_NPS5555_X7Y1/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port3_out" sink_port="NOC_NSU512_X0Y0/req" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Read" name ="M00_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="1720" read_transaction_size="64">
+<CHANNEL source_port="NOC_NSU512_X0Y1/resp" sink_port="NOC_NPS_VNOC_X0Y2/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port0_out" sink_port="NOC_NPS_VNOC_X0Y0/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port0_out" sink_port="NOC_NPS5555_X7Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port3_out" sink_port="NOC_NPS5555_X7Y2/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port0_out" sink_port="NOC_NPS5555_X5Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port0_out" sink_port="NOC_NPS5555_X3Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port0_out" sink_port="NOC_NPS5555_X1Y1/port2_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port1_out" sink_port="NOC_NMU128_X0Y1/resp_in" length="1.5"></CHANNEL>
+</PATH>
+<PATH type ="Write" name ="M00_AXI_nsu/S01_AXI_nmu" master_name="axi_noc_0/inst/S01_AXI_nmu" master_type="PCIE_NMU" slave_name="axi_noc_0/inst/M00_AXI_nsu" slave_type="PL_NSU" bandwidth ="2150" write_transaction_size="64">
+<CHANNEL source_port="NOC_NMU128_X0Y1/req_out" sink_port="NOC_NPS5555_X1Y1/port1_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X1Y1/port2_out" sink_port="NOC_NPS5555_X3Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X3Y1/port2_out" sink_port="NOC_NPS5555_X5Y1/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X5Y1/port2_out" sink_port="NOC_NPS5555_X7Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y2/port1_out" sink_port="NOC_NPS5555_X7Y1/port3_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS5555_X7Y1/port2_out" sink_port="NOC_NPS_VNOC_X0Y0/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y0/port2_out" sink_port="NOC_NPS_VNOC_X0Y2/port0_in" length="1.5"></CHANNEL>
+<CHANNEL source_port="NOC_NPS_VNOC_X0Y2/port3_out" sink_port="NOC_NSU512_X0Y1/req" length="1.5"></CHANNEL>
+</PATH>
+</NOC_ROUTES>
+<BLOCKTYPE name="HMC">
+<HMC name="axi_noc_0/inst/MC0_ddrc" count="1" mode="LPDDR4_SDRAM" channels="2" datawidth="32" dataRate="3200" readBandWidth="3440" writeBandWidth="4300" config="x32,2 channel" inputTermination="40" outputTermination="40" eccUsage="Disabled" commandBusOption="Highest Data Rate" outputLoad="1">
+</HMC>
+</BLOCKTYPE>
+<BLOCKTYPE name="HBM2E">
+</BLOCKTYPE>
+</POWERDATA>

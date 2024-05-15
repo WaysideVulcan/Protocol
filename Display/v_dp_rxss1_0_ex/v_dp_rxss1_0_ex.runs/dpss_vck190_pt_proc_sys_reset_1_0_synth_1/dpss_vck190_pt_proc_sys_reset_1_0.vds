@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 19:05:37 2024
+# Process ID: 12408
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1
+# Command line: vivado.exe -log dpss_vck190_pt_proc_sys_reset_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpss_vck190_pt_proc_sys_reset_1_0.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0.vds
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source dpss_vck190_pt_proc_sys_reset_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 583.715 ; gain = 184.348
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f1440e936a053f5f to dir: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.cache/ip/2023.2/f/1/f1440e936a053f5f/dpss_vck190_pt_proc_sys_reset_2_1.dcp to c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.cache/ip/2023.2/f/1/f1440e936a053f5f/dpss_vck190_pt_proc_sys_reset_2_1_sim_netlist.v to c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.cache/ip/2023.2/f/1/f1440e936a053f5f/dpss_vck190_pt_proc_sys_reset_2_1_sim_netlist.vhdl to c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.cache/ip/2023.2/f/1/f1440e936a053f5f/dpss_vck190_pt_proc_sys_reset_2_1_stub.v to c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.cache/ip/2023.2/f/1/f1440e936a053f5f/dpss_vck190_pt_proc_sys_reset_2_1_stub.vhdl to c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/dpss_vck190_pt_proc_sys_reset_1_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dpss_vck190_pt_proc_sys_reset_1_0, cache-ID = f1440e936a053f5f.
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 19:06:18 2024...

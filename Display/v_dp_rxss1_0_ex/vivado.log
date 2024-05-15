@@ -1,0 +1,623 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 18:49:46 2024
+# Process ID: 4708
+# Current directory: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex
+# Command line: vivado.exe -notrace -source c:/Vulcan/Protocol/Display/dp_pt/dp_pt.gen/sources_1/ip/v_dp_rxss1_0/v_dp_rxss1_0_ex.tcl
+# Log file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/vivado.log
+# Journal file: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+source c:/Vulcan/Protocol/Display/dp_pt/dp_pt.gen/sources_1/ip/v_dp_rxss1_0/v_dp_rxss1_0_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1619.328 ; gain = 394.574
+INFO: [open_example_project] Setting board_part_repo_paths...
+WARNING: [Runs 36-551] Changing part from 7vx485t to xcvc1902 will replace the write_bitstream step with write_device_image and write_bitstream step configuration will be lost
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [open_example_project] Adding example synthesis miscellaneous files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: [open_example_project] Sourcing extension script: v_dp_rxss1_0_exdes_bd_synth.tcl
+INFO: [BD::TCL 103-2003] Currently there is no design <dpss_vck190_pt> in project, so creating one...
+Wrote  : <c:\Vulcan\Protocol\Display\v_dp_rxss1_0_ex\v_dp_rxss1_0_ex.srcs\sources_1\bd\dpss_vck190_pt\dpss_vck190_pt.bd> 
+create_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2675.902 ; gain = 118.926
+INFO: [BD::TCL 103-2004] Making design <dpss_vck190_pt> as current_bd_design.
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "dpss_vck190_pt".
+BEGIN1: update_boundary
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dprxss_dp_irq
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dptxss_dp_irq
+BEGIN1: update_boundary
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Generating the xmc port to NPI programming
+Loading data files...
+Generating the xmc port to NPI programming
+Generating the xmc port to NPI programming
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dprxss_dp_irq
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dptxss_dp_irq
+INFO: [MyID-1] Available d sites in device: GTY_QUAD GTY_REFCLK
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_tx_rate' from '2.7' to '1.62' has been ignored for IP 'dprx_gt_ip0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_tx_num_ch' from '4' to '1' has been ignored for IP 'dprx_gt_ip0'
+apply_bd_automation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4060.180 ; gain = 181.723
+INFO: [MyID-1] Available d sites in device: GTY_QUAD GTY_REFCLK
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+INFO: [MyID-1] GT Direction: DUPLEX
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_rx_rate' from '2.7' to '1.62' has been ignored for IP 'dptx_gt_ip0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_rx_num_ch' from '4' to '1' has been ignored for IP 'dptx_gt_ip0'
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1306] The connection to interface pin </dp_rx_hier_0/axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+Generating the xmc port to NPI programming
+Generating the xmc port to NPI programming
+Generating the xmc port to NPI programming
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKFBOUT_MULT' from '30.000000' to '20.000000' has been ignored for IP 'dp_tx_hier_0/clk_wizard_2'
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1306] The connection to interface pin </dp_tx_hier_0/tx_clk_rst/gpio_io_i> is being overridden by the user with net <clk_wiz_1_locked>. This pin will not be connected as a part of interface connection <GPIO>.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+create_bd_cell: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4592.328 ; gain = 239.844
+WARNING: [BD 41-1306] The connection to interface pin </processor_hier_0/hls_rst/gpio_io_o> is being overridden by the user with net <hls_rst_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+WARNING: [BD 41-1306] The connection to interface pin </dp_rx_hier_0/v_dp_rxss1_0/edid_iic_scl_i> is being overridden by the user with net <v_dp_rxss1_0_edid_iic_scl_t>. This pin will not be connected as a part of interface connection <edid_iic>.
+WARNING: [BD 41-1306] The connection to interface pin </dp_rx_hier_0/v_dp_rxss1_0/edid_iic_scl_t> is being overridden by the user with net <v_dp_rxss1_0_edid_iic_scl_t>. This pin will not be connected as a part of interface connection <edid_iic>.
+WARNING: [BD 41-1306] The connection to interface pin </dp_rx_hier_0/v_dp_rxss1_0/edid_iic_sda_i> is being overridden by the user with net <util_reduced_logic_0_Res>. This pin will not be connected as a part of interface connection <edid_iic>.
+WARNING: [BD 41-1306] The connection to interface pin </dp_rx_hier_0/v_dp_rxss1_0/edid_iic_sda_t> is being overridden by the user with net </dp_rx_hier_0/Net3>. This pin will not be connected as a part of interface connection <edid_iic>.
+WARNING: [BD 41-1306] The connection to interface pin </processor_hier_0/axi_gpio_0/gpio_io_i> is being overridden by the user with net <gpio_io_i_1>. This pin will not be connected as a part of interface connection <GPIO>.
+Slave segment '/processor_hier_0/axi_noc_0/S04_AXI/C2_DDR_LOW0' is being assigned into address space '/dp_rx_hier_0/v_frmbuf_wr_0/Data_m_axi_mm_video' at <0x0000_0000 [ 2G ]>.
+Slave segment '/processor_hier_0/axi_noc_0/S05_AXI/C3_DDR_LOW0' is being assigned into address space '/dp_tx_hier_0/v_frmbuf_rd_0/Data_m_axi_mm_video' at <0x0000_0000 [ 2G ]>.
+Slave segment '/dp_rx_hier_0/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA402_0000 [ 64K ]>.
+Slave segment '/processor_hier_0/axi_iic_0/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA405_0000 [ 64K ]>.
+Slave segment '/processor_hier_0/axi_noc_0/S00_AXI/C0_DDR_LOW0' is being assigned into address space '/processor_hier_0/versal_cips_0/FPD_CCI_NOC_0' at <0x0000_0000 [ 2G ]>.
+Slave segment '/processor_hier_0/axi_noc_0/S01_AXI/C1_DDR_LOW0' is being assigned into address space '/processor_hier_0/versal_cips_0/FPD_CCI_NOC_1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/processor_hier_0/axi_noc_0/S02_AXI/C2_DDR_LOW0' is being assigned into address space '/processor_hier_0/versal_cips_0/FPD_CCI_NOC_2' at <0x0000_0000 [ 2G ]>.
+Slave segment '/processor_hier_0/axi_noc_0/S03_AXI/C3_DDR_LOW0' is being assigned into address space '/processor_hier_0/versal_cips_0/FPD_CCI_NOC_3' at <0x0000_0000 [ 2G ]>.
+Slave segment '/processor_hier_0/axi_timer_0/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA403_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/axis_switch_0/S_AXI_CTRL/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA406_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/axis_switch_0/S_AXI_CTRL/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40E_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/clk_wizard_2/s_axi_lite/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA414_0000 [ 64K ]>.
+Slave segment '/gt_quad/gt_quad_base/AXI_LITE/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA418_0000 [ 256K ]>.
+Slave segment '/processor_hier_0/hls_rst/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA400_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/i2s_receiver_0/s_axi_ctrl/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40F_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/i2s_transmitter_0/s_axi_ctrl/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA407_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/rx_acr/s_axi_ctrl/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA409_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/tx_clk_rst/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA411_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/v_dp_rxss1_0/s_axi/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA404_0000 [ 32K ]>.
+Slave segment '/dp_tx_hier_0/v_dp_txss1_0/s_axi/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA401_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/v_frmbuf_rd_0/s_axi_CTRL/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA412_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/v_frmbuf_wr_0/s_axi_CTRL/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40A_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/vid_edid_0/s_axi/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40B_0000 [ 64K ]>.
+Slave segment '/dp_rx_hier_0/video_frame_crc_0/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40C_0000 [ 64K ]>.
+Slave segment '/dp_tx_hier_0/video_frame_crc_tx/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA413_0000 [ 64K ]>.
+Slave segment '/processor_hier_0/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processor_hier_0/versal_cips_0/M_AXI_FPD' at <0xA40D_0000 [ 64K ]>.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processor_hier_0/versal_cips_0/M_AXI_LPD' to master interface '/processor_hier_0/versal_cips_0/M_AXI_LPD'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dprxss_dp_irq
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /dptxss_dp_irq
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter FREQ_HZ(506.25) on '/gt_quad/dptx_bufg_gt1' with propagated value(156250000). Command ignored
+Generating the xmc port to NPI programming
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter FREQ_HZ(506.25) on '/gt_quad/dptx_bufg_gt1' with propagated value(506250000.0). Command ignored
+INFO: [BD 5-943] Reserving offset range <0x0000_5000 [ 4K ]> from slave interface '/xbar/S00_AXI' to master interface '/xbar/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 8K ]> from slave interface '/xbar/S00_AXI' to master interface '/xbar/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] bd_98fb_xbar_0: SmartConnect bd_98fb_xbar_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] bd_98fb_xbar_0: IP bd_98fb_xbar_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] bd_98fb_xbar_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /bd_98fb_xbar_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 8K ]> from slave interface '/xbar/S00_AXI' to master interface '/xbar/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_8000 [ 4K ]> from slave interface '/xbar/S00_AXI' to master interface '/xbar/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] bd_38d0_xbar_0: SmartConnect bd_38d0_xbar_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] bd_38d0_xbar_0: IP bd_38d0_xbar_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] bd_38d0_xbar_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /bd_38d0_xbar_0]
+Generating placement and routing for NoC components
+NoC TrafficSpec | Checksum: e67a11b3
+NoC Constraints | Checksum: 4938e9f2
+NoC Incremental Solution | Checksum: 8cee98bf
+INFO: [Ipconfig 75-92] Running NOC Placement
+INFO: [Ipconfig 75-122] Detailed placement phase
+INFO: [Ipconfig 75-133] Running NOC Routing
+NoC Compiler Finished Successfully
+NoC Solution | Checksum: 9dfbda63
+INFO: [Ipconfig 75-108] Writing file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/common/nsln/NOC_Power.xpe.
+INFO: [BD 5-943] Reserving offset range <0xA404_0000 [ 32K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40C_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA409_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40B_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA402_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA406_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA407_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M06_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40A_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M07_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40E_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA401_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA413_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40F_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA414_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA411_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA412_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M06_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA403_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/processor_hier_0/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA400_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/processor_hier_0/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA405_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/processor_hier_0/smartconnect_0/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA418_0000 [ 256K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/processor_hier_0/smartconnect_0/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40D_0000 [ 64K ]> from slave interface '/processor_hier_0/smartconnect_0/S00_AXI' to master interface '/processor_hier_0/smartconnect_0/M06_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_2: SmartConnect dpss_vck190_pt_smartconnect_0_2 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_2: IP dpss_vck190_pt_smartconnect_0_2 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_2: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /dpss_vck190_pt_smartconnect_0_2]
+INFO: [BD 5-943] Reserving offset range <0xA404_0000 [ 32K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40C_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA409_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40B_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA402_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA406_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA407_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M06_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40A_0000 [ 64K ]> from slave interface '/dp_rx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_rx_hier_0/smartconnect_0/M07_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_0: SmartConnect dpss_vck190_pt_smartconnect_0_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_0: IP dpss_vck190_pt_smartconnect_0_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /dpss_vck190_pt_smartconnect_0_0]
+INFO: [BD 5-943] Reserving offset range <0xA40E_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA401_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA413_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA40F_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA414_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA411_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA412_0000 [ 64K ]> from slave interface '/dp_tx_hier_0/smartconnect_0/S00_AXI' to master interface '/dp_tx_hier_0/smartconnect_0/M06_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_1: SmartConnect dpss_vck190_pt_smartconnect_0_1 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_1: IP dpss_vck190_pt_smartconnect_0_1 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] dpss_vck190_pt_smartconnect_0_1: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /dpss_vck190_pt_smartconnect_0_1]
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /processor_hier_0/axi_noc_0/S00_AXI(17) and /processor_hier_0/versal_cips_0/FPD_CCI_NOC_0(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /processor_hier_0/axi_noc_0/S01_AXI(17) and /processor_hier_0/versal_cips_0/FPD_CCI_NOC_1(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /processor_hier_0/axi_noc_0/S02_AXI(17) and /processor_hier_0/versal_cips_0/FPD_CCI_NOC_2(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /processor_hier_0/axi_noc_0/S03_AXI(17) and /processor_hier_0/versal_cips_0/FPD_CCI_NOC_3(0)
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 5095.418 ; gain = 441.852
+Wrote  : <c:\Vulcan\Protocol\Display\v_dp_rxss1_0_ex\v_dp_rxss1_0_ex.srcs\sources_1\bd\dpss_vck190_pt\dpss_vck190_pt.bd> 
+Wrote  : <c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.srcs/sources_1/bd/dpss_vck190_pt/ui/bd_cb8c4626.ui> 
+save_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 5170.055 ; gain = 74.637
+INFO: [BD 41-1662] The design 'dpss_vck190_pt.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txdata'(128) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txrate'(8) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txdata'(128) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txrate'(8) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txdata'(128) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txrate'(8) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txdata'(128) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txrate'(8) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_rxrate'(8) to pin: '/gt_quad/RX0_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_rxrate'(8) to pin: '/gt_quad/RX1_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_rxrate'(8) to pin: '/gt_quad/RX2_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_rxrate'(8) to pin: '/gt_quad/RX3_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/i2s_transmitter_0/s_axis_aud_tid'(3) to pin: '/dp_rx_hier_0/axis_switch_0/m_axis_tid'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch3_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX3_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch0_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX0_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch1_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX1_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch2_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX2_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_tx_hier_0/axis_switch_0/s_axis_tid'(8) to pin: '/dp_tx_hier_0/i2s_receiver_0/m_axis_aud_tid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_arlock'(1) to pin: '/processor_hier_0/rx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_awlock'(1) to pin: '/processor_hier_0/rx_video_MM_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_arlock'(1) to pin: '/processor_hier_0/tx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_awlock'(1) to pin: '/processor_hier_0/tx_video_MM_awlock'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/synth/dpss_vck190_pt.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txdata'(128) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txrate'(8) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txdata'(128) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txrate'(8) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txdata'(128) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txrate'(8) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txdata'(128) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txrate'(8) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_rxrate'(8) to pin: '/gt_quad/RX0_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_rxrate'(8) to pin: '/gt_quad/RX1_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_rxrate'(8) to pin: '/gt_quad/RX2_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_rxrate'(8) to pin: '/gt_quad/RX3_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/i2s_transmitter_0/s_axis_aud_tid'(3) to pin: '/dp_rx_hier_0/axis_switch_0/m_axis_tid'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch3_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX3_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch0_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX0_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch1_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX1_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch2_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX2_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_tx_hier_0/axis_switch_0/s_axis_tid'(8) to pin: '/dp_tx_hier_0/i2s_receiver_0/m_axis_aud_tid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_arlock'(1) to pin: '/processor_hier_0/rx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_awlock'(1) to pin: '/processor_hier_0/rx_video_MM_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_arlock'(1) to pin: '/processor_hier_0/tx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_awlock'(1) to pin: '/processor_hier_0/tx_video_MM_awlock'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/sim/dpss_vck190_pt.v
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/hdl/dpss_vck190_pt_wrapper.v
+INFO: [Project 1-1716] Could not find the wrapper file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.srcs/sources_1/bd/dpss_vck190_pt/hdl/dpss_vck190_pt_wrapper.v, checking in project .gen location instead.
+INFO: [Vivado 12-12390] Found file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/hdl/dpss_vck190_pt_wrapper.v, adding it to Project
+WARNING: [Vivado 12-818] No files matched 'v_dp_rxss1_0.xci'
+WARNING: [Coretcl 2-175] No Catalog IPs found
+WARNING: [Coretcl 2-175] No Catalog IPs found
+WARNING: [Coretcl 2-176] No IPs found
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_device_image -jobs 20
+INFO: [BD 41-1662] The design 'dpss_vck190_pt.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txdata'(128) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txrate'(8) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txdata'(128) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txrate'(8) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txdata'(128) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txrate'(8) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txdata'(128) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txrate'(8) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_rxrate'(8) to pin: '/gt_quad/RX0_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_rxrate'(8) to pin: '/gt_quad/RX1_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_rxrate'(8) to pin: '/gt_quad/RX2_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_rxrate'(8) to pin: '/gt_quad/RX3_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/i2s_transmitter_0/s_axis_aud_tid'(3) to pin: '/dp_rx_hier_0/axis_switch_0/m_axis_tid'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch3_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX3_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch0_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX0_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch1_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX1_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch2_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX2_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_tx_hier_0/axis_switch_0/s_axis_tid'(8) to pin: '/dp_tx_hier_0/i2s_receiver_0/m_axis_aud_tid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_arlock'(1) to pin: '/processor_hier_0/rx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_awlock'(1) to pin: '/processor_hier_0/rx_video_MM_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_arlock'(1) to pin: '/processor_hier_0/tx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_awlock'(1) to pin: '/processor_hier_0/tx_video_MM_awlock'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/synth/dpss_vck190_pt.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txdata'(128) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_txrate'(8) to pin: '/gt_quad/TX0_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txdata'(128) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_txrate'(8) to pin: '/gt_quad/TX1_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txdata'(128) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_txrate'(8) to pin: '/gt_quad/TX2_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txdata'(128) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_txrate'(8) to pin: '/gt_quad/TX3_GT_IP_Interface_ch_txrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch0_rxrate'(8) to pin: '/gt_quad/RX0_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch1_rxrate'(8) to pin: '/gt_quad/RX1_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch2_rxrate'(8) to pin: '/gt_quad/RX2_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gt_quad/gt_quad_base/ch3_rxrate'(8) to pin: '/gt_quad/RX3_GT_IP_Interface_ch_rxrate'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/i2s_transmitter_0/s_axis_aud_tid'(3) to pin: '/dp_rx_hier_0/axis_switch_0/m_axis_tid'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch3_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX3_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch0_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX0_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch1_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX1_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_rx_hier_0/dprx_gt_ip0/ch2_rxdata'(32) to pin: '/dp_rx_hier_0/GT_RX2_ch_rxdata'(128) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/dp_tx_hier_0/axis_switch_0/s_axis_tid'(8) to pin: '/dp_tx_hier_0/i2s_receiver_0/m_axis_aud_tid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_arlock'(1) to pin: '/processor_hier_0/rx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S04_AXI_awlock'(1) to pin: '/processor_hier_0/rx_video_MM_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_arlock'(1) to pin: '/processor_hier_0/tx_video_MM_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processor_hier_0/axi_noc_0/S05_AXI_awlock'(1) to pin: '/processor_hier_0/tx_video_MM_awlock'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/sim/dpss_vck190_pt.v
+Verilog Output written to : c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/hdl/dpss_vck190_pt_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gt_quad/bufg_gt .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gt_quad/gt_quad_base .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gt_quad/bufg_gt_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gt_quad/util_ds_buf .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gt_quad/dptx_bufg_gt1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wizard_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/axis_data_fifo_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axis_switch_0_0/dpss_vck190_pt_axis_switch_0_0_ooc.xdc'
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M00_AXIS.TDATA_NUM_BYTES'. Logical port width '4' and physical port width '8' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M00_AXIS.TID_WIDTH'. Logical port width '8' and physical port width '16' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M01_AXIS.TDATA_NUM_BYTES'. Logical port width '4' and physical port width '8' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M01_AXIS.TID_WIDTH'. Logical port width '8' and physical port width '16' do not match.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/axis_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/i2s_transmitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/proc_sys_reset_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/proc_sys_reset_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/proc_sys_reset_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/rx_acr .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_0/bd_0/hw_handoff/dpss_vck190_pt_smartconnect_0_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_0/bd_0/synth/dpss_vck190_pt_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/util_reduced_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/util_vector_logic_1 .
+WARNING: [IP_Flow 19-1971] File named "sim/dpss_vck190_pt_v_frmbuf_wr_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/v_frmbuf_wr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/vid_edid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/video_frame_crc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/xlslice_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/dprx_gt_ip0 .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_1/hw_handoff/bd_98fb_xbar_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_1/synth/bd_98fb_xbar_0.hwdef
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/hw_handoff/dpss_vck190_pt_v_dp_rxss1_0_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_rxss1_0_0/bd_0/synth/dpss_vck190_pt_v_dp_rxss1_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_rx_hier_0/v_dp_rxss1_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axis_switch_0_1/dpss_vck190_pt_axis_switch_0_1_ooc.xdc'
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S00_AXIS.TDATA_NUM_BYTES'. Logical port width '4' and physical port width '8' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S00_AXIS.TID_WIDTH'. Logical port width '8' and physical port width '16' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S01_AXIS.TDATA_NUM_BYTES'. Logical port width '4' and physical port width '8' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S01_AXIS.TID_WIDTH'. Logical port width '8' and physical port width '16' do not match.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/axis_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/clk_wizard_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/i2s_receiver_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/proc_sys_reset_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/proc_sys_reset_3 .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_1/bd_0/hw_handoff/dpss_vck190_pt_smartconnect_0_1.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_1/bd_0/synth/dpss_vck190_pt_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/tx_clk_rst .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/util_vector_logic_2 .
+WARNING: [IP_Flow 19-1971] File named "sim/dpss_vck190_pt_v_frmbuf_rd_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/v_frmbuf_rd_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/video_frame_crc_tx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/dptx_gt_ip0 .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_txss1_0_0/bd_1/hw_handoff/bd_38d0_xbar_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_txss1_0_0/bd_1/synth/bd_38d0_xbar_0.hwdef
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_txss1_0_0/bd_0/hw_handoff/dpss_vck190_pt_v_dp_txss1_0_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_v_dp_txss1_0_0/bd_0/synth/dpss_vck190_pt_v_dp_txss1_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dp_tx_hier_0/v_dp_txss1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block oddr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block oddr_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/axi_iic_0 .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S00_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S01_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S02_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S03_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S04_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S05_AXI'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S00_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S00_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S01_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S01_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S02_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S02_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S03_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S03_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S04_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S04_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S05_AXI_nmu_0: device = xcvc1902
+INFO: [xilinx.com:ip:noc_nmu:1.0-1] bd_3191_S05_AXI_nmu_0: device = xcvc1902
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'SAXI4'. A default connection has been created.
+Calling reg_generate
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_noc_0_0/bd_0/hw_handoff/dpss_vck190_pt_axi_noc_0_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_noc_0_0/bd_0/synth/dpss_vck190_pt_axi_noc_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/axi_noc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_axi_timer_0_0/dpss_vck190_pt_axi_timer_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/hls_rst .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/rst_ps8_0_99M .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_2/bd_0/hw_handoff/dpss_vck190_pt_smartconnect_0_2.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_smartconnect_0_2/bd_0/synth/dpss_vck190_pt_smartconnect_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/smartconnect_0 .
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: XDC Generation
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: Time taken by generate_ps_data 4159 ms
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: Time taken by XDC_generate is 4160 ms
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: REG Generation
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: Time taken by generate_ps_data 3344 ms
+INFO: [xilinx.com:ip:pspmc:1.4-2] bd_65e0_pspmc_0_0: Time taken by reg_generate is 3345 ms
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_versal_cips_0_0/bd_0/hw_handoff/dpss_vck190_pt_versal_cips_0_0.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/ip/dpss_vck190_pt_versal_cips_0_0/bd_0/synth/dpss_vck190_pt_versal_cips_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/versal_cips_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_hier_0/axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_2_aud .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_aud .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+Exporting to file c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/hw_handoff/dpss_vck190_pt.hwh
+Generated Hardware Definition File c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.gen/sources_1/bd/dpss_vck190_pt/synth/dpss_vck190_pt.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axi_gpio_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axi_iic_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axi_noc_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axi_timer_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axis_data_fifo_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axis_switch_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_axis_switch_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_bufg_gt_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_bufg_gt_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_clk_wizard_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_clk_wizard_2_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_dprx_gt_ip0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_dptx_bufg_gt1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_dptx_gt_ip0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_gt_quad_base_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_hls_rst_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_i2s_receiver_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_i2s_transmitter_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_oddr_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_oddr_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_0_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_1_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_2_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_2_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_3_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_3_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_proc_sys_reset_4_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_rst_ps8_0_99M_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_rx_acr_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_smartconnect_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_smartconnect_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_smartconnect_0_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_tx_clk_rst_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_ds_buf_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_ds_buf_2_aud_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_ds_buf_aud_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_reduced_logic_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_vector_logic_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_util_vector_logic_2_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_v_dp_rxss1_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_v_dp_txss1_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_v_frmbuf_rd_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_v_frmbuf_wr_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_vid_edid_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_video_frame_crc_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dpss_vck190_pt_video_frame_crc_tx_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_38d0_dp_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_38d0_not_gate1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_38d0_vb1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_38d0_vtc1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_38d0_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_98fb_clk_wiz_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_98fb_dp_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_98fb_notof_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_98fb_vb1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP bd_98fb_xbar_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_gpio_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_clk_wizard_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_dprx_gt_ip0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_dptx_gt_ip0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_hls_rst_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_i2s_receiver_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_4_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_smartconnect_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_clk_wizard_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_dptx_bufg_gt1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_gt_quad_base_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_i2s_transmitter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_oddr_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_2_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_3_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_smartconnect_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_iic_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_noc_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_dp_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_oddr_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_1_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_proc_sys_reset_3_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_rst_ps8_0_99M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_smartconnect_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axi_timer_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axis_data_fifo_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_rx_acr_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_ds_buf_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_ds_buf_aud_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_vector_logic_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_vector_logic_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_v_dp_txss1_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_tx_clk_rst_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_ds_buf_2_aud_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_util_reduced_logic_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_v_dp_rxss1_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axis_switch_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_axis_switch_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_bufg_gt_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_bufg_gt_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_vb1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_notof_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_v_frmbuf_rd_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_v_frmbuf_wr_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_video_frame_crc_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_not_gate1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_dp_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_vid_edid_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dpss_vck190_pt_video_frame_crc_tx_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_38d0_vtc1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_vb1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_98fb_clk_wiz_0
+[Thu May  9 18:57:17 2024] Launched dpss_vck190_pt_proc_sys_reset_0_1_synth_1, bd_98fb_notof_0_0_synth_1, dpss_vck190_pt_axis_switch_0_1_synth_1, dpss_vck190_pt_proc_sys_reset_1_1_synth_1, bd_98fb_vb1_0_synth_1, dpss_vck190_pt_i2s_receiver_0_0_synth_1, dpss_vck190_pt_clk_wizard_2_0_synth_1, dpss_vck190_pt_proc_sys_reset_2_1_synth_1, dpss_vck190_pt_smartconnect_0_1_synth_1, dpss_vck190_pt_proc_sys_reset_3_1_synth_1, dpss_vck190_pt_bufg_gt_0_synth_1, dpss_vck190_pt_gt_quad_base_0_synth_1, dpss_vck190_pt_bufg_gt_1_0_synth_1, dpss_vck190_pt_util_ds_buf_0_synth_1, dpss_vck190_pt_dptx_bufg_gt1_0_synth_1, dpss_vck190_pt_clk_wizard_1_0_synth_1, dpss_vck190_pt_axi_gpio_0_0_synth_1, dpss_vck190_pt_rx_acr_0_synth_1, dpss_vck190_pt_proc_sys_reset_4_0_synth_1, dpss_vck190_pt_proc_sys_reset_0_0_synth_1, dpss_vck190_pt_proc_sys_reset_2_0_synth_1, dpss_vck190_pt_proc_sys_reset_3_0_synth_1, dpss_vck190_pt_axis_data_fifo_0_0_synth_1, dpss_vck190_pt_axis_switch_0_0_synth_1, dpss_vck190_pt_smartconnect_0_0_synth_1, dpss_vck190_pt_i2s_transmitter_0_0_synth_1, dpss_vck190_pt_proc_sys_reset_1_0_synth_1, dpss_vck190_pt_dprx_gt_ip0_0_synth_1, bd_98fb_xbar_0_synth_1, dpss_vck190_pt_util_vector_logic_1_0_synth_1, dpss_vck190_pt_video_frame_crc_0_0_synth_1, dpss_vck190_pt_v_dp_rxss1_0_0_synth_1, dpss_vck190_pt_vid_edid_0_0_synth_1, bd_98fb_clk_wiz_0_synth_1, dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1, dpss_vck190_pt_util_reduced_logic_0_0_synth_1, bd_98fb_dp_0_synth_1, bd_38d0_xbar_0_synth_1, dpss_vck190_pt_v_frmbuf_rd_0_0_synth_1, dpss_vck190_pt_video_frame_crc_tx_0_synth_1, dpss_vck190_pt_dptx_gt_ip0_0_synth_1, dpss_vck190_pt_v_dp_txss1_0_0_synth_1, dpss_vck190_pt_tx_clk_rst_0_synth_1, dpss_vck190_pt_util_vector_logic_2_0_synth_1, bd_38d0_dp_0_synth_1, bd_38d0_vtc1_0_synth_1, bd_38d0_not_gate1_0_synth_1, dpss_vck190_pt_axi_iic_0_0_synth_1, dpss_vck190_pt_oddr_1_0_synth_1, dpss_vck190_pt_smartconnect_0_2_synth_1, dpss_vck190_pt_hls_rst_0_synth_1, dpss_vck190_pt_proc_sys_reset_0_2_synth_1, dpss_vck190_pt_rst_ps8_0_99M_0_synth_1, dpss_vck190_pt_axi_timer_0_0_synth_1, bd_38d0_vb1_0_synth_1, dpss_vck190_pt_oddr_0_0_synth_1, dpss_vck190_pt_axi_noc_0_0_synth_1, dpss_vck190_pt_axi_gpio_0_1_synth_1, dpss_vck190_pt_util_ds_buf_2_aud_0_synth_1, dpss_vck190_pt_util_ds_buf_aud_0_synth_1, synth_1...
+Run output will be captured here:
+dpss_vck190_pt_proc_sys_reset_0_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_0_1_synth_1/runme.log
+bd_98fb_notof_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_notof_0_0_synth_1/runme.log
+dpss_vck190_pt_axis_switch_0_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axis_switch_0_1_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_1_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_1_synth_1/runme.log
+bd_98fb_vb1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_vb1_0_synth_1/runme.log
+dpss_vck190_pt_i2s_receiver_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_i2s_receiver_0_0_synth_1/runme.log
+dpss_vck190_pt_clk_wizard_2_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_2_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_2_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_2_1_synth_1/runme.log
+dpss_vck190_pt_smartconnect_0_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_smartconnect_0_1_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_3_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_3_1_synth_1/runme.log
+dpss_vck190_pt_bufg_gt_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_bufg_gt_0_synth_1/runme.log
+dpss_vck190_pt_gt_quad_base_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_gt_quad_base_0_synth_1/runme.log
+dpss_vck190_pt_bufg_gt_1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_bufg_gt_1_0_synth_1/runme.log
+dpss_vck190_pt_util_ds_buf_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_ds_buf_0_synth_1/runme.log
+dpss_vck190_pt_dptx_bufg_gt1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dptx_bufg_gt1_0_synth_1/runme.log
+dpss_vck190_pt_clk_wizard_1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_clk_wizard_1_0_synth_1/runme.log
+dpss_vck190_pt_axi_gpio_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axi_gpio_0_0_synth_1/runme.log
+dpss_vck190_pt_rx_acr_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_rx_acr_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_4_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_4_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_0_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_2_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_2_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_3_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_3_0_synth_1/runme.log
+dpss_vck190_pt_axis_data_fifo_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axis_data_fifo_0_0_synth_1/runme.log
+dpss_vck190_pt_axis_switch_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axis_switch_0_0_synth_1/runme.log
+dpss_vck190_pt_smartconnect_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_smartconnect_0_0_synth_1/runme.log
+dpss_vck190_pt_i2s_transmitter_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_i2s_transmitter_0_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_1_0_synth_1/runme.log
+dpss_vck190_pt_dprx_gt_ip0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dprx_gt_ip0_0_synth_1/runme.log
+bd_98fb_xbar_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_xbar_0_synth_1/runme.log
+dpss_vck190_pt_util_vector_logic_1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_vector_logic_1_0_synth_1/runme.log
+dpss_vck190_pt_video_frame_crc_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_video_frame_crc_0_0_synth_1/runme.log
+dpss_vck190_pt_v_dp_rxss1_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_dp_rxss1_0_0_synth_1/runme.log
+dpss_vck190_pt_vid_edid_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_vid_edid_0_0_synth_1/runme.log
+bd_98fb_clk_wiz_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_clk_wiz_0_synth_1/runme.log
+dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_wr_0_0_synth_1/runme.log
+dpss_vck190_pt_util_reduced_logic_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_reduced_logic_0_0_synth_1/runme.log
+bd_98fb_dp_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_98fb_dp_0_synth_1/runme.log
+bd_38d0_xbar_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_38d0_xbar_0_synth_1/runme.log
+dpss_vck190_pt_v_frmbuf_rd_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_frmbuf_rd_0_0_synth_1/runme.log
+dpss_vck190_pt_video_frame_crc_tx_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_video_frame_crc_tx_0_synth_1/runme.log
+dpss_vck190_pt_dptx_gt_ip0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_dptx_gt_ip0_0_synth_1/runme.log
+dpss_vck190_pt_v_dp_txss1_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_v_dp_txss1_0_0_synth_1/runme.log
+dpss_vck190_pt_tx_clk_rst_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_tx_clk_rst_0_synth_1/runme.log
+dpss_vck190_pt_util_vector_logic_2_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_vector_logic_2_0_synth_1/runme.log
+bd_38d0_dp_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_38d0_dp_0_synth_1/runme.log
+bd_38d0_vtc1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_38d0_vtc1_0_synth_1/runme.log
+bd_38d0_not_gate1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_38d0_not_gate1_0_synth_1/runme.log
+dpss_vck190_pt_axi_iic_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axi_iic_0_0_synth_1/runme.log
+dpss_vck190_pt_oddr_1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_oddr_1_0_synth_1/runme.log
+dpss_vck190_pt_smartconnect_0_2_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_smartconnect_0_2_synth_1/runme.log
+dpss_vck190_pt_hls_rst_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_hls_rst_0_synth_1/runme.log
+dpss_vck190_pt_proc_sys_reset_0_2_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_proc_sys_reset_0_2_synth_1/runme.log
+dpss_vck190_pt_rst_ps8_0_99M_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_rst_ps8_0_99M_0_synth_1/runme.log
+dpss_vck190_pt_axi_timer_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axi_timer_0_0_synth_1/runme.log
+bd_38d0_vb1_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/bd_38d0_vb1_0_synth_1/runme.log
+dpss_vck190_pt_oddr_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_oddr_0_0_synth_1/runme.log
+dpss_vck190_pt_axi_noc_0_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axi_noc_0_0_synth_1/runme.log
+dpss_vck190_pt_axi_gpio_0_1_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_axi_gpio_0_1_synth_1/runme.log
+dpss_vck190_pt_util_ds_buf_2_aud_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_ds_buf_2_aud_0_synth_1/runme.log
+dpss_vck190_pt_util_ds_buf_aud_0_synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/dpss_vck190_pt_util_ds_buf_aud_0_synth_1/runme.log
+synth_1: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/synth_1/runme.log
+[Thu May  9 18:57:21 2024] Launched impl_1...
+Run output will be captured here: c:/Vulcan/Protocol/Display/v_dp_rxss1_0_ex/v_dp_rxss1_0_ex.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:14 ; elapsed = 00:04:22 . Memory (MB): peak = 6512.484 ; gain = 1295.156
+reset_run bd_98fb_xbar_0_synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 21:51:10 2024...

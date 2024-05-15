@@ -1,0 +1,323 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Apr 26 23:12:44 2024
+# Process ID: 23896
+# Current directory: C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1
+# Command line: vivado.exe -log hdmi_trans_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_trans_top.tcl
+# Log file: C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/hdmi_trans_top.vds
+# Journal file: C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source hdmi_trans_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/utils_1/imports/synth_1/hdmi_trans_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/utils_1/imports/synth_1/hdmi_trans_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top hdmi_trans_top -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1610.961 ; gain = 440.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'hemi_oen', assumed default net type 'wire' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:35]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_trans_top' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/.Xil/Vivado-23896-Vulcan/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/.Xil/Vivado-23896-Vulcan/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_shift' [C:/Vulcan/Design_Tool/Vivado/VC707/vga/vga.srcs/sources_1/new/vga_shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'vga_shift' (0#1) [C:/Vulcan/Design_Tool/Vivado/VC707/vga/vga.srcs/sources_1/new/vga_shift.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rd_image' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/rd_image.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rom_ip' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/.Xil/Vivado-23896-Vulcan/realtime/rom_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_ip' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/.Xil/Vivado-23896-Vulcan/realtime/rom_ip_stub.v:6]
+WARNING: [Synth 8-7071] port 'ena' of module 'rom_ip' is unconnected for instance 'inst_rom' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/rd_image.v:22]
+WARNING: [Synth 8-7023] instance 'inst_rom' of module 'rom_ip' has 4 connections declared, but only 3 given [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/rd_image.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'rd_image' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/rd_image.v:2]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_trans' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans.v:23]
+INFO: [Synth 8-6157] synthesizing module 'encode' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/encode.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/encode.v:2]
+INFO: [Synth 8-6157] synthesizing module 'parallel_to_serial' [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/parallel_to_serial.v:3]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:93073]
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:93073]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97310]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97310]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97310]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97310]
+INFO: [Synth 8-6155] done synthesizing module 'parallel_to_serial' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/parallel_to_serial.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_trans' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_trans_top' (0#1) [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:2]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:39]
+WARNING: [Synth 8-6014] Unused sequential element hdmi_oen_r_reg was removed.  [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:35]
+WARNING: [Synth 8-3848] Net hdmi_oen in module/entity hdmi_trans_top does not have driver. [C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.srcs/sources_1/new/hdmi_trans_top.v:6]
+WARNING: [Synth 8-7129] Port vsync in module hdmi_trans is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsync in module hdmi_trans is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hdmi_oen in module hdmi_trans_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1724.734 ; gain = 554.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1724.734 ; gain = 554.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1724.734 ; gain = 554.422
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1724.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clock'
+Finished Parsing XDC File [c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clock'
+Parsing XDC File [c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/rom_ip/rom_ip/rom_ip_in_context.xdc] for cell 'inst_rd_image/inst_rom'
+Finished Parsing XDC File [c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/rom_ip/rom_ip/rom_ip_in_context.xdc] for cell 'inst_rd_image/inst_rom'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1798.664 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst_rd_image/inst_rom' at clock pin 'clka' is different from the actual clock period '6.734', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_n. (constraint file  c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_n. (constraint file  c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_p. (constraint file  c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_p. (constraint file  c:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_clock. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_rd_image/inst_rom. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 4     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   5 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port hdmi_oen in module hdmi_trans_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \inst_rd_image/inst_rom  has unconnected pin ena
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |rom_ip        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz   |     1|
+|2     |rom_ip    |     1|
+|3     |CARRY4    |    53|
+|4     |LUT1      |    54|
+|5     |LUT2      |    62|
+|6     |LUT3      |    61|
+|7     |LUT4      |    98|
+|8     |LUT5      |    90|
+|9     |LUT6      |   115|
+|10    |OSERDESE2 |     8|
+|12    |FDCE      |    42|
+|13    |FDRE      |   175|
+|14    |FDSE      |     1|
+|15    |IBUF      |     1|
+|16    |OBUFDS    |     4|
+|17    |OBUFT     |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1805.457 ; gain = 554.422
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.457 ; gain = 635.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1805.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1805.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+Synth Design complete | Checksum: e688cee9
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1805.457 ; gain = 1209.195
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1805.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vulcan/Protocol/HDMI/HDMI_img/HDMI_img.runs/synth_1/hdmi_trans_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hdmi_trans_top_utilization_synth.rpt -pb hdmi_trans_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 23:13:22 2024...

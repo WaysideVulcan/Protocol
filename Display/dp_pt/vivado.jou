@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May  9 18:48:12 2024
+# Process ID: 7932
+# Current directory: C:/Vulcan/Protocol/Display/dp_pt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19328 C:\Vulcan\Protocol\Display\dp_pt\dp_pt.xpr
+# Log file: C:/Vulcan/Protocol/Display/dp_pt/vivado.log
+# Journal file: C:/Vulcan/Protocol/Display/dp_pt\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vulcan/Protocol/Display/dp_pt/dp_pt.xpr
+update_compile_order -fileset sources_1
+open_example_project -force -dir C:/Vulcan/Protocol/Display [get_ips  v_dp_rxss1_0]

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../uart_loop.srcs/sources_1/new/rs232.v" \
+"../../../../uart_loop.srcs/sources_1/new/uart_rx.v" \
+"../../../../uart_loop.srcs/sources_1/new/uart_tx.v" \
+"../../../../uart_loop.srcs/sim_1/new/tb_rs232.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

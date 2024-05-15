@@ -4,14 +4,15 @@
 ## XDMA IP CORE
 此IP內含DMA模塊，讓FPGA可以透過ARM/MCU來控制資料傳輸
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/pcie_ip.png)
 
 ### Blcok Diagram
 透過Vivado提供的Block Design來完成設計
 
 XDMA IP 可以讓Host PC使用PCie介面與FPGA上的儲存空間傳輸資料
 
-![Image text]() ![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/pcie_block_diagram.png) 
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/pcie_block_design.png)
 
 ### XDMA Driver
 利用Xilinx提供的PCie Driver來讀寫FPGA
@@ -35,12 +36,13 @@ $ ./run_test.sh
 ## Versal PCie Gen5 Demo
 藉由Versal器件獨有的硬核CPM來達到Gen5的傳輸速度
 
-![Image text]() ![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/versal_cpm1.png) 
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/versal_cpm2.png)
 
 ### Example Design
 利用Xilinx提供的Example Design來建構
 
-![Image text]()
+![Image text](https://github.com/WaysideVulcan/Protocol/blob/master/img/pcie/pcie_gen5_ex.png)
 
 ### QDMA Driver
 利用Xilinx提供的PCie Driver來讀寫FPGA
